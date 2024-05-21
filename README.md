@@ -28,13 +28,13 @@
 9. **`export EASYBUILD_BUILDPATH=/dev/shm/$USER`**
    - **Description**: Sets the build path for EasyBuild to the shared memory directory, which can improve build performance.
 
-10. **`eb /home/users/pvares/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs/o/OpenFOAM/OpenFOAM-v2312-foss-2023a.eb --missing`**
+10. **`eb /home/users/$USER/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs/o/OpenFOAM/OpenFOAM-v2312-foss-2023a.eb --missing`**
     - **Description**: Checks for and lists any missing dependencies required for building OpenFOAM.
 
-11. **`eb /home/users/pvares/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs/o/OpenFOAM/OpenFOAM-v2312-foss-2023a.eb --job --job-cores 32 --job-max-walltime 11 --robot --trace`**
+11. **`eb /home/users/$USER/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs/o/OpenFOAM/OpenFOAM-v2312-foss-2023a.eb --job --job-cores 32 --job-max-walltime 11 --robot --trace`**
     - **Description**: Submits the OpenFOAM build as a job with 32 cores, a maximum wall time of 11 hours, resolving dependencies automatically, and tracing the build process.
 
-12. **`module use /home/users/pvares/easybuild/modules/all`**
+12. **`module use /home/users/$USER/easybuild/modules/all`**
     - **Description**: Adds the user's EasyBuild module files directory to the module path.
 
 13. **`module load cae/OpenFOAM/v2312-foss-2023a`**
