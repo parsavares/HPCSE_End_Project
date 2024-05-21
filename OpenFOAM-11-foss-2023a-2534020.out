@@ -1,0 +1,106 @@
+== Temporary log file in case of crash /tmp/eb-iafwwxb_/eb-o_n3pxsg/easybuild-aftl9ut6.log
+== found valid index for /home/users/pvares/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs, so using it...
+== found valid index for /home/users/pvares/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs, so using it...
+== processing EasyBuild easyconfig /home/users/pvares/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs/o/OpenFOAM/OpenFOAM-11-foss-2023a.eb
+== building and installing cae/OpenFOAM/11-foss-2023a...
+  >> installation prefix: /home/users/pvares/easybuild/software/OpenFOAM/11-foss-2023a
+== fetching files...
+  >> sources:
+  >> /home/users/pvares/easybuild/sources/o/OpenFOAM/version-11.tar.gz [SHA256: ebc0f86ead699abba61290ba8aac5b730aa93256e675d1d93a5d5f116d51e0c0]
+  >> patches:
+  >> /home/users/pvares/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs/o/OpenFOAM/OpenFOAM-11-ThirdParty.patch [SHA256: 7c526be93a0e241584c849cdcda682c23d1a87f23b1a06eae2fa8372a2cab415]
+== ... (took < 1 sec)
+== creating build dir, resetting environment...
+  >> build dir: /home/users/pvares/easybuild/software/OpenFOAM/11-foss-2023a
+== ... (took < 1 sec)
+== unpacking...
+  >> running command:
+	[started at: 2024-05-21 15:03:24]
+	[working dir: /mnt/aiongpfs/users/pvares/easybuild/software/OpenFOAM/11-foss-2023a]
+	[output logged in /tmp/eb-iafwwxb_/eb-o_n3pxsg/easybuild-run_cmd-f32t7i4z.log]
+	tar xzf /home/users/pvares/easybuild/sources/o/OpenFOAM/version-11.tar.gz
+  >> command completed: exit 0, ran in 00h00m05s
+== ... (took 5 secs)
+== patching...
+  >> applying patch OpenFOAM-11-ThirdParty.patch
+== ... (took < 1 sec)
+== preparing...
+  >> loading toolchain module: toolchain/foss/2023a
+  >> loading modules for build dependencies:
+  >>  * lang/Bison/3.8.2-GCCcore-12.3.0
+  >>  * devel/CMake/3.26.3-GCCcore-12.3.0
+  >>  * lang/flex/2.6.4-GCCcore-12.3.0
+  >> loading modules for (runtime) dependencies:
+  >>  * devel/ncurses/6.4-GCCcore-12.3.0
+  >>  * math/METIS/5.1.0-GCCcore-12.3.0
+  >>  * math/SCOTCH/7.0.3-gompi-2023a
+  >>  * numlib/CGAL/5.6-GCCcore-12.3.0
+  >>  * vis/ParaView/5.11.2-foss-2023a
+  >>  * vis/gnuplot/5.4.8-GCCcore-12.3.0
+  >> defining build environment for foss/2023a toolchain
+== ... (took 5 secs)
+== configuring...
+== ... (took < 1 sec)
+== building...
+  >> running command:
+	[started at: 2024-05-21 15:03:34]
+	[working dir: /mnt/aiongpfs/users/pvares/easybuild/software/OpenFOAM/11-foss-2023a/OpenFOAM-11]
+	[output logged in /tmp/eb-iafwwxb_/eb-o_n3pxsg/easybuild-run_cmd-b9c6_y3q.log]
+	source /home/users/pvares/easybuild/software/OpenFOAM/11-foss-2023a/OpenFOAM-11/etc/bashrc && cd $WM_PROJECT_DIR && wcleanPlatform -all && cd - &&  /home/users/pvares/easybuild/software/OpenFOAM/11-foss-2023a/OpenFOAM-11/Allwmake
+  >> command completed: exit 0, ran in 00h34m27s
+== ... (took 34 mins 27 secs)
+== testing...
+== ... (took < 1 sec)
+== installing...
+== ... (took 1 secs)
+== taking care of extensions...
+== ... (took < 1 sec)
+== restore after iterating...
+== ... (took < 1 sec)
+== postprocessing...
+== ... (took < 1 sec)
+== sanity checking...
+  >> file 'OpenFOAM-11/etc/bashrc' found: OK
+  >> file 'OpenFOAM-11/etc/cshrc' found: OK
+  >> file 'OpenFOAM-11/bin/paraFoam' found: OK
+  >> file 'OpenFOAM-11/platforms/linux64GccDPInt32Opt/bin/boundaryFoam' found: OK
+  >> file 'OpenFOAM-11/platforms/linux64GccDPInt32Opt/bin/surfaceAdd' found: OK
+  >> file 'OpenFOAM-11/platforms/linux64GccDPInt32Opt/bin/surfaceFind' found: OK
+  >> file 'OpenFOAM-11/platforms/linux64GccDPInt32Opt/bin/blockMesh' found: OK
+  >> file 'OpenFOAM-11/platforms/linux64GccDPInt32Opt/bin/checkMesh' found: OK
+  >> file 'OpenFOAM-11/platforms/linux64GccDPInt32Opt/bin/deformedGeom' found: OK
+  >> file 'OpenFOAM-11/platforms/linux64GccDPInt32Opt/bin/engineSwirl' found: OK
+  >> file 'OpenFOAM-11/platforms/linux64GccDPInt32Opt/bin/modifyMesh' found: OK
+  >> file 'OpenFOAM-11/platforms/linux64GccDPInt32Opt/bin/refineMesh' found: OK
+  >> file 'OpenFOAM-11/platforms/linux64GccDPInt32Opt/bin/surfaceLambdaMuSmooth' found: OK
+  >> file 'OpenFOAM-11/bin/foamMonitor' found: OK
+  >> file 'OpenFOAM-11/platforms/linux64GccDPInt32Opt/lib/dummy/libPstream.so' found: OK
+  >> file 'OpenFOAM-11/platforms/linux64GccDPInt32Opt/lib/mpi/libPstream.so' found: OK
+  >> file 'OpenFOAM-11/platforms/linux64GccDPInt32Opt/lib/dummy/libptscotchDecomp.so' found: OK
+  >> file 'OpenFOAM-11/platforms/linux64GccDPInt32Opt/lib/mpi/libptscotchDecomp.so' found: OK
+  >> file 'OpenFOAM-11/platforms/linux64GccDPInt32Opt/lib/libscotchDecomp.so' found: OK
+  >> file 'OpenFOAM-11/platforms/linux64GccDPInt32Opt/lib/dummy/libscotchDecomp.so' found: OK
+  >> (non-empty) directory 'OpenFOAM-11/platforms/linux64GccDPInt32Opt/bin' found: OK
+  >> (non-empty) directory 'OpenFOAM-11/platforms/linux64GccDPInt32Opt/lib' found: OK
+  >> loading modules: cae/OpenFOAM/11-foss-2023a...
+  >> running command 'source $FOAM_BASH' ...
+  >> result for command 'source $FOAM_BASH': OK
+  >> running command 'source $FOAM_BASH && ! foamMonitor -h 2>&1 | grep 'not installed'' ...
+  >> result for command 'source $FOAM_BASH && ! foamMonitor -h 2>&1 | grep 'not installed'': OK
+  >> running command 'cp -a /home/users/pvares/easybuild/software/OpenFOAM/11-foss-2023a/OpenFOAM-11/tutorials/incompressibleFluid/motorBike/motorBike /tmp/eb-iafwwxb_/eb-o_n3pxsg/tmpqt51sj4q && chmod -R +w  /tmp/eb-iafwwxb_/eb-o_n3pxsg/tmpqt51sj4q/motorBike && cd /tmp/eb-iafwwxb_/eb-o_n3pxsg/tmpqt51sj4q/motorBike && source $FOAM_BASH && . $WM_PROJECT_DIR/bin/tools/RunFunctions && cp $FOAM_TUTORIALS/resources/geometry/motorBike.obj.gz constant/geometry/ && runApplication blockMesh && runApplication decomposePar -copyZero && find . -type f -iname '*level*' -exec rm {} \; && runParallel renumberMesh -overwrite && runParallel potentialFoam -initialiseUBCs && runParallel simpleFoam && cd /home/users/pvares/easybuild/software/OpenFOAM/11-foss-2023a && rm -r /tmp/eb-iafwwxb_/eb-o_n3pxsg/tmpqt51sj4q' ...
+  >> result for command 'cp -a /home/users/pvares/easybuild/software/OpenFOAM/11-foss-2023a/OpenFOAM-11/tutorials/incompressibleFluid/motorBike/motorBike /tmp/eb-iafwwxb_/eb-o_n3pxsg/tmpqt51sj4q && chmod -R +w  /tmp/eb-iafwwxb_/eb-o_n3pxsg/tmpqt51sj4q/motorBike && cd /tmp/eb-iafwwxb_/eb-o_n3pxsg/tmpqt51sj4q/motorBike && source $FOAM_BASH && . $WM_PROJECT_DIR/bin/tools/RunFunctions && cp $FOAM_TUTORIALS/resources/geometry/motorBike.obj.gz constant/geometry/ && runApplication blockMesh && runApplication decomposePar -copyZero && find . -type f -iname '*level*' -exec rm {} \; && runParallel renumberMesh -overwrite && runParallel potentialFoam -initialiseUBCs && runParallel simpleFoam && cd /home/users/pvares/easybuild/software/OpenFOAM/11-foss-2023a && rm -r /tmp/eb-iafwwxb_/eb-o_n3pxsg/tmpqt51sj4q': OK
+== ... (took 40 secs)
+== cleaning up...
+== ... (took < 1 sec)
+== creating module...
+  >> generating module file @ /home/users/pvares/easybuild/modules/all/cae/OpenFOAM/11-foss-2023a.lua
+== ... (took 4 secs)
+== permissions...
+== ... (took 1 secs)
+== packaging...
+== ... (took < 1 sec)
+== COMPLETED: Installation ended successfully (took 35 mins 28 secs)
+== Results of the build can be found in the log file(s) /home/users/pvares/easybuild/software/OpenFOAM/11-foss-2023a/easybuild/easybuild-OpenFOAM-11-20240521.153852.log
+== Build succeeded for 1 out of 1
+== Temporary log file(s) /tmp/eb-iafwwxb_/eb-o_n3pxsg/easybuild-aftl9ut6.log* have been removed.
+== Temporary directory /tmp/eb-iafwwxb_/eb-o_n3pxsg has been removed.
