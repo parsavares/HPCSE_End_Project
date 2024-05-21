@@ -71,16 +71,65 @@ Parsa VARES
 
 ## **PART II. **
 ## **PART II. **
-1. download `https://develop.openfoam.com/Development/openfoam/-/archive/OpenFOAM-v2312/openfoam-OpenFOAM-v2312.zip?path=tutorials/incompressible/simpleFoam/motorBike`
-2. `mkdir -p $HOME/OpenFOAM`
-3. upload it on HPC in `$HOME/OpenFOAM`
-4. `unzip openfoam-OpenFOAM-v2312-tutorials-incompressible-simpleFoam-motorBike.zip`
-5. `cd $HOME/OpenFOAM/openfoam-OpenFOAM-v2312-tutorials-incompressible-simpleFoam-motorBike/tutorials/incompressible/simpleFoam/motorBike`
-6. `source /home/users/pvares/easybuild/software/OpenFOAM/v2312-foss-2023a/OpenFOAM-v2312/etc/bashrc`
-7. `echo $WM_PROJECT_DIR`
-8. `chmod +x Allrun`
-9. `srun -n 1 -c 64 ./Allrun`
-10. `./Allrun`
+### Minimal Description for Running the OpenFOAM `motorBike` Tutorial on HPC
+
+1. **Download the Tutorial Files**
+   - **Command**: 
+     ```bash
+     wget https://develop.openfoam.com/Development/openfoam/-/archive/OpenFOAM-v2312/openfoam-OpenFOAM-v2312.zip?path=tutorials/incompressible/simpleFoam/motorBike -O openfoam-OpenFOAM-v2312-tutorials-incompressible-simpleFoam-motorBike.zip
+     ```
+
+2. **Create the Directory Structure**
+   - **Command**:
+     ```bash
+     mkdir -p $HOME/OpenFOAM
+     ```
+
+3. **Upload the File to HPC**
+   - **Description**: Use SCP or a similar tool to upload `openfoam-OpenFOAM-v2312-tutorials-incompressible-simpleFoam-motorBike.zip` to `$HOME/OpenFOAM` on the HPC.
+
+4. **Unzip the Tutorial Files**
+   - **Command**:
+     ```bash
+     unzip $HOME/OpenFOAM/openfoam-OpenFOAM-v2312-tutorials-incompressible-simpleFoam-motorBike.zip -d $HOME/OpenFOAM
+     ```
+
+5. **Navigate to the Tutorial Directory**
+   - **Command**:
+     ```bash
+     cd $HOME/OpenFOAM/openfoam-OpenFOAM-v2312-tutorials-incompressible-simpleFoam-motorBike/tutorials/incompressible/simpleFoam/motorBike
+     ```
+
+6. **Source the OpenFOAM Environment Setup Script**
+   - **Command**:
+     ```bash
+     source /home/users/pvares/easybuild/software/OpenFOAM/v2312-foss-2023a/OpenFOAM-v2312/etc/bashrc
+     ```
+
+7. **Verify the Environment Variable**
+   - **Command**:
+     ```bash
+     echo $WM_PROJECT_DIR
+     ```
+
+8. **Make the `Allrun` Script Executable**
+   - **Command**:
+     ```bash
+     chmod +x Allrun
+     ```
+
+9. **Run the `Allrun` Script Using `srun`**
+   - **Command**:
+     ```bash
+     srun -n 1 -c 64 ./Allrun
+     ```
+
+10. **Run the `Allrun` Script Directly (Optional)**
+    - **Command**:
+      ```bash
+      ./Allrun
+      ```
+
 
 ## **PART II. **
 
