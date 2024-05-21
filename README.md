@@ -39,12 +39,16 @@
 `
 == COMPLETED: Installation ended successfully (took 1 hour 3 mins 41 secs)
 `
+
 `== Results of the build can be found in the log file(s) /home/users/pvares/easybuild/software/OpenFOAM/v2312-foss-2023a/eas$
 `
+
 `== Build succeeded for 1 out of 1
 `
+
 `== Temporary log file(s) /tmp/eb-j7o7pzoh/eb-txnweqte/easybuild-qnzsrnfi.log* have been removed.
 `
+
 `== Temporary directory /tmp/eb-j7o7pzoh/eb-txnweqte has been removed.
 `
 
