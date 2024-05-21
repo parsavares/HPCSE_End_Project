@@ -33,6 +33,15 @@
 
 11. **`eb /home/users/$USER/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs/o/OpenFOAM/OpenFOAM-v2312-foss-2023a.eb --job --job-cores 32 --job-max-walltime 11 --robot --trace`**
     - **Description**: Submits the OpenFOAM build as a job with 32 cores, a maximum wall time of 11 hours, resolving dependencies automatically, and tracing the build process.
+    - by using `sq` you can see it running
+    - after it finished OpenFOAM .out can be found at /home/users/$USER
+    - the right output uploaded here you can check it. when you are opening the .out file it should have:
+`== COMPLETED: Installation ended successfully (took 1 hour 3 mins 41 secs)
+== Results of the build can be found in the log file(s) /home/users/pvares/easybuild/software/OpenFOAM/v2312-foss-2023a/eas$
+== Build succeeded for 1 out of 1
+== Temporary log file(s) /tmp/eb-j7o7pzoh/eb-txnweqte/easybuild-qnzsrnfi.log* have been removed.
+== Temporary directory /tmp/eb-j7o7pzoh/eb-txnweqte has been removed.
+`
 
 12. **`module use /home/users/$USER/easybuild/modules/all`**
     - **Description**: Adds the user's EasyBuild module files directory to the module path.
