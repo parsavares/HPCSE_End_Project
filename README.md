@@ -36,11 +36,16 @@
     - by using `sq` you can see it running
     - after it finished OpenFOAM .out can be found at /home/users/$USER
     - the right output uploaded here you can check it. when you are opening the .out file it should have:
-`== COMPLETED: Installation ended successfully (took 1 hour 3 mins 41 secs)
-== Results of the build can be found in the log file(s) /home/users/pvares/easybuild/software/OpenFOAM/v2312-foss-2023a/eas$
-== Build succeeded for 1 out of 1
-== Temporary log file(s) /tmp/eb-j7o7pzoh/eb-txnweqte/easybuild-qnzsrnfi.log* have been removed.
-== Temporary directory /tmp/eb-j7o7pzoh/eb-txnweqte has been removed.
+`
+== COMPLETED: Installation ended successfully (took 1 hour 3 mins 41 secs)
+`
+`== Results of the build can be found in the log file(s) /home/users/pvares/easybuild/software/OpenFOAM/v2312-foss-2023a/eas$
+`
+`== Build succeeded for 1 out of 1
+`
+`== Temporary log file(s) /tmp/eb-j7o7pzoh/eb-txnweqte/easybuild-qnzsrnfi.log* have been removed.
+`
+`== Temporary directory /tmp/eb-j7o7pzoh/eb-txnweqte has been removed.
 `
 
 12. **`module use /home/users/$USER/easybuild/modules/all`**
