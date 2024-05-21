@@ -70,7 +70,7 @@
 Parsa VARES
 
 ## **PART II. **
-## **PART II. **
+
 ### Minimal Description for Running the OpenFOAM `motorBike` Tutorial on HPC
 
 1. **Download the Tutorial Files**
