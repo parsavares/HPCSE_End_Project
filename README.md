@@ -36,6 +36,7 @@
     - by using `sq` you can see it running
     - after it finished OpenFOAM .out can be found at /home/users/$USER
     - the right output uploaded here you can check it. when you are opening the .out file it should have:
+      
 `
 == COMPLETED: Installation ended successfully (took 1 hour 3 mins 41 secs)
 `
