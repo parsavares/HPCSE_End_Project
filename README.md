@@ -35,7 +35,7 @@
     - **Description**: Submits the OpenFOAM build as a job with 32 cores, a maximum wall time of 11 hours, resolving dependencies automatically, and tracing the build process.
     - by using `sq` you can see it running
     - after it finished OpenFOAM .out can be found at /home/users/$USER
-    - the right output uploaded here you can check it. when you are opening the .out file it should have:
+    - the right output uploaded here you can check it. when you are opening the .out file, ath the end of it should have:
       
 `
 == COMPLETED: Installation ended successfully (took 1 hour 3 mins 41 secs)
