@@ -70,6 +70,17 @@
 Parsa VARES
 
 ## **PART II. **
+## **PART II. **
+1. download `https://develop.openfoam.com/Development/openfoam/-/archive/OpenFOAM-v2312/openfoam-OpenFOAM-v2312.zip?path=tutorials/incompressible/simpleFoam/motorBike`
+2. `mkdir -p $HOME/OpenFOAM`
+3. upload it on HPC in `$HOME/OpenFOAM`
+4. `unzip openfoam-OpenFOAM-v2312-tutorials-incompressible-simpleFoam-motorBike.zip`
+5. `cd $HOME/OpenFOAM/openfoam-OpenFOAM-v2312-tutorials-incompressible-simpleFoam-motorBike/tutorials/incompressible/simpleFoam/motorBike`
+6. `source /home/users/pvares/easybuild/software/OpenFOAM/v2312-foss-2023a/OpenFOAM-v2312/etc/bashrc`
+7. `echo $WM_PROJECT_DIR`
+8. `chmod +x Allrun`
+9. `srun -n 1 -c 64 ./Allrun`
+10. `./Allrun`
 
 ## **PART II. **
 
