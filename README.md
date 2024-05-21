@@ -41,7 +41,7 @@
 == COMPLETED: Installation ended successfully (took 1 hour 3 mins 41 secs)
 `
 
-`== Results of the build can be found in the log file(s) /home/users/pvares/easybuild/software/OpenFOAM/v2312-foss-2023a/eas$
+`== Results of the build can be found in the log file(s) /home/users/$USER/easybuild/software/OpenFOAM/v2312-foss-2023a/eas$
 `
 
 `== Build succeeded for 1 out of 1
