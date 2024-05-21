@@ -1,4 +1,5 @@
-### **HPCSE_End_Project Minimal Descriptions**
+# **HPCSE_End_Project**
+## **PART I. Installing latest release of EasyBuild & OpenFOAM**
 
 1. **`salloc -p interactive --qos debug --time=2:00:00 -N 1 -n 1 -c 32`**
    - **Description**: Allocates an interactive job with a high priority for 2 hours, using 1 node, 1 task, and 32 CPU cores.
@@ -38,3 +39,6 @@
 
 13. **`module load cae/OpenFOAM/v2312-foss-2023a`**
     - **Description**: Loads the OpenFOAM v2312 module built with the foss-2023a toolchain, making its commands and environment available.
+Parsa VARES
+## **PART II. **
+## **PART II. **
