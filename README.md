@@ -59,6 +59,13 @@
 13. **`module load cae/OpenFOAM/v2312-foss-2023a`**
     - **Description**: Loads the OpenFOAM v2312 module built with the foss-2023a toolchain, making its commands and environment available.
 
+13. **`eb /home/users/pvares/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs/o/OpenFOAM/OpenFOAM-11-foss-2023a.eb --job --job-cores 32 --job-max-walltime 11 --robot --trace`**
+    - **Description**: now we do the 11th step for the 11th version of OpenFOAM.
+
+      
 Parsa VARES
+
 ## **PART II. **
+
 ## **PART II. **
+
