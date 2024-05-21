@@ -1,0 +1,112 @@
+== Temporary log file in case of crash /tmp/eb-j7o7pzoh/eb-txnweqte/easybuild-qnzsrnfi.log
+== found valid index for /home/users/pvares/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs, so using it...
+== found valid index for /home/users/pvares/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs, so using it...
+== processing EasyBuild easyconfig /home/users/pvares/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs/o/OpenFOAM/OpenFOAM-v2312-foss-2023a.eb
+== building and installing cae/OpenFOAM/v2312-foss-2023a...
+  >> installation prefix: /home/users/pvares/easybuild/software/OpenFOAM/v2312-foss-2023a
+== fetching files...
+  >> sources:
+  >> /home/users/pvares/easybuild/sources/o/OpenFOAM/OpenFOAM-v2312.tgz [SHA256: f113183a4d027c93939212af8967053c5f8fe76fb62e5848cb11bbcf8e829552]
+  >> patches:
+  >> /home/users/pvares/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs/o/OpenFOAM/OpenFOAM-v2312-cleanup.patch [SHA256: f1389e5d89510209d99d35917a4a6bd727134121bbbaa12471235042e675dacf]
+  >> /home/users/pvares/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs/o/OpenFOAM/OpenFOAM-v2212-wmake-OpenMPI.patch [SHA256: 4f5110e98df1f057dc4b478a004e4ae2dc5cc763899f0d3ceb6773315c5c8ba9]
+== ... (took < 1 sec)
+== creating build dir, resetting environment...
+  >> build dir: /home/users/pvares/easybuild/software/OpenFOAM/v2312-foss-2023a
+== ... (took < 1 sec)
+== unpacking...
+  >> running command:
+	[started at: 2024-05-21 12:19:44]
+	[working dir: /mnt/aiongpfs/users/pvares/easybuild/software/OpenFOAM/v2312-foss-2023a]
+	[output logged in /tmp/eb-j7o7pzoh/eb-txnweqte/easybuild-run_cmd-5yem087e.log]
+	tar xzf /home/users/pvares/easybuild/sources/o/OpenFOAM/OpenFOAM-v2312.tgz
+  >> command completed: exit 0, ran in 00h00m12s
+== ... (took 12 secs)
+== patching...
+  >> applying patch OpenFOAM-v2312-cleanup.patch
+  >> applying patch OpenFOAM-v2212-wmake-OpenMPI.patch
+== ... (took < 1 sec)
+== preparing...
+  >> loading toolchain module: toolchain/foss/2023a
+  >> loading modules for build dependencies:
+  >>  * lang/Bison/3.8.2-GCCcore-12.3.0
+  >>  * devel/CMake/3.26.3-GCCcore-12.3.0
+  >>  * lang/flex/2.6.4-GCCcore-12.3.0
+  >> loading modules for (runtime) dependencies:
+  >>  * lib/libreadline/8.2-GCCcore-12.3.0
+  >>  * devel/ncurses/6.4-GCCcore-12.3.0
+  >>  * math/METIS/5.1.0-GCCcore-12.3.0
+  >>  * math/SCOTCH/7.0.3-gompi-2023a
+  >>  * math/KaHIP/3.16-gompi-2023a
+  >>  * numlib/CGAL/5.6-GCCcore-12.3.0
+  >>  * vis/ParaView/5.11.2-foss-2023a
+  >>  * vis/gnuplot/5.4.8-GCCcore-12.3.0
+  >> defining build environment for foss/2023a toolchain
+== ... (took 7 secs)
+== configuring...
+== ... (took < 1 sec)
+== building...
+  >> running command:
+	[started at: 2024-05-21 12:20:04]
+	[working dir: /mnt/aiongpfs/users/pvares/easybuild/software/OpenFOAM/v2312-foss-2023a/OpenFOAM-v2312]
+	[output logged in /tmp/eb-j7o7pzoh/eb-txnweqte/easybuild-run_cmd-inn3gpw0.log]
+	source /home/users/pvares/easybuild/software/OpenFOAM/v2312-foss-2023a/OpenFOAM-v2312/etc/bashrc && cd $WM_PROJECT_DIR && wclean -platform -all && cd - &&  /home/users/pvares/easybuild/software/OpenFOAM/v2312-foss-2023a/OpenFOAM-v2312/Allwmake -log
+  >> command completed: exit 0, ran in 01h02m45s
+== ... (took 1 hour 2 mins 45 secs)
+== testing...
+== ... (took < 1 sec)
+== installing...
+== ... (took 2 secs)
+== taking care of extensions...
+== ... (took < 1 sec)
+== restore after iterating...
+== ... (took < 1 sec)
+== postprocessing...
+== ... (took < 1 sec)
+== sanity checking...
+  >> file 'OpenFOAM-v2312/etc/bashrc' found: OK
+  >> file 'OpenFOAM-v2312/etc/cshrc' found: OK
+  >> file 'OpenFOAM-v2312/bin/paraFoam' found: OK
+  >> file 'OpenFOAM-v2312/platforms/linux64GccDPInt32Opt/bin/boundaryFoam' found: OK
+  >> file 'OpenFOAM-v2312/platforms/linux64GccDPInt32Opt/bin/engineFoam' found: OK
+  >> file 'OpenFOAM-v2312/platforms/linux64GccDPInt32Opt/bin/buoyantSimpleFoam' found: OK
+  >> file 'OpenFOAM-v2312/platforms/linux64GccDPInt32Opt/bin/buoyantBoussinesqSimpleFoam' found: OK
+  >> file 'OpenFOAM-v2312/platforms/linux64GccDPInt32Opt/bin/sonicFoam' found: OK
+  >> file 'OpenFOAM-v2312/platforms/linux64GccDPInt32Opt/bin/surfaceAdd' found: OK
+  >> file 'OpenFOAM-v2312/platforms/linux64GccDPInt32Opt/bin/surfaceFind' found: OK
+  >> file 'OpenFOAM-v2312/platforms/linux64GccDPInt32Opt/bin/blockMesh' found: OK
+  >> file 'OpenFOAM-v2312/platforms/linux64GccDPInt32Opt/bin/checkMesh' found: OK
+  >> file 'OpenFOAM-v2312/platforms/linux64GccDPInt32Opt/bin/deformedGeom' found: OK
+  >> file 'OpenFOAM-v2312/platforms/linux64GccDPInt32Opt/bin/engineSwirl' found: OK
+  >> file 'OpenFOAM-v2312/platforms/linux64GccDPInt32Opt/bin/modifyMesh' found: OK
+  >> file 'OpenFOAM-v2312/platforms/linux64GccDPInt32Opt/bin/refineMesh' found: OK
+  >> file 'OpenFOAM-v2312/platforms/linux64GccDPInt32Opt/bin/surfaceLambdaMuSmooth' found: OK
+  >> file 'OpenFOAM-v2312/bin/foamMonitor' found: OK
+  >> file 'OpenFOAM-v2312/platforms/linux64GccDPInt32Opt/lib/dummy/libPstream.so' found: OK
+  >> file 'OpenFOAM-v2312/platforms/linux64GccDPInt32Opt/lib/eb-mpi/libPstream.so' found: OK
+  >> file 'OpenFOAM-v2312/platforms/linux64GccDPInt32Opt/lib/dummy/libptscotchDecomp.so' found: OK
+  >> file 'OpenFOAM-v2312/platforms/linux64GccDPInt32Opt/lib/eb-mpi/libptscotchDecomp.so' found: OK
+  >> file 'OpenFOAM-v2312/platforms/linux64GccDPInt32Opt/lib/libscotchDecomp.so' found: OK
+  >> file 'OpenFOAM-v2312/platforms/linux64GccDPInt32Opt/lib/dummy/libscotchDecomp.so' found: OK
+  >> (non-empty) directory 'OpenFOAM-v2312/platforms/linux64GccDPInt32Opt/bin' found: OK
+  >> (non-empty) directory 'OpenFOAM-v2312/platforms/linux64GccDPInt32Opt/lib' found: OK
+  >> loading modules: cae/OpenFOAM/v2312-foss-2023a...
+  >> running command 'source $FOAM_BASH' ...
+  >> result for command 'source $FOAM_BASH': OK
+  >> running command 'source $FOAM_BASH && ! foamMonitor -h 2>&1 | grep 'not installed'' ...
+  >> result for command 'source $FOAM_BASH && ! foamMonitor -h 2>&1 | grep 'not installed'': OK
+== ... (took 23 secs)
+== cleaning up...
+== ... (took < 1 sec)
+== creating module...
+  >> generating module file @ /home/users/pvares/easybuild/modules/all/cae/OpenFOAM/v2312-foss-2023a.lua
+== ... (took 4 secs)
+== permissions...
+== ... (took 3 secs)
+== packaging...
+== ... (took < 1 sec)
+== COMPLETED: Installation ended successfully (took 1 hour 3 mins 41 secs)
+== Results of the build can be found in the log file(s) /home/users/pvares/easybuild/software/OpenFOAM/v2312-foss-2023a/easybuild/easybuild-OpenFOAM-v2312-20240521.132325.log
+== Build succeeded for 1 out of 1
+== Temporary log file(s) /tmp/eb-j7o7pzoh/eb-txnweqte/easybuild-qnzsrnfi.log* have been removed.
+== Temporary directory /tmp/eb-j7o7pzoh/eb-txnweqte has been removed.
