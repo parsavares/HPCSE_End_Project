@@ -1,4 +1,4 @@
-# **HPCSE_End_Project**
+# **HPCSE_Final_Project**
 ## **PART I. Installing latest release of EasyBuild & OpenFOAM**
 
 1. **`salloc -p interactive --qos debug --time=2:00:00 -N 1 -n 1 -c 32`**
