@@ -63,8 +63,7 @@
      ```bash
      eb /home/users/$USER/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs/o/OpenFOAM/OpenFOAM-v2312-foss-2023a.eb --missing
      ```
-11. **``**
-    - **Description**: Submits the OpenFOAM build as a job with 32 cores, a maximum wall time of 11 hours, resolving dependencies automatically, and tracing the build process.
+11. This command submits the OpenFOAM build as a job with 32 cores, a maximum wall time of 11 hours, resolving dependencies automatically, and tracing the build process.
     - by using `sq` you can see it running
     - after it finished OpenFOAM .out can be found at /home/users/$USER
     - the right output uploaded here you can check it. when you are opening the .out file, ath the end of it should have:
@@ -88,19 +87,30 @@
 `== Temporary directory /tmp/eb-j7o7pzoh/eb-txnweqte has been removed.
 `
 
-12. **`module use /home/users/$USER/easybuild/modules/all`**
-    - **Description**: Adds the user's EasyBuild module files directory to the module path.
+12. It adds the user's EasyBuild module files directory to the module path.
+- **Command**: 
+    ```bash
+    module use /home/users/$USER/easybuild/modules/all
+    ```
 
-13. **`module load cae/OpenFOAM/v2312-foss-2023a`**
-    - **Description**: Loads the OpenFOAM v2312 module built with the foss-2023a toolchain, making its commands and environment available.
+13. loading OpenFOAM v2312 module built with the foss-2023a toolchain, making its commands and environment available.
+- **Command**: 
+    ```bash
+    module load cae/OpenFOAM/v2312-foss-2023a
+    ```
 
-13. **`eb /home/users/$USER/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs/o/OpenFOAM/OpenFOAM-11-foss-2023a.eb --job --job-cores 64 --job-max-walltime 3 --robot --trace`**
-    - **Description**: now we repeat procees again from the 10th step for installing OpenFOAM-11.
+14. Now we repeat process again from the step 10th for installing OpenFOAM-11.
     - **Important**: don't forget to do: 1. `export EASYBUILD_JOB_BACKEND='Slurm'` 2. `export EASYBUILD_PREFIX=$HOME/easybuild` 3. `export EASYBUILD_BUILDPATH=/dev/shm/$USER` before doing this line.
+ - **Command**: 
+   ```bash
+   eb /home/users/$USER/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs/o/OpenFOAM/OpenFOAM-11-foss-2023a.eb --job --job-cores 64 --job-max-walltime 3 --robot --trace
+   ```
 
-14. **`module load cae/OpenFOAM/11-foss-2023a`**
-    - **Description**: Loads the OpenFOAM 11 module built with the foss-2023a toolchain, making its commands and environment available.
-   
+15.  Loading OpenFOAM 11 module built with the foss-2023a toolchain, making its commands and environment available.
+- **Command**: 
+     ```bash
+    module load cae/OpenFOAM/11-foss-2023a
+    ```
       
 Parsa VARES
 
