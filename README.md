@@ -87,6 +87,10 @@ Parsa VARES
 
 3. **Upload the File to HPC**
    - **Description**: Use SCP or a similar tool to upload `openfoam-OpenFOAM-v2312-tutorials-incompressible-simpleFoam-motorBike.zip` to `$HOME/OpenFOAM` on the HPC.
+      - **Command**:
+     ```bash
+     scp openfoam-OpenFOAM-v2312-tutorials-incompressible-simpleFoam-motorBike.zip $HOME/OpenFOAM
+     ```
 
 4. **Unzip the Tutorial Files**
    - **Command**:
