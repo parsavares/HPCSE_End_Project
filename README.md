@@ -61,7 +61,7 @@
 
 13. **`eb /home/users/$USER/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs/o/OpenFOAM/OpenFOAM-11-foss-2023a.eb --job --job-cores 64 --job-max-walltime 3 --robot --trace`**
     - **Description**: now we repeat procees again from the 10th step for installing OpenFOAM-11.
-    - **Important**: don't forget to do: 1. `export EASYBUILD_JOB_BACKEND='Slurm'` 2. `export EASYBUILD_PREFIX=$HOME/easybuild` 3. `export EASYBUILD_BUILDPATH=/dev/shm/$USER before doing this line`.
+    - **Important**: don't forget to do: 1. `export EASYBUILD_JOB_BACKEND='Slurm'` 2. `export EASYBUILD_PREFIX=$HOME/easybuild` 3. `export EASYBUILD_BUILDPATH=/dev/shm/$USER` before doing this line.
 
 14. **`module load cae/OpenFOAM/11-foss-2023a`**
     - **Description**: Loads the OpenFOAM 11 module built with the foss-2023a toolchain, making its commands and environment available.
