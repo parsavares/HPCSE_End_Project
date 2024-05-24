@@ -7,19 +7,30 @@
  
  **Scope** It is used in research organizations, academic institutes and across many types of industries, for example, automotive, manufacturing, process engineering and environmental engineering. 
  
-**Purpose** The goals of this project are 1) to install recent versions of OpenFOAM on the Uni.lu HPC platform using EasyBuild, and 2) to set up a regression testing configuration for the installed OpenFOAM using ReFrame.
+**Purpose** The goals of this project are 
+            1) To install recent versions of OpenFOAM on the Uni.lu HPC platform using EasyBuild.
+            2) To set up a regression testing configuration for the installed OpenFOAM using ReFrame.
 
 ## **PART I. Installing latest release of EasyBuild & OpenFOAM** 
 
-1. **`salloc -p interactive --qos debug --time=2:00:00 -N 1 -n 1 -c 32`**
-   - **Description**: Allocates an interactive job with a high priority for 2 hours, using 1 node, 1 task, and 32 CPU cores.
+1. Allocating an interactive job with a high priority for 2 hours, using 1 node, 1 task, and 32 CPU cores.
+ - **Command**: 
+     ```bash
+     salloc -p interactive --qos debug --time=2:00:00 -N 1 -n 1 -c 32
+     ```
 
-2. **`eb --install-latest-eb-release`**
-   - **Description**: Installs the latest release of EasyBuild, a software build and installation framework.
 
+2. Installing the latest release of EasyBuild, a software build and installation framework.
+- **Command**: 
+     ```bash
+     eb --install-latest-eb-release
+     ```
 3. **`module spider easybuild`**
    - **Description**: Searches for available EasyBuild modules and their details.
+- **Command**: 
+     ```bash
 
+     ```
 4. **`module load tools/EasyBuild/4.9.1`**
    - **Description**: Loads EasyBuild version 4.9.1 module, making its commands and environment available.
 
