@@ -112,7 +112,6 @@
     module load cae/OpenFOAM/11-foss-2023a
     ```
       
-Parsa VARES
 
 ## **PART II. **
 
@@ -152,7 +151,7 @@ Parsa VARES
 6. **Source the OpenFOAM Environment Setup Script**
    - **Command**:
      ```bash
-     source /home/users/pvares/easybuild/software/OpenFOAM/v2312-foss-2023a/OpenFOAM-v2312/etc/bashrc
+     source /home/users/$USER/easybuild/software/OpenFOAM/v2312-foss-2023a/OpenFOAM-v2312/etc/bashrc
      ```
 
 7. **Verify the Environment Variable**
