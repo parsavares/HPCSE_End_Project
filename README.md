@@ -1,5 +1,15 @@
-# **HPCSE_Final_Project**
-## **PART I. Installing latest release of EasyBuild & OpenFOAM**
+# **HPCSE_Final_Project** 
+
+# OpenFOAM-Documentation
+ **Installation and Regression Testing of OpenFOAM** 
+
+ OpenFOAM is a C++ toolbox for the development of customized numerical solvers, and pre-/post-processing utilities for the solution of continuum mechanics problems, most prominently including computational fluid dynamics (CFD). 
+ 
+ **Scope** It is used in research organizations, academic institutes and across many types of industries, for example, automotive, manufacturing, process engineering and environmental engineering. 
+ 
+**Purpose** The goals of this project are 1) to install recent versions of OpenFOAM on the Uni.lu HPC platform using EasyBuild, and 2) to set up a regression testing configuration for the installed OpenFOAM using ReFrame.
+
+## **PART I. Installing latest release of EasyBuild & OpenFOAM** 
 
 1. **`salloc -p interactive --qos debug --time=2:00:00 -N 1 -n 1 -c 32`**
    - **Description**: Allocates an interactive job with a high priority for 2 hours, using 1 node, 1 task, and 32 CPU cores.
