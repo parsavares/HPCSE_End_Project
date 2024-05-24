@@ -169,7 +169,7 @@
 9. **Run the `Allrun` Script Using `srun`**
    - **Command**:
      ```bash
-     srun -n 1 -c 64 ./Allrun
+     srun -n 1 -c 32 ./Allrun
      ```
 
 10. **Run the `Allrun` Script Directly (Optional)**
