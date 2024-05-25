@@ -190,10 +190,16 @@
    module load tools/EasyBuild/4.9.1
    module use ~/.local/easyconfig/modules/all
    module use /work/projects/mhpc-softenv/easybuild/aion-epyc-prod-2023a/modules/all/
+   ```
+   ```bash
    export EASYBUILD_JOB_BACKEND='Slurm'
    export EASYBUILD_PREFIX=$HOME/easybuild
    export EASYBUILD_BUILDPATH=/dev/shm/$USER
+   ```
+   ```bash
   eb /home/users/$USER/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs/o/OpenFOAM/OpenFOAM-v2312-foss-2023a.eb --job --job-cores 32 --job-max-walltime 11 --robot --trace
+   ```
+   ```bash
    module use /home/users/$USER/easybuild/modules/all
    module load cae/OpenFOAM/v2312-foss-2023a
    ```
