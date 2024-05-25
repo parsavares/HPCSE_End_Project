@@ -243,10 +243,25 @@ cd plots
 ```
 ![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/477e3a8b-cdec-4ec4-9141-635f39056b13) 
  
- we see that all of .png files are saved in plots directory. (check ValidationVerfication folder)
-
-
+ we see that all of .png files are saved in plots directory. (check ValidationVerfication folder for plots)
 
 
 ## **PART III. ** Reframe
+
+# ReFrame Installation and Setup Guide
+
+## Introduction
+This guide details the steps required for installing and setting up ReFrame on a system using EasyBuild and the Slurm job scheduler. The setup is intended for conducting HPC tests with specific emphasis on OpenFOAM applications.
+
+## Prerequisites
+- Access to a terminal with module management capabilities.
+- Permission to load modules and install software in the user's environment.
+
+## Installation Steps
+
+### Step 1: Load EasyBuild Module
+Load EasyBuild, a software build and installation framework.
+```bash
+module load tools/EasyBuild/4.9.1
+```
 
