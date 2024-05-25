@@ -238,7 +238,15 @@ cd plots
  
 ![all_setups_yPlus_vs_epsilonPlus](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/064d9284-f71d-455b-b29c-f323f2947c68)
 ![all_setups_yPlus_vs_kPlus0](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/37eda302-3ceb-4735-ab38-9cd1fc25c468) 
-![all_setups_yPlus_vs_kPlus1](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/8fbd6300-2514-4cff-8e35-ab223ca3f637) ![initial-iteration-residuals](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/6c4c3a49-d873-4fc3-ac4d-a4cd5d374c96) ![final-iteration-residuals](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/06ecf7da-38a0-438c-8de3-b4c28ccf9c2f)
+![all_setups_yPlus_vs_kPlus1](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/8fbd6300-2514-4cff-8e35-ab223ca3f637) 
+![initial-iteration-residuals](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/6c4c3a49-d873-4fc3-ac4d-a4cd5d374c96) 
+![final-iteration-residuals](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/06ecf7da-38a0-438c-8de3-b4c28ccf9c2f)
+![yPlus_vs_uPlus](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/41be7b13-201e-4643-8bd9-bb8cff815785)
+![yPlus_vs_productionRatePlus](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/5cc2b9e9-3792-4150-b492-a3404cafd01d)
+![yPlus_vs_Rww](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/91dbdbc1-2de7-4008-823b-fe64164999b8)
+![yPlus_vs_Ruu](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/b628af68-586f-43ec-98e6-3e5932c8d212)
+![yPlus_vs_Rvv](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/9022cda6-e3fe-46c5-94c3-2daacc87b831)
+
 
 
 
