@@ -178,6 +178,46 @@
       ./Allrun
       ```
 
+Similarly, we do verification and validation part to make sure of example results by comparing them with both v2312 and 11. 
+
+# ** Running Test Examples for Post Processing Phase** 
+  # **Verification and Validation Example with OpenFOAM v2312** 
+   **Loading required modules** 
+   ```bash
+   module load tools/EasyBuild/4.9.1
+   module use ~/.local/easyconfig/modules/all
+   module use /work/projects/mhpc-softenv/easybuild/aion-epyc-prod-2023a/modules/all/
+   export EASYBUILD_JOB_BACKEND='Slurm'
+   export EASYBUILD_PREFIX=$HOME/easybuild
+   export EASYBUILD_BUILDPATH=/dev/shm/$USER
+  eb /home/users/$USER/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs/o/OpenFOAM/OpenFOAM-v2312-foss-2023a.eb --job --job-cores 32 --job-max-walltime 11 --robot --trace
+   module use /home/users/$USER/easybuild/modules/all
+   module load cae/OpenFOAM/v2312-foss-2023a
+   ```
+Now, we're gonna supposed to download tutorials of openfoam v2312, then upload them in openfoam directory that we have created for motorbike example: 
+   ```bash
+   wget https://develop.openfoam.com/Development/openfoam/-/archive/OpenFOAM-v2312/openfoam-OpenFOAM-v2312.zip?     path=tutorials/incompressible/simpleFoam -O openfoam-OpenFOAM-v2312-tutorials-incompressible-simpleFoam.zip
+   mkdir -p $HOME/OpenFOAM
+   scp openfoam-OpenFOAM-v2312-tutorials-incompressible-simpleFoam.zip $HOME/OpenFOAM
+   unzip $HOME/OpenFOAM/openfoam-OpenFOAM-v2312-tutorials-incompressible-simpleFoam.zip -d $HOME/OpenFOAM
+   cd $HOME/OpenFOAM/openfoam-OpenFOAM-v2312/tutorials/verificationAndValidation/turbulenceModels/planeChannel
+  ```
+Source the OpenFOAM Environment Setup
+
+```bash
+source /home/users/$USER/easybuild/software/OpenFOAM/v2312-foss-2023a/OpenFOAM-v2312/etc/bashrc
+```
+Verifying the Environment Variable 
+```bash
+echo $WM_PROJECT_DIR
+```
+Execution and running 
+```bash
+chmod +x Allrun
+srun -n 1 -c 32 ./Allrun
+./Allrun
+```
+
 
 ## **PART III. ** Reframe
 
