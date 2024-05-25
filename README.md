@@ -196,6 +196,7 @@
    export EASYBUILD_PREFIX=$HOME/easybuild
    export EASYBUILD_BUILDPATH=/dev/shm/$USER
    ```
+   **installing(optional if needed)** 
    ```bash
 
   eb /home/users/$USER/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs/o/OpenFOAM/OpenFOAM-v2312-foss-2023a.eb --job --job-cores 32 --job-max-walltime 11 --robot --trace
