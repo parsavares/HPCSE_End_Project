@@ -177,7 +177,10 @@
       ```bash
       ./Allrun
       ```
-![image](https://github.com/parsavares/HPCSE_End_Project/assets/106035843/dcef86d4-9866-40f2-9f50-e8d797a0e7dd)
+<!---
+ ![image](https://github.com/parsavares/HPCSE_End_Project/assets/106035843/dcef86d4-9866-40f2-9f50-e8d797a0e7dd)
+--> 
+![9y8wrzf8](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/2f8c9fa3-7d06-4c36-89cc-b3871ab37fb1)
 
 
 # ** Running Test Examples for Post Processing Phase** 
