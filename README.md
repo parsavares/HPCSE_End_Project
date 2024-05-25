@@ -179,7 +179,6 @@
       ```
 ![image](https://github.com/parsavares/HPCSE_End_Project/assets/106035843/dcef86d4-9866-40f2-9f50-e8d797a0e7dd)
 
-Similarly, we do verification and validation part to make sure of example results by comparing them with both v2312 and 11. 
 
 # ** Running Test Examples for Post Processing Phase** 
   # **Verification and Validation Example with OpenFOAM v2312** 
