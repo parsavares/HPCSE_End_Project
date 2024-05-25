@@ -183,7 +183,7 @@
 ![9y8wrzf8](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/2f8c9fa3-7d06-4c36-89cc-b3871ab37fb1)
 
 
-# ** Running Test Examples for Post Processing Phase** 
+# **Running Test Examples for Post Processing Phase** 
   # **Verification and Validation Example with OpenFOAM v2312** 
    **Loading required modules** 
    ```bash
