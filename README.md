@@ -203,7 +203,7 @@
    module use /home/users/$USER/easybuild/modules/all
    module load cae/OpenFOAM/v2312-foss-2023a
    ```
-**Testing turbulenceModels from planeChannel**
+**Testing 'turbulenceModels' from 'planeChannel'**
 
 Now, we're gonna supposed to download tutorials of openfoam v2312, then upload them in openfoam directory that we have created for motorbike example: 
    ```bash
