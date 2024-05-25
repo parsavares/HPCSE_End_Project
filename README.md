@@ -281,6 +281,13 @@ eb /home/users/pvares/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyco
 ```bash
 module load devel/ReFrame/4.3.3
 ```
+```bash
+mkdir -p $HOME/ReFrame_test
+cd $HOME/ReFrame_test
+git clone https://github.com/reframe-hpc/hpc-tests.git
+cd hpc-tests/apps/openfoam
+```
+
 
 
 
