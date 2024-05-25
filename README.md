@@ -194,7 +194,8 @@ Similarly, we do verification and validation part to make sure of example result
    module use /home/users/$USER/easybuild/modules/all
    module load cae/OpenFOAM/v2312-foss-2023a
    ```
-** Testing turbulenceModels from planeChannel **
+**Testing turbulenceModels from planeChannel**
+
 Now, we're gonna supposed to download tutorials of openfoam v2312, then upload them in openfoam directory that we have created for motorbike example: 
    ```bash
    wget https://develop.openfoam.com/Development/openfoam/-/archive/OpenFOAM-v2312/openfoam-OpenFOAM-v2312.zip?     path=tutorials/incompressible/simpleFoam -O openfoam-OpenFOAM-v2312-tutorials-incompressible-simpleFoam.zip
