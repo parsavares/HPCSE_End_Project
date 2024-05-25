@@ -222,6 +222,24 @@ srun -n 1 -c 32 ./Allrun
 ./Allrun
 ```
 ![image](https://github.com/nahidjavadinara/OpenFOAM-Documentation/assets/161458338/5e14d6a4-fe7b-487f-a990-3ef6ff926728)
+![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/ae69ec9b-9f15-4f05-85fa-3370f1e6cda1) 
+
+Now, after running procedure it is possible to generate plots 
+```bash
+./plot
+```
+open the plots directory 
+```bash
+cd plots
+```
+![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/477e3a8b-cdec-4ec4-9141-635f39056b13) 
+ 
+ we see that all of .png files are saved in plots directory. we can open and check .png files: 
+ 
+![all_setups_yPlus_vs_epsilonPlus](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/064d9284-f71d-455b-b29c-f323f2947c68)
+![all_setups_yPlus_vs_kPlus0](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/37eda302-3ceb-4735-ab38-9cd1fc25c468) 
+![all_setups_yPlus_vs_kPlus1](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/8fbd6300-2514-4cff-8e35-ab223ca3f637) ![initial-iteration-residuals](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/6c4c3a49-d873-4fc3-ac4d-a4cd5d374c96) ![final-iteration-residuals](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/06ecf7da-38a0-438c-8de3-b4c28ccf9c2f)
+
 
 
 
