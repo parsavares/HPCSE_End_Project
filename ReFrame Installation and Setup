@@ -14,3 +14,4 @@ This guide details the steps required for installing and setting up ReFrame on a
 Load EasyBuild, a software build and installation framework.
 ```bash
 module load tools/EasyBuild/4.9.1
+```
