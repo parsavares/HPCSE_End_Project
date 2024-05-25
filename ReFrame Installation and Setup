@@ -1,1 +1,16 @@
 
+# ReFrame Installation and Setup Guide
+
+## Introduction
+This guide details the steps required for installing and setting up ReFrame on a system using EasyBuild and the Slurm job scheduler. The setup is intended for conducting HPC tests with specific emphasis on OpenFOAM applications.
+
+## Prerequisites
+- Access to a terminal with module management capabilities.
+- Permission to load modules and install software in the user's environment.
+
+## Installation Steps
+
+### Step 1: Load EasyBuild Module
+Load EasyBuild, a software build and installation framework.
+```bash
+module load tools/EasyBuild/4.9.1
