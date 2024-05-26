@@ -57,7 +57,7 @@ This is done via the `--job` command line option.
 
 It is important to be aware of some details before you start using this, which we'll cover here.
      
-7. It Configures EasyBuild to use Slurm as the backend job scheduler for build jobs.
+7. It Configures EasyBuild to use Slurm as the backend job scheduler for build jobs. The default job backend in EasyBuild `v4.x` is GC3Pie. To let EasyBuild submit jobs to Slurm instead, you should set the job-backend configuration setting to `Slurm`, for example by setting the corresponding environment variable:
 - **Command**: 
      ```bash
      export EASYBUILD_JOB_BACKEND='Slurm'
@@ -80,11 +80,17 @@ It is important to be aware of some details before you start using this, which w
 11. This command submits the OpenFOAM build as a job with 32 cores, a maximum wall time of 11 hours, resolving dependencies automatically, and tracing the build process.
     - by using `sq` you can see it running
     - after it finished OpenFOAM .out can be found at /home/users/$USER
-    - the right output uploaded here you can check it. when you are opening the .out file, ath the end of it should have:
+    - the right output uploaded here you can check it. when you are opening the `.out` file, at the end you should run:
  - **Command**: 
      ```bash
      eb /home/users/$USER/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs/o/OpenFOAM/OpenFOAM-v2312-foss-2023a.eb --job --job-cores 32 --job-max-walltime 11 --robot --trace
      ```
+By default, EasyBuild will submit single-core jobs requesting for `24` hours of `walltime`. You can tweak the requested resources via the `job-cores` and `job-max-walltime` configuration options. Note that not all job-* configuration settings apply to all job backends, see the [EasyBuild documentation](https://docs.easybuild.io/en/latest/Submitting_jobs.html) for more details. 
+
+####Combining `--job` and `--robot`
+If one or more dependencies are still missing for the software you want to install, you can combine `--job` and `--robot` to get EasyBuild to submit a separate job for each of the installations. These jobs will not `--robot`, they will each only perform a single installation.
+
+Dependencies between jobs will be "registered" at submission time, so Slurm will put jobs on hold until the jobs that install the required (build) dependencies have completed successfully, and cancel jobs if the job to install a dependency failed for some reason.
 `
 == COMPLETED: Installation ended successfully (took 1 hour 3 mins 41 secs)
 `
