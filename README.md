@@ -1,7 +1,8 @@
-# **Installation and Regression Testing of OpenFOAM** 
+# **Installation and Regression Testing of OpenFOAM**  
 
 ##  Introduction
 OpenFOAM is a free, open source computational fluid dynamics (CFD) software package released by the OpenFOAM Foundation. It has a large user base across most areas of engineering and science, from both commercial and academic organisations. OpenFOAM has an extensive range of features to solve anything from complex fluid flows involving chemical reactions, turbulence and heat transfer, to solid dynamics and electromagnetics. 
+![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/a8e12044-7064-491b-a8a5-2482d4bca3da)
 
 OpenFOAM is a C++ toolbox for the development of customized numerical solvers, and pre-/post-processing utilities for the solution of continuum mechanics problems, most prominently including computational fluid dynamics (CFD).  
 
