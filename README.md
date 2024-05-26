@@ -11,7 +11,7 @@ OpenFOAM is a C++ toolbox for the development of customized numerical solvers, a
 - [Part III: Testing turbulenceModels from planeChannel](https://github.com/parsavares/HPCSE_End_Project/blob/main/README.md#iii-testing-turbulencemodels-from-planechanneltest2)
 - [Part IV: Test atmDownstreamDevelopment from atmosphericModels](https://github.com/parsavares/HPCSE_End_Project/blob/main/README.md#iv-test-atmdownstreamdevelopment-from-atmosphericmodelstest3)
 - [Part V: ChemFoam Tutorial Setup](https://github.com/parsavares/HPCSE_End_Project/blob/main/README.md#v-chemfoam-gri-tutorial-setuptest4)
-- [Part VI: ChemFoam h2 Tutorial Setup]()
+- [Part VI: ChemFoam h2 Tutorial Setup](https://github.com/parsavares/HPCSE_End_Project/tree/main#vi-chemfoam-h2-tutorial-setuptest5)
 - [Resources]()
 
 
