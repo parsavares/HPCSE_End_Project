@@ -118,9 +118,7 @@ OpenFOAM is a C++ toolbox for the development of customized numerical solvers, a
     ```
       
 
-# **PART II. **
-
-### Running the OpenFOAM-v2312 `motorBike` Tutorial on HPC
+## Running the OpenFOAM-v2312 `motorBike` Tutorial on HPC
 
 1. **Download the Tutorial Files**
    - **Command**: 
@@ -188,7 +186,7 @@ OpenFOAM is a C++ toolbox for the development of customized numerical solvers, a
 ![9y8wrzf8](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/2f8c9fa3-7d06-4c36-89cc-b3871ab37fb1)
 
 
-# **Running Test Examples for Post Processing Phase** 
+## **Running Test Examples for Post Processing Phase** 
   # **Verification and Validation Example with OpenFOAM v2312** 
    **Loading required modules** 
    ```bash
@@ -211,7 +209,7 @@ OpenFOAM is a C++ toolbox for the development of customized numerical solvers, a
    module use /home/users/$USER/easybuild/modules/all
    module load cae/OpenFOAM/v2312-foss-2023a
    ```
-**Testing `turbulenceModels` from `planeChannel`**
+# Example 1: Testing `turbulenceModels` from `planeChannel`**
 
 Now, we're gonna supposed to download tutorials of openfoam v2312, then upload them in openfoam directory that we have created for motorbike example: 
    ```bash
@@ -253,7 +251,16 @@ cd plots
  
  we see that all of .png files are saved in plots directory. (check ValidationVerfication folder for plots)
 
-Example 2: Test `atmDownstreamDevelopment` from `atmosphericModels`
+# Example 2: Test `atmDownstreamDevelopment` from `atmosphericModels` 
+
+
+![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/a12c4afc-585f-4a5a-be82-0ac5fd2d5880)
+![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/07dccb2c-ed68-4477-a46b-1993566fbbc5) 
+![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/2028a24e-96b9-4a02-8b29-c5a3b6e2c57b)
+![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/58be2fee-fdb3-4248-8f64-87169de90715)
+![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/ede71e65-993b-4a94-be19-f8bc52dcfc22)
+
+
 
 
 
