@@ -287,66 +287,7 @@ cd kEpsilon/
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# ReFrame Installation and Setup Guide
-
-## Introduction
-This section provides detail steps required for installing and setting up ReFrame on a system using EasyBuild and the Slurm job scheduler. The setup is intended for conducting HPC tests with specific emphasis on OpenFOAM applications.
-
-### Step 1: Load EasyBuild Module
-Load EasyBuild, a software build and installation framework.
-```bash
-module load tools/EasyBuild/4.9.1
-```
-### Step 2: Configure Module Paths 
-```bash
-module use ~/.local/easyconfig/modules/all
-module use /work/projects/mhpc-softenv/easybuild/aion-epyc-prod-2023a/modules/all/
-module use /home/users/$USER/easybuild/modules/all
-```
-### Step 3: Check ReFrame Version
-Check if ReFrame 4.3.3 is available in the module list. 
-```bash
-module spider reframe
-```
-### Step 4: Environment Setup for Building ReFrame 
-If ReFrame 4.3.3 is not found, setup environment variables and build it using EasyBuild. 
-```bash
-export EASYBUILD_JOB_BACKEND='Slurm'
-export EASYBUILD_PREFIX=$HOME/easybuild
-export EASYBUILD_BUILDPATH=/dev/shm/$USER
-eb /home/users/pvares/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs/r/ReFrame/ReFrame-4.3.3.eb --job --job-cores 64 --job-max-walltime 3 --robot --trace
-```
-### Step 5: Load ReFrame 
-```bash
-module load devel/ReFrame/4.3.3
-```
-```bash
-mkdir -p $HOME/ReFrame_test
-cd $HOME/ReFrame_test
-git clone https://github.com/reframe-hpc/hpc-tests.git
-cd hpc-tests/apps/openfoam
-```
-
-
-
-Sure, here's a README documentation for your university project on setting up and running the `chemFoam` tutorial from OpenFOAM:
-
-# README for chemFoam Tutorial Setup
+# ChemFoam Tutorial Setup
 
 ## Pre-settings
 
@@ -370,7 +311,7 @@ module load cae/OpenFOAM/v2312-foss-2023a
 module load devel/ReFrame/4.3.3
 ```
 
-## ReFrame Setup
+## Setup
 
 ### Download the Tutorial Files
 Download the `chemFoam` tutorial files:
@@ -434,6 +375,64 @@ For further information, refer to the OpenFOAM documentation:
 - [chemFoam Tutorial](https://doc.openfoam.com/2312/examples/verification-validation/chemistry/chemFoam/reactions/)
 - Part: `$FOAM_TUTORIALS/combustion/chemFoam/gri`
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ReFrame Installation and Setup Guide
+
+## Introduction
+This section provides detail steps required for installing and setting up ReFrame on a system using EasyBuild and the Slurm job scheduler. The setup is intended for conducting HPC tests with specific emphasis on OpenFOAM applications.
+
+### Step 1: Load EasyBuild Module
+Load EasyBuild, a software build and installation framework.
+```bash
+module load tools/EasyBuild/4.9.1
+```
+### Step 2: Configure Module Paths 
+```bash
+module use ~/.local/easyconfig/modules/all
+module use /work/projects/mhpc-softenv/easybuild/aion-epyc-prod-2023a/modules/all/
+module use /home/users/$USER/easybuild/modules/all
+```
+### Step 3: Check ReFrame Version
+Check if ReFrame 4.3.3 is available in the module list. 
+```bash
+module spider reframe
+```
+### Step 4: Environment Setup for Building ReFrame 
+If ReFrame 4.3.3 is not found, setup environment variables and build it using EasyBuild. 
+```bash
+export EASYBUILD_JOB_BACKEND='Slurm'
+export EASYBUILD_PREFIX=$HOME/easybuild
+export EASYBUILD_BUILDPATH=/dev/shm/$USER
+eb /home/users/pvares/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs/r/ReFrame/ReFrame-4.3.3.eb --job --job-cores 64 --job-max-walltime 3 --robot --trace
+```
+### Step 5: Load ReFrame 
+```bash
+module load devel/ReFrame/4.3.3
+```
+```bash
+mkdir -p $HOME/ReFrame_test
+cd $HOME/ReFrame_test
+git clone https://github.com/reframe-hpc/hpc-tests.git
+cd hpc-tests/apps/openfoam
+```
 
 
 
