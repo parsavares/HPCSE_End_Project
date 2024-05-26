@@ -568,13 +568,97 @@ srun -n 6 -c 6 ./Allrun
 ./Allrun
 ```
 
-![image](https://github.com/parsavares/HPCSE_End_Project/assets/106035843/3398341c-41e6-43f6-9491-41cb61ed86ae)
-
 ## Resources
 For further information, refer to the OpenFOAM documentation:
 - [chemFoam Tutorial](https://doc.openfoam.com/2312/examples/verification-validation/chemistry/chemFoam/reactions/)
 - Tutorial location in OpenFOAM: `$FOAM_TUTORIALS/combustion/chemFoam/ic8h18`
 
+## VIII. ChemFoam `nc7h16` Tutorial Setup[test7]
+
+### Pre-settings
+
+#### Resource Allocation
+Allocate resources on the HPC:
+```bash
+salloc -p interactive --qos debug --time=2:00:00 -N 1 -n 1 -c 64
+```
+
+#### Load Environment Modules
+Set up the necessary environment modules:
+```bash
+module use ~/.local/easyconfig/modules/all
+module use /work/projects/mhpc-softenv/easybuild/aion-epyc-prod-2023a/modules/all/
+module use /home/users/$USER/easybuild/modules/all
+export EASYBUILD_JOB_BACKEND='Slurm'
+export EASYBUILD_PREFIX=$HOME/easybuild
+export EASYBUILD_BUILDPATH=/dev/shm/$USER
+module load tools/EasyBuild/4.9.1
+module load cae/OpenFOAM/v2312-foss-2023a
+module load devel/ReFrame/4.3.3
+```
+
+### Setup
+
+#### Download the Tutorial Files
+Download the `chemFoam` tutorial files for the `nc7h16` case:
+```bash
+wget https://develop.openfoam.com/Development/openfoam/-/archive/OpenFOAM-v2312/openfoam-OpenFOAM-v2312.zip?path=tutorials/combustion/chemFoam/nc7h16 -O openfoam-OpenFOAM-v2312-tutorials-combustion-chemFoam-nc7h16.zip
+```
+
+#### Create Directory Structure
+Create the directory structure in your home directory:
+```bash
+mkdir -p $HOME/OpenFOAM
+```
+
+#### Upload File to HPC
+Upload the downloaded zip file to the HPC:
+```bash
+scp openfoam-OpenFOAM-v2312-tutorials-combustion-chemFoam-nc7h16.zip $HOME/OpenFOAM
+```
+
+#### Unzip the Tutorial Files
+Unzip the tutorial files:
+```bash
+unzip $HOME/OpenFOAM/openfoam-OpenFOAM-v2312-tutorials-combustion-chemFoam-nc7h16.zip -d $HOME/OpenFOAM
+```
+
+#### Navigate to Tutorial Directory
+Navigate to the tutorial directory:
+```bash
+cd $HOME/OpenFOAM/openfoam-OpenFOAM-v2312-tutorials-combustion-chemFoam-nc7h16/tutorials/combustion/chemFoam/nc7h16
+```
+
+#### Source OpenFOAM Environment
+Source the OpenFOAM environment:
+```bash
+source /home/users/$USER/easybuild/software/OpenFOAM/v2312-foss-2023a/OpenFOAM-v2312/etc/bashrc
+echo $WM_PROJECT_DIR
+```
+
+#### Set Execute Permissions and List Files
+Set execute permissions for the `Allrun` script and list the directory contents:
+```bash
+chmod +x Allrun
+ls
+```
+
+Expected output:
+```
+Allclean  Allrun  chemkin  constant  system  validation
+```
+
+#### Run the Simulation
+Run the simulation using `srun`:
+```bash
+srun -n 6 -c 6 ./Allrun
+./Allrun
+```
+
+## Resources
+For further information, refer to the OpenFOAM documentation:
+- [chemFoam Tutorial](https://doc.openfoam.com/2312/examples/verification-validation/chemistry/chemFoam/reactions/)
+- Tutorial location in OpenFOAM: `$FOAM_TUTORIALS/combustion/chemFoam/nc7h16`
 
 ___
 ___
