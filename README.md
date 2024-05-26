@@ -482,7 +482,10 @@ Run the simulation using `srun`:
 srun -n 6 -c 6 ./Allrun
 ./Allrun
 ```
+<!--- 
 ![image](https://github.com/parsavares/HPCSE_End_Project/assets/106035843/3398341c-41e6-43f6-9491-41cb61ed86ae)
+-->
+![6](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/e0cb432e-cfd6-4b51-9927-ccc20a736ae8)
 
 ### Resources
 For further information, refer to the OpenFOAM documentation:
