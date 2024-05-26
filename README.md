@@ -87,7 +87,8 @@ It is important to be aware of some details before you start using this, which w
      ```
 By default, EasyBuild will submit single-core jobs requesting for `24` hours of `walltime`. You can tweak the requested resources via the `job-cores` and `job-max-walltime` configuration options. Note that not all job-* configuration settings apply to all job backends, see the [EasyBuild documentation](https://docs.easybuild.io/en/latest/Submitting_jobs.html) for more details. 
 
-####Combining `--job` and `--robot`
+#### **Combining `--job` and `--robot`**
+
 If one or more dependencies are still missing for the software you want to install, you can combine `--job` and `--robot` to get EasyBuild to submit a separate job for each of the installations. These jobs will not `--robot`, they will each only perform a single installation.
 
 Dependencies between jobs will be "registered" at submission time, so Slurm will put jobs on hold until the jobs that install the required (build) dependencies have completed successfully, and cancel jobs if the job to install a dependency failed for some reason.
