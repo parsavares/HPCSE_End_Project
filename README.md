@@ -11,9 +11,8 @@ OpenFOAM is a C++ toolbox for the development of customized numerical solvers, a
  
 **Purpose** The goals of this project are: 
             
-            1) To install recent versions of OpenFOAM on the Uni.lu HPC platform using EasyBuild.
-          
-            2) To set up a regression testing configuration for the installed OpenFOAM using ReFrame.
+   1) To install recent versions of OpenFOAM on the Uni.lu HPC platform using EasyBuild.
+   2) To set up a regression testing configuration for the installed OpenFOAM using ReFrame.
 
 ## **Installing latest release of EasyBuild** 
 
