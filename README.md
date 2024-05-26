@@ -5,17 +5,18 @@ OpenFOAM is a free, open source computational fluid dynamics (CFD) software pack
 
 # **Installation and Regression Testing of OpenFOAM** 
 
- In this project, we're gonna supposed to install OpenFOAM-11 and OpenFOAM-v2312 using EasyBuild 4.9.1 (the latest version)
+ In this project, we're gonna supposed to install OpenFOAM-11 and OpenFOAM-v2312 using EasyBuild 4.9.1 (the latest version).
  
  **Scope** It is used in research organizations, academic institutes and across many types of industries, for example, automotive, manufacturing, process engineering and environmental engineering. 
  
-**Purpose** The goals of this project are 
+**Purpose** The goals of this project are: 
             1) To install recent versions of OpenFOAM on the Uni.lu HPC platform using EasyBuild.
             2) To set up a regression testing configuration for the installed OpenFOAM using ReFrame.
 
  **Installing latest release of EasyBuild & OpenFOAM** 
 
-1. Allocating an interactive job with a high priority for 2 hours, using 1 node, 1 task, and 32 CPU cores.
+1. **Connection to a Compute Node**
+2. Allocating an interactive job with a high priority for 2 hours, using 1 node, 1 task, and 32 CPU cores.
  - **Command**: 
      ```bash
      salloc -p interactive --qos debug --time=2:00:00 -N 1 -n 1 -c 64
