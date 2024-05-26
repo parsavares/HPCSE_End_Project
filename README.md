@@ -388,7 +388,7 @@ For further information, refer to the OpenFOAM documentation:
 
 
 
-# VI. ChemFoam `h2` Tutorial Setup
+## VI. ChemFoam `h2` Tutorial Setup
 
 ## Pre-settings
 
