@@ -16,7 +16,7 @@ OpenFOAM is a free, open source computational fluid dynamics (CFD) software pack
  **Installing latest release of EasyBuild & OpenFOAM** 
 
 1. **Connection to a Compute Node**
-2. Allocating an interactive job with a high priority for 2 hours, using 1 node, 1 task, and 32 CPU cores.
+ Allocating an interactive job with a high priority for 2 hours, using 1 node, 1 task, and 32 CPU cores.
  - **Command**: 
      ```bash
      salloc -p interactive --qos debug --time=2:00:00 -N 1 -n 1 -c 64
