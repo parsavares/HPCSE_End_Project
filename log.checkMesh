@@ -1,0 +1,115 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2312                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _1d8f0d55f7-20231221 OPENFOAM=2312 version=v2312
+Arch   : "LSB;label=32;scalar=64"
+Exec   : checkMesh -parallel -decomposeParDict system/decomposeParDict.6 -writeFields (nonOrthoAngle) -constant
+Date   : May 26 2024
+Time   : 16:10:45
+Host   : aion-0180
+PID    : 2523160
+I/O    : uncollated
+Case   : /mnt/aiongpfs/users/pvares/OpenFOAM/openfoam-OpenFOAM-v2312-tutorials-incompressible-simpleFoam-motorBike/tutorials/incompressible/simpleFoam/motorBike
+nProcs : 6
+Hosts  :
+(
+    (aion-0180 6)
+)
+Pstream initialized with:
+    floatTransfer      : false
+    nProcsSimpleSum    : 0
+    nonBlockingExchange: 0 (tuning: 0)
+    exchange algorithm : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = constant
+
+Check mesh...
+    Writing mesh quality as fields (nonOrthoAngle)
+
+Time = constant
+
+Mesh stats 
+    points:           2112
+    faces:            4548
+    internal faces:   3132
+    cells:            1280
+    faces per cell:   6
+    boundary patches: 5 (7 9)
+    point zones:      0
+    face zones:       0
+    cell zones:       1
+
+Overall number of cells of each type:
+    hexahedra:     1280
+    prisms:        0
+    wedges:        0
+    pyramids:      0
+    tet wedges:    0
+    tetrahedra:    0
+    polyhedra:     0
+
+Checking topology...
+    Boundary definition OK.
+    Cell to face addressing OK.
+    Point usage OK.
+    Upper triangular ordering OK.
+    Face vertices OK.
+    Number of regions: 1 (OK).
+
+Checking patch topology for multiply connected surfaces...
+    Patch               Faces    Points     Surface topology
+    frontAndBack        320      416      ok (non-closed singly connected)  
+    inlet               64       91       ok (non-closed singly connected)  
+    outlet              64       91       ok (non-closed singly connected)  
+    lowerWall           160      232      ok (non-closed singly connected)  
+    upperWall           160      232      ok (non-closed singly connected)  
+    ".*"                768      902      ok (closed singly connected)      
+
+
+Checking faceZone topology for multiply connected surfaces...
+    No faceZones found.
+
+Checking basic cellZone addressing...
+    CellZone            Cells        Points       Volume       BoundingBox
+    inner               23           102          23           (-1 -1 0) (6 1 2)
+
+Checking basic pointZone addressing...
+    No pointZones found.
+
+Checking geometry...
+    Overall domain bounding box (-5 -4 0) (15 4 8)
+    Mesh has 3 geometric (non-empty/wedge) directions (1 1 1)
+    Mesh has 3 solution (non-empty) directions (1 1 1)
+    Boundary openness (1.56811e-19 -5.09636e-19 -8.24565e-18) OK.
+    Max cell openness = 2.22045e-16 OK.
+    Max aspect ratio = 1 OK.
+    Minimum face area = 1. Maximum face area = 1.  Face area magnitudes OK.
+    Min volume = 1. Max volume = 1.  Total volume = 1280.  Cell volumes OK.
+    Mesh non-orthogonality Max: 0 average: 0
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 8.15509e-15 OK.
+    Coupled point location match (average 0) OK.
+
+Mesh OK.
+
+Writing fields with mesh quality parameters
+    Writing non-orthogonality (angle) to nonOrthoAngle
+
+End
+
+Finalising parallel run
+[1716732645.248202] [aion-0180:2523162:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x1a53400 was not matched
+[1716732645.289832] [aion-0180:2523161:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x1758840 was not matched
