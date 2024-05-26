@@ -1,23 +1,22 @@
 # **Installation and Regression Testing of OpenFOAM**  
+![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/3e6e50b6-7554-48dc-af74-69ea97a494b7)
+
+OpenFOAM is a free, open source computational fluid dynamics (CFD) software package released by the OpenFOAM Foundation. It has a large user base across most areas of engineering and science, from both commercial and academic organisations. OpenFOAM has an extensive range of features to solve anything from complex fluid flows involving chemical reactions, turbulence and heat transfer, to solid dynamics and electromagnetics. 
+OpenFOAM is a C++ toolbox for the development of customized numerical solvers, and pre-/post-processing utilities for the solution of continuum mechanics problems, most prominently including computational fluid dynamics (CFD).  
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Installation and Regression Testing of OpenFOAM](#installation-and-regression-testing-of-openfoam)
-  - [Part I: Installing EasyBuild and OpenFOAM](#part-i-installing-easybuild-and-openfoam)
-  - [Part II: Running OpenFOAM-v2312 motorBike Tutorial on HPC](#part-ii-running-openfoam-v2312-motorbike-tutorial-on-hpc)
-  - [Part III: Testing turbulenceModels from planeChannel](#part-iii-testing-turbulencemodels-from-planechannel)
-  - [Part IV: Test atmDownstreamDevelopment from atmosphericModels](#part-iv-test-atmdownstreamdevelopment-from-atmosphericmodels)
-  - [Part V: ChemFoam Tutorial Setup](#part-v-chemfoam-tutorial-setup)
-  - [Part VI: ChemFoam h2 Tutorial Setup](#part-vi-chemfoam-h2-tutorial-setup)
-  - [ReFrame Installation and Setup Guide](#reframe-installation-and-setup-guide)
+- [Part I: Installing EasyBuild and OpenFOAM](#part-i-installing-easybuild-and-openfoam)
+- [Part II: Running OpenFOAM-v2312 motorBike Tutorial on HPC](#part-ii-running-openfoam-v2312-motorbike-tutorial-on-hpc)
+- [Part III: Testing turbulenceModels from planeChannel](#part-iii-testing-turbulencemodels-from-planechannel)
+- [Part IV: Test atmDownstreamDevelopment from atmosphericModels](#part-iv-test-atmdownstreamdevelopment-from-atmosphericmodels)
+- [Part V: ChemFoam Tutorial Setup](#part-v-chemfoam-tutorial-setup)
+- [Part VI: ChemFoam h2 Tutorial Setup](#part-vi-chemfoam-h2-tutorial-setup)
+- [ReFrame Installation and Setup Guide](#reframe-installation-and-setup-guide)
 - [Resources](#resources)
 
 
 ##  Introduction
-OpenFOAM is a free, open source computational fluid dynamics (CFD) software package released by the OpenFOAM Foundation. It has a large user base across most areas of engineering and science, from both commercial and academic organisations. OpenFOAM has an extensive range of features to solve anything from complex fluid flows involving chemical reactions, turbulence and heat transfer, to solid dynamics and electromagnetics. 
-OpenFOAM is a C++ toolbox for the development of customized numerical solvers, and pre-/post-processing utilities for the solution of continuum mechanics problems, most prominently including computational fluid dynamics (CFD).  
-
-![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/3e6e50b6-7554-48dc-af74-69ea97a494b7)
 
 
  In this project, we're gonna supposed to install OpenFOAM-11 and OpenFOAM-v2312 using EasyBuild 4.9.1 (the latest version).
