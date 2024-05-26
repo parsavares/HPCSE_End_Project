@@ -2,9 +2,7 @@
 
 ##  Introduction
 OpenFOAM is a free, open source computational fluid dynamics (CFD) software package released by the OpenFOAM Foundation. It has a large user base across most areas of engineering and science, from both commercial and academic organisations. OpenFOAM has an extensive range of features to solve anything from complex fluid flows involving chemical reactions, turbulence and heat transfer, to solid dynamics and electromagnetics. 
-
-![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/8dfe3e71-19bc-438b-bcc2-f806311d77d8)
-
+![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/a8e12044-7064-491b-a8a5-2482d4bca3da)
 
 OpenFOAM is a C++ toolbox for the development of customized numerical solvers, and pre-/post-processing utilities for the solution of continuum mechanics problems, most prominently including computational fluid dynamics (CFD).  
 
@@ -17,7 +15,7 @@ OpenFOAM is a C++ toolbox for the development of customized numerical solvers, a
    1) To install recent versions of OpenFOAM on the Uni.lu HPC platform using EasyBuild.
    2) To set up a regression testing configuration for the installed OpenFOAM using ReFrame.
 
-## **Installing latest release of EasyBuild** 
+## **I. Installing latest release of EasyBuild** 
 
 1. **Connection to a Compute Node**
  Allocating an interactive job with a high priority for 2 hours, using 1 node, 1 task, and 32 CPU cores.
@@ -120,7 +118,7 @@ OpenFOAM is a C++ toolbox for the development of customized numerical solvers, a
     ```
       
 
-## Running the OpenFOAM-v2312 `motorBike` Tutorial on HPC
+## II. Running the OpenFOAM-v2312 `motorBike` Tutorial on HPC
 
 1. **Download the Tutorial Files**
    - **Command**: 
@@ -188,8 +186,8 @@ OpenFOAM is a C++ toolbox for the development of customized numerical solvers, a
 ![9y8wrzf8](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/2f8c9fa3-7d06-4c36-89cc-b3871ab37fb1)
 
 
-## **Running Test Examples for Post Processing Phase** 
-  # **Verification and Validation Example with OpenFOAM v2312** 
+## III. Testing `turbulenceModels` from `planeChannel`**
+
    **Loading required modules** 
    ```bash
    module load tools/EasyBuild/4.9.1
@@ -210,9 +208,7 @@ OpenFOAM is a C++ toolbox for the development of customized numerical solvers, a
    ```bash
    module use /home/users/$USER/easybuild/modules/all
    module load cae/OpenFOAM/v2312-foss-2023a
-   ```
-# Example 1: Testing `turbulenceModels` from `planeChannel`**
-
+   ``` 
 Now, we're gonna supposed to download tutorials of openfoam v2312, then upload them in openfoam directory that we have created for motorbike example: 
    ```bash
    wget https://develop.openfoam.com/Development/openfoam/-/archive/OpenFOAM-v2312/openfoam-OpenFOAM-v2312.zip?     path=tutorials/incompressible/simpleFoam -O openfoam-OpenFOAM-v2312-tutorials-incompressible-simpleFoam.zip
@@ -253,7 +249,7 @@ cd plots
  
  we see that all of .png files are saved in plots directory. (check ValidationVerfication folder for plots)
 
-# Example 2: Test `atmDownstreamDevelopment` from `atmosphericModels` 
+## IV. Test `atmDownstreamDevelopment` from `atmosphericModels` 
 
 
 ![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/a12c4afc-585f-4a5a-be82-0ac5fd2d5880) 
@@ -289,9 +285,9 @@ cd kEpsilon/
 
 
 
-# ChemFoam Tutorial Setup
+## VI. ChemFoam Tutorial Setup
 
-## Pre-settings
+### Pre-settings
 
 ### Resource Allocation
 Allocate resources on the HPC:
