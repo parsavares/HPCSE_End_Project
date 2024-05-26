@@ -16,7 +16,7 @@
 1. Allocating an interactive job with a high priority for 2 hours, using 1 node, 1 task, and 32 CPU cores.
  - **Command**: 
      ```bash
-     salloc -p interactive --qos debug --time=2:00:00 -N 1 -n 1 -c 32
+     salloc -p interactive --qos debug --time=2:00:00 -N 1 -n 1 -c 64
      ```
 2. Installing the latest release of EasyBuild, a software build and installation framework.
 - **Command**: 
@@ -169,7 +169,7 @@
 9. **Run the `Allrun` Script Using `srun`**
    - **Command**:
      ```bash
-     srun -n 1 -c 32 ./Allrun
+     srun -n 6 -c 10 ./Allrun
      ```
 
 10. **Run the `Allrun` Script Directly (Optional)**
@@ -230,7 +230,7 @@ echo $WM_PROJECT_DIR
 Execution and running 
 ```bash
 chmod +x Allrun
-srun -n 1 -c 32 ./Allrun
+srun -n 6 -c 10 ./Allrun
 ./Allrun
 ```
 ![image](https://github.com/nahidjavadinara/OpenFOAM-Documentation/assets/161458338/5e14d6a4-fe7b-487f-a990-3ef6ff926728)
