@@ -412,7 +412,7 @@ module load cae/OpenFOAM/v2312-foss-2023a
 module load devel/ReFrame/4.3.3
 ```
 
-## ReFrame Setup
+## Setup
 
 ### Download the Tutorial Files
 Download the `chemFoam` tutorial files for the `h2` case:
