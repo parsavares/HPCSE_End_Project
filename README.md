@@ -49,7 +49,7 @@ OpenFOAM is a C++ toolbox for the development of customized numerical solvers, a
      ```bash
      module use /work/projects/mhpc-softenv/easybuild/aion-epyc-prod-2023a/modules/all/
      ```
-## **Submitting installations as Slurm jobs** 
+### **Submitting installations as Slurm jobs** 
 
 EasyBuild can submit jobs to different backends including Slurm to install software, to distribute the often time-consuming installation of a set of software applications and the dependencies they require to a cluster.
 
