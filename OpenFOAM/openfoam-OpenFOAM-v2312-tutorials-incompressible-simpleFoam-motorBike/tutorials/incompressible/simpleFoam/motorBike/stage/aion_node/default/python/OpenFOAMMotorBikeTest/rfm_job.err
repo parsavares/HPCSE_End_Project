@@ -1,0 +1,14 @@
+
+The following have been reloaded with a version change:
+  1) cae/OpenFOAM/v2312-foss-2023a => cae/OpenFOAM/11-foss-2023a
+
+
+
+--> FOAM FATAL ERROR: (openfoam-2312)
+cannot find file "/mnt/aiongpfs/users/pvares/OpenFOAM/openfoam-OpenFOAM-v2312-tutorials-incompressible-simpleFoam-motorBike/tutorials/incompressible/simpleFoam/motorBike/stage/aion_node/default/python/OpenFOAMMotorBikeTest/motorBike/system/controlDict"
+
+    From virtual Foam::autoPtr<Foam::ISstream> Foam::fileOperations::uncollatedFileOperation::readStream(Foam::regIOobject&, const Foam::fileName&, const Foam::word&, bool) const
+    in file global/fileOperations/uncollatedFileOperation/uncollatedFileOperation.C at line 626.
+
+FOAM exiting
+

@@ -1,0 +1,8 @@
+
+
+--> FOAM FATAL ERROR: (openfoam-2312)
+simpleFoam: cannot open case directory "/mnt/aiongpfs/users/pvares/OpenFOAM/openfoam-OpenFOAM-v2312-tutorials-incompressible-simpleFoam-motorBike/tutorials/incompressible/simpleFoam/motorBike/stage/generic/default/builtin/OpenFOAMMotorBikeTest/motorBike"
+
+
+FOAM exiting
+

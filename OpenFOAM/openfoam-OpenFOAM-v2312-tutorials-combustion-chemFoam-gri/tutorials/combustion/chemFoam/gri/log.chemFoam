@@ -1,0 +1,3815 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2312                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _1d8f0d55f7-20231221 OPENFOAM=2312 version=v2312
+Arch   : "LSB;label=32;scalar=64"
+Exec   : chemFoam
+Date   : May 26 2024
+Time   : 17:16:14
+Host   : aion-0180
+PID    : 2531176
+I/O    : uncollated
+Case   : /mnt/aiongpfs/users/pvares/OpenFOAM/openfoam-OpenFOAM-v2312-tutorials-combustion-chemFoam-gri/tutorials/combustion/chemFoam/gri
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Overriding DebugSwitches according to controlDict
+    SolverPerformance 0;
+
+Constructing single cell mesh
+
+Reading initial conditions.
+
+Creating base fields for time 0
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         reactingMixture;
+    transport       sutherland;
+    thermo          janaf;
+    energy          sensibleEnthalpy;
+    equationOfState perfectGas;
+    specie          specie;
+}
+
+Selecting chemistryReader foamChemistryReader
+--> FOAM Warning : 
+    From void Foam::multiComponentMixture<ThermoType>::correctMassFractions() [with ThermoType = Foam::sutherlandTransport<Foam::species::thermo<Foam::janafThermo<Foam::perfectGas<Foam::specie> >, Foam::sensibleEnthalpy> >]
+    in file lnInclude/multiComponentMixture.C at line 78
+    Sum of mass fractions is different from one for species 
+53
+(
+CH4
+CH2O
+CH3O
+H
+O2
+H2
+O
+OH
+H2O
+HO2
+H2O2
+C
+CH
+CH2
+CH2(S)
+CH3
+CO
+CO2
+HCO
+CH2OH
+CH3OH
+C2H
+C2H2
+C2H3
+C2H4
+C2H5
+C2H6
+HCCO
+CH2CO
+HCCOH
+N
+NH
+NH2
+NH3
+NNH
+NO
+NO2
+N2O
+HNO
+CN
+HCN
+H2CN
+HCNN
+HCNO
+HOCN
+HNCO
+NCO
+N2
+AR
+C3H7
+C3H8
+CH2CHO
+CH3CHO
+)
+
+    Max of mass fraction sum differs from 1 by 52
+Selecting chemistry solver 
+{
+    solver          ode;
+    method          standard;
+}
+
+StandardChemistryModel: Number of species = 53 and reactions = 325
+Selecting ODE solver seulex
+Reading/calculating face flux field phi
+
+pressure will be held constant.
+ p   = 1.36789e+06 [Pa]
+ T   = 1000 [K] 
+ rho = 4.54619 [kg/m3]
+
+
+Starting time loop
+
+deltaT = 1e-07
+Time = 1e-07
+
+Qdot = -1005.62, T = 1000, p = 1.36789e+06, CH4 = 0.0551873
+ExecutionTime = 0.06 s  ClockTime = 0 s
+
+deltaT = 1.99998e-07
+Time = 2.99998e-07
+
+Qdot = -1005.19, T = 1000, p = 1.36789e+06, CH4 = 0.0551873
+ExecutionTime = 0.11 s  ClockTime = 0 s
+
+deltaT = 4.00004e-07
+Time = 7.00002e-07
+
+Qdot = -1004.34, T = 1000, p = 1.36789e+06, CH4 = 0.0551873
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+deltaT = 8.00008e-07
+Time = 1.50001e-06
+
+Qdot = -1002.63, T = 1000, p = 1.36789e+06, CH4 = 0.0551873
+ExecutionTime = 0.17 s  ClockTime = 0 s
+
+deltaT = 1.60002e-06
+Time = 3.10003e-06
+
+Qdot = -999.201, T = 1000, p = 1.36789e+06, CH4 = 0.0551873
+ExecutionTime = 0.2 s  ClockTime = 0 s
+
+deltaT = 3.20003e-06
+Time = 6.30006e-06
+
+Qdot = -992.318, T = 1000, p = 1.36789e+06, CH4 = 0.0551873
+ExecutionTime = 0.23 s  ClockTime = 0 s
+
+deltaT = 6.39802e-06
+Time = 1.26981e-05
+
+Qdot = -978.449, T = 1000, p = 1.36789e+06, CH4 = 0.0551873
+ExecutionTime = 0.26 s  ClockTime = 0 s
+
+deltaT = 1.27878e-05
+Time = 2.54859e-05
+
+Qdot = -950.3, T = 1000, p = 1.36789e+06, CH4 = 0.0551873
+ExecutionTime = 0.29 s  ClockTime = 0 s
+
+deltaT = 2.55757e-05
+Time = 5.10616e-05
+
+Qdot = -892.299, T = 1000, p = 1.36789e+06, CH4 = 0.0551873
+ExecutionTime = 0.32 s  ClockTime = 0 s
+
+deltaT = 3.9169e-05
+Time = 9.02306e-05
+
+Qdot = -789.137, T = 1000, p = 1.36789e+06, CH4 = 0.0551873
+ExecutionTime = 0.35 s  ClockTime = 0 s
+
+deltaT = 6.43492e-05
+Time = 0.00015458
+
+Qdot = -610.039, T = 1000, p = 1.36789e+06, CH4 = 0.0551873
+ExecutionTime = 0.39 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.000255043
+
+Qdot = -287.566, T = 1000, p = 1.36789e+06, CH4 = 0.0551873
+ExecutionTime = 0.42 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.000355507
+
+Qdot = 170.101, T = 1000, p = 1.36789e+06, CH4 = 0.0551873
+ExecutionTime = 0.45 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.00045597
+
+Qdot = 700.077, T = 1000, p = 1.36789e+06, CH4 = 0.0551872
+ExecutionTime = 0.48 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.000556434
+
+Qdot = 1301.39, T = 1000, p = 1.36789e+06, CH4 = 0.0551872
+ExecutionTime = 0.51 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.000656897
+
+Qdot = 1970.2, T = 1000, p = 1.36789e+06, CH4 = 0.0551872
+ExecutionTime = 0.54 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.000757361
+
+Qdot = 2699.77, T = 1000, p = 1.36789e+06, CH4 = 0.0551872
+ExecutionTime = 0.57 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.000857824
+
+Qdot = 3480.69, T = 1000, p = 1.36789e+06, CH4 = 0.0551871
+ExecutionTime = 0.6 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.000958288
+
+Qdot = 4301.33, T = 1000, p = 1.36789e+06, CH4 = 0.0551871
+ExecutionTime = 0.63 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.00105875
+
+Qdot = 5148.67, T = 1000, p = 1.36789e+06, CH4 = 0.055187
+ExecutionTime = 0.66 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.00115921
+
+Qdot = 6009.14, T = 1000, p = 1.36789e+06, CH4 = 0.0551869
+ExecutionTime = 0.69 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.00125968
+
+Qdot = 6869.52, T = 1000, p = 1.36789e+06, CH4 = 0.0551869
+ExecutionTime = 0.72 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.00136014
+
+Qdot = 7717.81, T = 1000, p = 1.36789e+06, CH4 = 0.0551868
+ExecutionTime = 0.75 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.0014606
+
+Qdot = 8543.72, T = 1000, p = 1.36789e+06, CH4 = 0.0551867
+ExecutionTime = 0.78 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.00156107
+
+Qdot = 9339.13, T = 1000, p = 1.36789e+06, CH4 = 0.0551867
+ExecutionTime = 0.82 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.00166153
+
+Qdot = 10098.1, T = 1000, p = 1.36789e+06, CH4 = 0.0551866
+ExecutionTime = 0.85 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.001762
+
+Qdot = 10817, T = 1000.01, p = 1.36789e+06, CH4 = 0.0551865
+ExecutionTime = 0.88 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.00186246
+
+Qdot = 11493.9, T = 1000.01, p = 1.36789e+06, CH4 = 0.0551864
+ExecutionTime = 0.91 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.00196292
+
+Qdot = 12128.5, T = 1000.01, p = 1.36789e+06, CH4 = 0.0551863
+ExecutionTime = 0.94 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.00206339
+
+Qdot = 12721.8, T = 1000.01, p = 1.36789e+06, CH4 = 0.0551862
+ExecutionTime = 0.97 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.00216385
+
+Qdot = 13275.6, T = 1000.01, p = 1.36789e+06, CH4 = 0.0551861
+ExecutionTime = 1 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.00226431
+
+Qdot = 13792.3, T = 1000.01, p = 1.36789e+06, CH4 = 0.055186
+ExecutionTime = 1.03 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.00236478
+
+Qdot = 14274.7, T = 1000.01, p = 1.36789e+06, CH4 = 0.0551859
+ExecutionTime = 1.06 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.00246524
+
+Qdot = 14725.7, T = 1000.01, p = 1.36789e+06, CH4 = 0.0551857
+ExecutionTime = 1.09 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.0025657
+
+Qdot = 15148.1, T = 1000.01, p = 1.36789e+06, CH4 = 0.0551856
+ExecutionTime = 1.12 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.00266617
+
+Qdot = 15544.8, T = 1000.02, p = 1.36789e+06, CH4 = 0.0551855
+ExecutionTime = 1.15 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.00276663
+
+Qdot = 15918.2, T = 1000.02, p = 1.36789e+06, CH4 = 0.0551854
+ExecutionTime = 1.18 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.00286709
+
+Qdot = 16270.9, T = 1000.02, p = 1.36789e+06, CH4 = 0.0551853
+ExecutionTime = 1.21 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.00296756
+
+Qdot = 16605, T = 1000.02, p = 1.36789e+06, CH4 = 0.0551851
+ExecutionTime = 1.25 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.00306802
+
+Qdot = 16922.4, T = 1000.02, p = 1.36789e+06, CH4 = 0.055185
+ExecutionTime = 1.28 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.00316848
+
+Qdot = 17225.1, T = 1000.02, p = 1.36789e+06, CH4 = 0.0551849
+ExecutionTime = 1.31 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.00326895
+
+Qdot = 17514.5, T = 1000.02, p = 1.36789e+06, CH4 = 0.0551847
+ExecutionTime = 1.34 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.00336941
+
+Qdot = 17792.1, T = 1000.02, p = 1.36789e+06, CH4 = 0.0551846
+ExecutionTime = 1.37 s  ClockTime = 1 s
+
+deltaT = 0.000100463
+Time = 0.00346987
+
+Qdot = 18059.2, T = 1000.03, p = 1.36789e+06, CH4 = 0.0551845
+ExecutionTime = 1.4 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00357034
+
+Qdot = 18316.8, T = 1000.03, p = 1.36789e+06, CH4 = 0.0551843
+ExecutionTime = 1.43 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.0036708
+
+Qdot = 18565.9, T = 1000.03, p = 1.36789e+06, CH4 = 0.0551842
+ExecutionTime = 1.46 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00377126
+
+Qdot = 18807.5, T = 1000.03, p = 1.36789e+06, CH4 = 0.055184
+ExecutionTime = 1.49 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00387173
+
+Qdot = 19042.2, T = 1000.03, p = 1.36789e+06, CH4 = 0.0551839
+ExecutionTime = 1.52 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00397219
+
+Qdot = 19270.9, T = 1000.03, p = 1.36789e+06, CH4 = 0.0551837
+ExecutionTime = 1.55 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00407266
+
+Qdot = 19494.2, T = 1000.03, p = 1.36789e+06, CH4 = 0.0551836
+ExecutionTime = 1.58 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00417312
+
+Qdot = 19712.6, T = 1000.04, p = 1.36789e+06, CH4 = 0.0551835
+ExecutionTime = 1.61 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00427358
+
+Qdot = 19926.7, T = 1000.04, p = 1.36789e+06, CH4 = 0.0551833
+ExecutionTime = 1.64 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00437405
+
+Qdot = 20136.9, T = 1000.04, p = 1.36789e+06, CH4 = 0.0551831
+ExecutionTime = 1.68 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00447451
+
+Qdot = 20343.6, T = 1000.04, p = 1.36789e+06, CH4 = 0.055183
+ExecutionTime = 1.71 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00457497
+
+Qdot = 20547.3, T = 1000.04, p = 1.36789e+06, CH4 = 0.0551828
+ExecutionTime = 1.74 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00467544
+
+Qdot = 20748.2, T = 1000.04, p = 1.36789e+06, CH4 = 0.0551827
+ExecutionTime = 1.77 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.0047759
+
+Qdot = 20946.8, T = 1000.04, p = 1.36789e+06, CH4 = 0.0551825
+ExecutionTime = 1.8 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00487636
+
+Qdot = 21143.2, T = 1000.05, p = 1.36789e+06, CH4 = 0.0551824
+ExecutionTime = 1.83 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00497683
+
+Qdot = 21337.8, T = 1000.05, p = 1.36789e+06, CH4 = 0.0551822
+ExecutionTime = 1.86 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00507729
+
+Qdot = 21530.8, T = 1000.05, p = 1.36789e+06, CH4 = 0.055182
+ExecutionTime = 1.89 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00517775
+
+Qdot = 21722.4, T = 1000.05, p = 1.36789e+06, CH4 = 0.0551819
+ExecutionTime = 1.92 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00527822
+
+Qdot = 21912.9, T = 1000.05, p = 1.36789e+06, CH4 = 0.0551817
+ExecutionTime = 1.95 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00537868
+
+Qdot = 22102.4, T = 1000.05, p = 1.36789e+06, CH4 = 0.0551816
+ExecutionTime = 1.98 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00547914
+
+Qdot = 22291.1, T = 1000.06, p = 1.36789e+06, CH4 = 0.0551814
+ExecutionTime = 2.01 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00557961
+
+Qdot = 22479.1, T = 1000.06, p = 1.36789e+06, CH4 = 0.0551812
+ExecutionTime = 2.04 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00568007
+
+Qdot = 22666.7, T = 1000.06, p = 1.36789e+06, CH4 = 0.0551811
+ExecutionTime = 2.07 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00578053
+
+Qdot = 22853.9, T = 1000.06, p = 1.36789e+06, CH4 = 0.0551809
+ExecutionTime = 2.1 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.005881
+
+Qdot = 23040.9, T = 1000.06, p = 1.36789e+06, CH4 = 0.0551807
+ExecutionTime = 2.14 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00598146
+
+Qdot = 23227.8, T = 1000.06, p = 1.36789e+06, CH4 = 0.0551805
+ExecutionTime = 2.17 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00608192
+
+Qdot = 23414.7, T = 1000.07, p = 1.36789e+06, CH4 = 0.0551804
+ExecutionTime = 2.2 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00618239
+
+Qdot = 23601.6, T = 1000.07, p = 1.36789e+06, CH4 = 0.0551802
+ExecutionTime = 2.23 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00628285
+
+Qdot = 23788.8, T = 1000.07, p = 1.36789e+06, CH4 = 0.05518
+ExecutionTime = 2.26 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00638332
+
+Qdot = 23976.2, T = 1000.07, p = 1.36789e+06, CH4 = 0.0551798
+ExecutionTime = 2.29 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00648378
+
+Qdot = 24164, T = 1000.07, p = 1.36789e+06, CH4 = 0.0551797
+ExecutionTime = 2.32 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00658424
+
+Qdot = 24352.3, T = 1000.08, p = 1.36789e+06, CH4 = 0.0551795
+ExecutionTime = 2.35 s  ClockTime = 2 s
+
+deltaT = 0.000100463
+Time = 0.00668471
+
+Qdot = 24541, T = 1000.08, p = 1.36789e+06, CH4 = 0.0551793
+ExecutionTime = 2.38 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00678517
+
+Qdot = 24730.3, T = 1000.08, p = 1.36789e+06, CH4 = 0.0551791
+ExecutionTime = 2.41 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00688563
+
+Qdot = 24920.2, T = 1000.08, p = 1.36789e+06, CH4 = 0.0551789
+ExecutionTime = 2.44 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.0069861
+
+Qdot = 25110.8, T = 1000.08, p = 1.36789e+06, CH4 = 0.0551787
+ExecutionTime = 2.47 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00708656
+
+Qdot = 25302.1, T = 1000.08, p = 1.36789e+06, CH4 = 0.0551785
+ExecutionTime = 2.5 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00718702
+
+Qdot = 25494.2, T = 1000.09, p = 1.36789e+06, CH4 = 0.0551784
+ExecutionTime = 2.53 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00728749
+
+Qdot = 25687.1, T = 1000.09, p = 1.36789e+06, CH4 = 0.0551782
+ExecutionTime = 2.56 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00738795
+
+Qdot = 25880.9, T = 1000.09, p = 1.36789e+06, CH4 = 0.055178
+ExecutionTime = 2.59 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00748841
+
+Qdot = 26075.6, T = 1000.09, p = 1.36789e+06, CH4 = 0.0551778
+ExecutionTime = 2.62 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00758888
+
+Qdot = 26271.3, T = 1000.09, p = 1.36789e+06, CH4 = 0.0551776
+ExecutionTime = 2.65 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00768934
+
+Qdot = 26467.9, T = 1000.1, p = 1.36789e+06, CH4 = 0.0551774
+ExecutionTime = 2.68 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.0077898
+
+Qdot = 26665.5, T = 1000.1, p = 1.36789e+06, CH4 = 0.0551772
+ExecutionTime = 2.71 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00789027
+
+Qdot = 26864.2, T = 1000.1, p = 1.36789e+06, CH4 = 0.055177
+ExecutionTime = 2.74 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00799073
+
+Qdot = 27063.9, T = 1000.1, p = 1.36789e+06, CH4 = 0.0551768
+ExecutionTime = 2.78 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00809119
+
+Qdot = 27264.8, T = 1000.1, p = 1.36789e+06, CH4 = 0.0551766
+ExecutionTime = 2.81 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00819166
+
+Qdot = 27466.8, T = 1000.11, p = 1.36789e+06, CH4 = 0.0551764
+ExecutionTime = 2.84 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00829212
+
+Qdot = 27669.9, T = 1000.11, p = 1.36789e+06, CH4 = 0.0551762
+ExecutionTime = 2.87 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00839258
+
+Qdot = 27874.2, T = 1000.11, p = 1.36789e+06, CH4 = 0.055176
+ExecutionTime = 2.9 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00849305
+
+Qdot = 28079.8, T = 1000.11, p = 1.36789e+06, CH4 = 0.0551758
+ExecutionTime = 2.93 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00859351
+
+Qdot = 28286.5, T = 1000.11, p = 1.36789e+06, CH4 = 0.0551756
+ExecutionTime = 2.96 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00869397
+
+Qdot = 28494.5, T = 1000.12, p = 1.36789e+06, CH4 = 0.0551754
+ExecutionTime = 2.99 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00879444
+
+Qdot = 28703.8, T = 1000.12, p = 1.36789e+06, CH4 = 0.0551751
+ExecutionTime = 3.02 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.0088949
+
+Qdot = 28914.4, T = 1000.12, p = 1.36789e+06, CH4 = 0.0551749
+ExecutionTime = 3.05 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00899537
+
+Qdot = 29126.3, T = 1000.12, p = 1.36789e+06, CH4 = 0.0551747
+ExecutionTime = 3.08 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00909583
+
+Qdot = 29339.5, T = 1000.13, p = 1.36789e+06, CH4 = 0.0551745
+ExecutionTime = 3.11 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00919629
+
+Qdot = 29554, T = 1000.13, p = 1.36789e+06, CH4 = 0.0551743
+ExecutionTime = 3.14 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00929676
+
+Qdot = 29769.9, T = 1000.13, p = 1.36789e+06, CH4 = 0.0551741
+ExecutionTime = 3.17 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00939722
+
+Qdot = 29987.2, T = 1000.13, p = 1.36789e+06, CH4 = 0.0551738
+ExecutionTime = 3.2 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00949768
+
+Qdot = 30205.9, T = 1000.13, p = 1.36789e+06, CH4 = 0.0551736
+ExecutionTime = 3.23 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00959815
+
+Qdot = 30426.1, T = 1000.14, p = 1.36789e+06, CH4 = 0.0551734
+ExecutionTime = 3.26 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00969861
+
+Qdot = 30647.6, T = 1000.14, p = 1.36789e+06, CH4 = 0.0551732
+ExecutionTime = 3.29 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00979907
+
+Qdot = 30870.7, T = 1000.14, p = 1.36789e+06, CH4 = 0.055173
+ExecutionTime = 3.33 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.00989954
+
+Qdot = 31095.1, T = 1000.14, p = 1.36789e+06, CH4 = 0.0551727
+ExecutionTime = 3.36 s  ClockTime = 3 s
+
+deltaT = 0.000100463
+Time = 0.01
+
+Qdot = 31321.1, T = 1000.15, p = 1.36789e+06, CH4 = 0.0551725
+ExecutionTime = 3.4 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0101
+
+Qdot = 31548, T = 1000.15, p = 1.36789e+06, CH4 = 0.0551723
+ExecutionTime = 3.45 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0102
+
+Qdot = 31776, T = 1000.15, p = 1.36789e+06, CH4 = 0.055172
+ExecutionTime = 3.48 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0103
+
+Qdot = 32005.4, T = 1000.15, p = 1.36789e+06, CH4 = 0.0551718
+ExecutionTime = 3.52 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0104
+
+Qdot = 32236.4, T = 1000.16, p = 1.36789e+06, CH4 = 0.0551716
+ExecutionTime = 3.55 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0105
+
+Qdot = 32468.9, T = 1000.16, p = 1.36789e+06, CH4 = 0.0551713
+ExecutionTime = 3.58 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0106
+
+Qdot = 32703, T = 1000.16, p = 1.36789e+06, CH4 = 0.0551711
+ExecutionTime = 3.61 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0107
+
+Qdot = 32938.7, T = 1000.16, p = 1.36789e+06, CH4 = 0.0551709
+ExecutionTime = 3.64 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0108
+
+Qdot = 33175.9, T = 1000.17, p = 1.36789e+06, CH4 = 0.0551706
+ExecutionTime = 3.67 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0109
+
+Qdot = 33414.8, T = 1000.17, p = 1.36789e+06, CH4 = 0.0551704
+ExecutionTime = 3.7 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.011
+
+Qdot = 33655.3, T = 1000.17, p = 1.36789e+06, CH4 = 0.0551701
+ExecutionTime = 3.73 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0111
+
+Qdot = 33897.4, T = 1000.17, p = 1.36789e+06, CH4 = 0.0551699
+ExecutionTime = 3.76 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0112
+
+Qdot = 34141.2, T = 1000.18, p = 1.36789e+06, CH4 = 0.0551696
+ExecutionTime = 3.79 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0113
+
+Qdot = 34386.7, T = 1000.18, p = 1.36789e+06, CH4 = 0.0551694
+ExecutionTime = 3.82 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0114
+
+Qdot = 34633.8, T = 1000.18, p = 1.36789e+06, CH4 = 0.0551691
+ExecutionTime = 3.85 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0115
+
+Qdot = 34882.7, T = 1000.18, p = 1.36789e+06, CH4 = 0.0551689
+ExecutionTime = 3.88 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0116
+
+Qdot = 35133.2, T = 1000.19, p = 1.36789e+06, CH4 = 0.0551686
+ExecutionTime = 3.91 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0117
+
+Qdot = 35385.5, T = 1000.19, p = 1.36789e+06, CH4 = 0.0551684
+ExecutionTime = 3.95 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0118
+
+Qdot = 35639.6, T = 1000.19, p = 1.36789e+06, CH4 = 0.0551681
+ExecutionTime = 3.98 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0119
+
+Qdot = 35895.4, T = 1000.19, p = 1.36789e+06, CH4 = 0.0551679
+ExecutionTime = 4.01 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.012
+
+Qdot = 36153, T = 1000.2, p = 1.36789e+06, CH4 = 0.0551676
+ExecutionTime = 4.04 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0121
+
+Qdot = 36412.3, T = 1000.2, p = 1.36789e+06, CH4 = 0.0551673
+ExecutionTime = 4.07 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0122
+
+Qdot = 36673.5, T = 1000.2, p = 1.36789e+06, CH4 = 0.0551671
+ExecutionTime = 4.1 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0123
+
+Qdot = 36936.5, T = 1000.2, p = 1.36789e+06, CH4 = 0.0551668
+ExecutionTime = 4.13 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0124
+
+Qdot = 37201.4, T = 1000.21, p = 1.36789e+06, CH4 = 0.0551665
+ExecutionTime = 4.16 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0125
+
+Qdot = 37468.1, T = 1000.21, p = 1.36789e+06, CH4 = 0.0551663
+ExecutionTime = 4.19 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0126
+
+Qdot = 37736.7, T = 1000.21, p = 1.36789e+06, CH4 = 0.055166
+ExecutionTime = 4.22 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0127
+
+Qdot = 38007.2, T = 1000.22, p = 1.36789e+06, CH4 = 0.0551657
+ExecutionTime = 4.25 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0128
+
+Qdot = 38279.6, T = 1000.22, p = 1.36789e+06, CH4 = 0.0551654
+ExecutionTime = 4.28 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0129
+
+Qdot = 38554, T = 1000.22, p = 1.36789e+06, CH4 = 0.0551652
+ExecutionTime = 4.31 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.013
+
+Qdot = 38830.2, T = 1000.22, p = 1.36789e+06, CH4 = 0.0551649
+ExecutionTime = 4.34 s  ClockTime = 4 s
+
+deltaT = 0.0001
+Time = 0.0131
+
+Qdot = 39108.5, T = 1000.23, p = 1.36789e+06, CH4 = 0.0551646
+ExecutionTime = 4.37 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0132
+
+Qdot = 39388.7, T = 1000.23, p = 1.36789e+06, CH4 = 0.0551643
+ExecutionTime = 4.4 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0133
+
+Qdot = 39670.9, T = 1000.23, p = 1.36789e+06, CH4 = 0.055164
+ExecutionTime = 4.44 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0134
+
+Qdot = 39955.1, T = 1000.24, p = 1.36789e+06, CH4 = 0.0551637
+ExecutionTime = 4.47 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0135
+
+Qdot = 40241.4, T = 1000.24, p = 1.36789e+06, CH4 = 0.0551635
+ExecutionTime = 4.5 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0136
+
+Qdot = 40529.7, T = 1000.24, p = 1.36789e+06, CH4 = 0.0551632
+ExecutionTime = 4.53 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0137
+
+Qdot = 40820.1, T = 1000.25, p = 1.36789e+06, CH4 = 0.0551629
+ExecutionTime = 4.56 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0138
+
+Qdot = 41112.5, T = 1000.25, p = 1.36789e+06, CH4 = 0.0551626
+ExecutionTime = 4.59 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0139
+
+Qdot = 41407.1, T = 1000.25, p = 1.36789e+06, CH4 = 0.0551623
+ExecutionTime = 4.62 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.014
+
+Qdot = 41703.8, T = 1000.25, p = 1.36789e+06, CH4 = 0.055162
+ExecutionTime = 4.65 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0141
+
+Qdot = 42002.6, T = 1000.26, p = 1.36789e+06, CH4 = 0.0551617
+ExecutionTime = 4.68 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0142
+
+Qdot = 42303.6, T = 1000.26, p = 1.36789e+06, CH4 = 0.0551614
+ExecutionTime = 4.71 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0143
+
+Qdot = 42606.8, T = 1000.26, p = 1.36789e+06, CH4 = 0.0551611
+ExecutionTime = 4.74 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0144
+
+Qdot = 42912.1, T = 1000.27, p = 1.36789e+06, CH4 = 0.0551608
+ExecutionTime = 4.77 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0145
+
+Qdot = 43219.7, T = 1000.27, p = 1.36789e+06, CH4 = 0.0551605
+ExecutionTime = 4.8 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0146
+
+Qdot = 43529.6, T = 1000.27, p = 1.36789e+06, CH4 = 0.0551601
+ExecutionTime = 4.83 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0147
+
+Qdot = 43841.6, T = 1000.28, p = 1.36789e+06, CH4 = 0.0551598
+ExecutionTime = 4.86 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0148
+
+Qdot = 44156, T = 1000.28, p = 1.36789e+06, CH4 = 0.0551595
+ExecutionTime = 4.89 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0149
+
+Qdot = 44472.7, T = 1000.28, p = 1.36789e+06, CH4 = 0.0551592
+ExecutionTime = 4.92 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.015
+
+Qdot = 44791.7, T = 1000.29, p = 1.36789e+06, CH4 = 0.0551589
+ExecutionTime = 4.95 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0151
+
+Qdot = 45113, T = 1000.29, p = 1.36789e+06, CH4 = 0.0551586
+ExecutionTime = 4.98 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0152
+
+Qdot = 45436.7, T = 1000.29, p = 1.36789e+06, CH4 = 0.0551582
+ExecutionTime = 5.02 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0153
+
+Qdot = 45762.8, T = 1000.3, p = 1.36789e+06, CH4 = 0.0551579
+ExecutionTime = 5.05 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0154
+
+Qdot = 46091.3, T = 1000.3, p = 1.36789e+06, CH4 = 0.0551576
+ExecutionTime = 5.08 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0155
+
+Qdot = 46422.2, T = 1000.3, p = 1.36789e+06, CH4 = 0.0551573
+ExecutionTime = 5.11 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0156
+
+Qdot = 46755.6, T = 1000.31, p = 1.36789e+06, CH4 = 0.0551569
+ExecutionTime = 5.14 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0157
+
+Qdot = 47091.4, T = 1000.31, p = 1.36789e+06, CH4 = 0.0551566
+ExecutionTime = 5.17 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0158
+
+Qdot = 47429.8, T = 1000.31, p = 1.36789e+06, CH4 = 0.0551563
+ExecutionTime = 5.2 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0159
+
+Qdot = 47770.6, T = 1000.32, p = 1.36789e+06, CH4 = 0.0551559
+ExecutionTime = 5.23 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.016
+
+Qdot = 48114, T = 1000.32, p = 1.36789e+06, CH4 = 0.0551556
+ExecutionTime = 5.26 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0161
+
+Qdot = 48460, T = 1000.33, p = 1.36789e+06, CH4 = 0.0551552
+ExecutionTime = 5.29 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0162
+
+Qdot = 48808.5, T = 1000.33, p = 1.36789e+06, CH4 = 0.0551549
+ExecutionTime = 5.32 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0163
+
+Qdot = 49159.7, T = 1000.33, p = 1.36789e+06, CH4 = 0.0551545
+ExecutionTime = 5.35 s  ClockTime = 5 s
+
+deltaT = 0.0001
+Time = 0.0164
+
+Qdot = 49513.5, T = 1000.34, p = 1.36789e+06, CH4 = 0.0551542
+ExecutionTime = 5.38 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0165
+
+Qdot = 49870, T = 1000.34, p = 1.36789e+06, CH4 = 0.0551538
+ExecutionTime = 5.41 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0166
+
+Qdot = 50229.1, T = 1000.34, p = 1.36789e+06, CH4 = 0.0551535
+ExecutionTime = 5.44 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0167
+
+Qdot = 50591, T = 1000.35, p = 1.36789e+06, CH4 = 0.0551531
+ExecutionTime = 5.47 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0168
+
+Qdot = 50955.6, T = 1000.35, p = 1.36789e+06, CH4 = 0.0551528
+ExecutionTime = 5.5 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0169
+
+Qdot = 51322.9, T = 1000.36, p = 1.36789e+06, CH4 = 0.0551524
+ExecutionTime = 5.53 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.017
+
+Qdot = 51693.1, T = 1000.36, p = 1.36789e+06, CH4 = 0.055152
+ExecutionTime = 5.56 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0171
+
+Qdot = 52066, T = 1000.36, p = 1.36789e+06, CH4 = 0.0551517
+ExecutionTime = 5.59 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0172
+
+Qdot = 52441.8, T = 1000.37, p = 1.36789e+06, CH4 = 0.0551513
+ExecutionTime = 5.62 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0173
+
+Qdot = 52820.5, T = 1000.37, p = 1.36789e+06, CH4 = 0.0551509
+ExecutionTime = 5.65 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0174
+
+Qdot = 53202, T = 1000.37, p = 1.36789e+06, CH4 = 0.0551505
+ExecutionTime = 5.68 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0175
+
+Qdot = 53586.5, T = 1000.38, p = 1.36789e+06, CH4 = 0.0551502
+ExecutionTime = 5.72 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0176
+
+Qdot = 53973.9, T = 1000.38, p = 1.36789e+06, CH4 = 0.0551498
+ExecutionTime = 5.75 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0177
+
+Qdot = 54364.3, T = 1000.39, p = 1.36789e+06, CH4 = 0.0551494
+ExecutionTime = 5.78 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0178
+
+Qdot = 54757.7, T = 1000.39, p = 1.36789e+06, CH4 = 0.055149
+ExecutionTime = 5.81 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0179
+
+Qdot = 55154.2, T = 1000.39, p = 1.36789e+06, CH4 = 0.0551486
+ExecutionTime = 5.84 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.018
+
+Qdot = 55553.7, T = 1000.4, p = 1.36789e+06, CH4 = 0.0551482
+ExecutionTime = 5.87 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0181
+
+Qdot = 55956.2, T = 1000.4, p = 1.36789e+06, CH4 = 0.0551478
+ExecutionTime = 5.9 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0182
+
+Qdot = 56362, T = 1000.41, p = 1.36789e+06, CH4 = 0.0551475
+ExecutionTime = 5.93 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0183
+
+Qdot = 56770.8, T = 1000.41, p = 1.36789e+06, CH4 = 0.0551471
+ExecutionTime = 5.96 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0184
+
+Qdot = 57182.8, T = 1000.42, p = 1.36789e+06, CH4 = 0.0551467
+ExecutionTime = 5.99 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0185
+
+Qdot = 57598.1, T = 1000.42, p = 1.36789e+06, CH4 = 0.0551463
+ExecutionTime = 6.02 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0186
+
+Qdot = 58016.6, T = 1000.42, p = 1.36789e+06, CH4 = 0.0551458
+ExecutionTime = 6.05 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0187
+
+Qdot = 58438.3, T = 1000.43, p = 1.36789e+06, CH4 = 0.0551454
+ExecutionTime = 6.08 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0188
+
+Qdot = 58863.4, T = 1000.43, p = 1.36789e+06, CH4 = 0.055145
+ExecutionTime = 6.11 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0189
+
+Qdot = 59291.8, T = 1000.44, p = 1.36789e+06, CH4 = 0.0551446
+ExecutionTime = 6.14 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.019
+
+Qdot = 59723.6, T = 1000.44, p = 1.36789e+06, CH4 = 0.0551442
+ExecutionTime = 6.18 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0191
+
+Qdot = 60158.7, T = 1000.45, p = 1.36789e+06, CH4 = 0.0551438
+ExecutionTime = 6.21 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0192
+
+Qdot = 60597.3, T = 1000.45, p = 1.36789e+06, CH4 = 0.0551433
+ExecutionTime = 6.24 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0193
+
+Qdot = 61039.4, T = 1000.46, p = 1.36789e+06, CH4 = 0.0551429
+ExecutionTime = 6.27 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0194
+
+Qdot = 61485, T = 1000.46, p = 1.36789e+06, CH4 = 0.0551425
+ExecutionTime = 6.3 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0195
+
+Qdot = 61934.1, T = 1000.46, p = 1.36789e+06, CH4 = 0.0551421
+ExecutionTime = 6.33 s  ClockTime = 6 s
+
+deltaT = 0.0001
+Time = 0.0196
+
+Qdot = 62386.8, T = 1000.47, p = 1.36789e+06, CH4 = 0.0551416
+ExecutionTime = 6.36 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0197
+
+Qdot = 62843.1, T = 1000.47, p = 1.36789e+06, CH4 = 0.0551412
+ExecutionTime = 6.39 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0198
+
+Qdot = 63303, T = 1000.48, p = 1.36789e+06, CH4 = 0.0551407
+ExecutionTime = 6.42 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0199
+
+Qdot = 63766.6, T = 1000.48, p = 1.36789e+06, CH4 = 0.0551403
+ExecutionTime = 6.45 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.02
+
+Qdot = 64233.9, T = 1000.49, p = 1.36789e+06, CH4 = 0.0551399
+ExecutionTime = 6.48 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0201
+
+Qdot = 64705, T = 1000.49, p = 1.36789e+06, CH4 = 0.0551394
+ExecutionTime = 6.54 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0202
+
+Qdot = 65179.8, T = 1000.5, p = 1.36789e+06, CH4 = 0.055139
+ExecutionTime = 6.57 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0203
+
+Qdot = 65658.5, T = 1000.5, p = 1.36789e+06, CH4 = 0.0551385
+ExecutionTime = 6.6 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0204
+
+Qdot = 66141.1, T = 1000.51, p = 1.36789e+06, CH4 = 0.055138
+ExecutionTime = 6.63 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0205
+
+Qdot = 66627.5, T = 1000.51, p = 1.36789e+06, CH4 = 0.0551376
+ExecutionTime = 6.66 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0206
+
+Qdot = 67117.9, T = 1000.52, p = 1.36789e+06, CH4 = 0.0551371
+ExecutionTime = 6.69 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0207
+
+Qdot = 67612.3, T = 1000.52, p = 1.36789e+06, CH4 = 0.0551366
+ExecutionTime = 6.72 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0208
+
+Qdot = 68110.7, T = 1000.53, p = 1.36789e+06, CH4 = 0.0551362
+ExecutionTime = 6.75 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0209
+
+Qdot = 68613.2, T = 1000.53, p = 1.36789e+06, CH4 = 0.0551357
+ExecutionTime = 6.78 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.021
+
+Qdot = 69119.8, T = 1000.54, p = 1.36789e+06, CH4 = 0.0551352
+ExecutionTime = 6.82 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0211
+
+Qdot = 69630.5, T = 1000.54, p = 1.36789e+06, CH4 = 0.0551347
+ExecutionTime = 6.85 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0212
+
+Qdot = 70145.4, T = 1000.55, p = 1.36789e+06, CH4 = 0.0551342
+ExecutionTime = 6.88 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0213
+
+Qdot = 70664.5, T = 1000.55, p = 1.36789e+06, CH4 = 0.0551338
+ExecutionTime = 6.91 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0214
+
+Qdot = 71187.9, T = 1000.56, p = 1.36789e+06, CH4 = 0.0551333
+ExecutionTime = 6.94 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0215
+
+Qdot = 71715.7, T = 1000.56, p = 1.36789e+06, CH4 = 0.0551328
+ExecutionTime = 6.97 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0216
+
+Qdot = 72247.7, T = 1000.57, p = 1.36789e+06, CH4 = 0.0551323
+ExecutionTime = 7 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0217
+
+Qdot = 72784.2, T = 1000.58, p = 1.36789e+06, CH4 = 0.0551318
+ExecutionTime = 7.03 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0218
+
+Qdot = 73325.2, T = 1000.58, p = 1.36789e+06, CH4 = 0.0551313
+ExecutionTime = 7.06 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0219
+
+Qdot = 73870.6, T = 1000.59, p = 1.36789e+06, CH4 = 0.0551308
+ExecutionTime = 7.09 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.022
+
+Qdot = 74420.6, T = 1000.59, p = 1.36789e+06, CH4 = 0.0551302
+ExecutionTime = 7.12 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0221
+
+Qdot = 74975.2, T = 1000.6, p = 1.36789e+06, CH4 = 0.0551297
+ExecutionTime = 7.15 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0222
+
+Qdot = 75534.5, T = 1000.6, p = 1.36789e+06, CH4 = 0.0551292
+ExecutionTime = 7.18 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0223
+
+Qdot = 76098.4, T = 1000.61, p = 1.36789e+06, CH4 = 0.0551287
+ExecutionTime = 7.21 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0224
+
+Qdot = 76667, T = 1000.61, p = 1.36789e+06, CH4 = 0.0551282
+ExecutionTime = 7.24 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0225
+
+Qdot = 77240.5, T = 1000.62, p = 1.36789e+06, CH4 = 0.0551276
+ExecutionTime = 7.27 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0226
+
+Qdot = 77818.7, T = 1000.63, p = 1.36789e+06, CH4 = 0.0551271
+ExecutionTime = 7.3 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0227
+
+Qdot = 78401.9, T = 1000.63, p = 1.36789e+06, CH4 = 0.0551265
+ExecutionTime = 7.33 s  ClockTime = 7 s
+
+deltaT = 0.0001
+Time = 0.0228
+
+Qdot = 78990, T = 1000.64, p = 1.36789e+06, CH4 = 0.055126
+ExecutionTime = 7.37 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.0229
+
+Qdot = 79583.1, T = 1000.64, p = 1.36789e+06, CH4 = 0.0551255
+ExecutionTime = 7.4 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.023
+
+Qdot = 80181.3, T = 1000.65, p = 1.36789e+06, CH4 = 0.0551249
+ExecutionTime = 7.43 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.0231
+
+Qdot = 80784.5, T = 1000.66, p = 1.36789e+06, CH4 = 0.0551244
+ExecutionTime = 7.46 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.0232
+
+Qdot = 81392.9, T = 1000.66, p = 1.36789e+06, CH4 = 0.0551238
+ExecutionTime = 7.49 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.0233
+
+Qdot = 82006.5, T = 1000.67, p = 1.36789e+06, CH4 = 0.0551232
+ExecutionTime = 7.52 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.0234
+
+Qdot = 82625.4, T = 1000.67, p = 1.36789e+06, CH4 = 0.0551227
+ExecutionTime = 7.55 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.0235
+
+Qdot = 83249.6, T = 1000.68, p = 1.36789e+06, CH4 = 0.0551221
+ExecutionTime = 7.58 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.0236
+
+Qdot = 83879.2, T = 1000.69, p = 1.36789e+06, CH4 = 0.0551215
+ExecutionTime = 7.61 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.0237
+
+Qdot = 84514.2, T = 1000.69, p = 1.36789e+06, CH4 = 0.055121
+ExecutionTime = 7.64 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.0238
+
+Qdot = 85154.7, T = 1000.7, p = 1.36789e+06, CH4 = 0.0551204
+ExecutionTime = 7.67 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.0239
+
+Qdot = 85800.8, T = 1000.71, p = 1.36789e+06, CH4 = 0.0551198
+ExecutionTime = 7.7 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.024
+
+Qdot = 86452.4, T = 1000.71, p = 1.36789e+06, CH4 = 0.0551192
+ExecutionTime = 7.73 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.0241
+
+Qdot = 87109.8, T = 1000.72, p = 1.36789e+06, CH4 = 0.0551186
+ExecutionTime = 7.76 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.0242
+
+Qdot = 87772.9, T = 1000.72, p = 1.36789e+06, CH4 = 0.055118
+ExecutionTime = 7.79 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.0243
+
+Qdot = 88441.8, T = 1000.73, p = 1.36789e+06, CH4 = 0.0551174
+ExecutionTime = 7.82 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.0244
+
+Qdot = 89116.6, T = 1000.74, p = 1.36789e+06, CH4 = 0.0551168
+ExecutionTime = 7.86 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.0245
+
+Qdot = 89797.3, T = 1000.74, p = 1.36789e+06, CH4 = 0.0551162
+ExecutionTime = 7.89 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.0246
+
+Qdot = 90483.9, T = 1000.75, p = 1.36789e+06, CH4 = 0.0551156
+ExecutionTime = 7.92 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.0247
+
+Qdot = 91176.7, T = 1000.76, p = 1.36789e+06, CH4 = 0.055115
+ExecutionTime = 7.96 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.0248
+
+Qdot = 91875.6, T = 1000.77, p = 1.36789e+06, CH4 = 0.0551143
+ExecutionTime = 7.99 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.0249
+
+Qdot = 92580.7, T = 1000.77, p = 1.36789e+06, CH4 = 0.0551137
+ExecutionTime = 8.02 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.025
+
+Qdot = 93292, T = 1000.78, p = 1.36789e+06, CH4 = 0.0551131
+ExecutionTime = 8.05 s  ClockTime = 8 s
+ddeltaT = 0.0001
+Time = 0.0251
+
+Qdot = 94009.7, T = 1000.79, p = 1.36789e+06, CH4 = 0.0551124
+ExecutionTime = 8.08 s  ClockTime = 8 s
+ddeltaT = 0.0001
+Time = 0.0252
+
+Qdot = 94733.8, T = 1000.79, p = 1.36789e+06, CH4 = 0.0551118
+ExecutionTime = 8.11 s  ClockTime = 8 s
+ddeltaT = 0.0001
+Time = 0.0253
+
+Qdot = 95464.4, T = 1000.8, p = 1.36789e+06, CH4 = 0.0551111
+ExecutionTime = 8.14 s  ClockTime = 8 s
+ddeltaT = 0.0001
+Time = 0.0254
+
+Qdot = 96201.5, T = 1000.81, p = 1.36789e+06, CH4 = 0.0551105
+ExecutionTime = 8.17 s  ClockTime = 8 s
+ddeltaT = 0.0001
+Time = 0.0255
+
+Qdot = 96945.2, T = 1000.81, p = 1.36789e+06, CH4 = 0.0551098
+ExecutionTime = 8.2 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.0256
+
+Qdot = 97695.7, T = 1000.82, p = 1.36789e+06, CH4 = 0.0551092
+ExecutionTime = 8.23 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.0257
+
+Qdot = 98452.9, T = 1000.83, p = 1.36789e+06, CH4 = 0.0551085
+ExecutionTime = 8.26 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.0258
+
+Qdot = 99217, T = 1000.84, p = 1.36789e+06, CH4 = 0.0551078
+ExecutionTime = 8.29 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.0259
+
+Qdot = 99988.1, T = 1000.84, p = 1.36789e+06, CH4 = 0.0551072
+ExecutionTime = 8.32 s  ClockTime = 8 s
+
+deltaT = 0.0001
+Time = 0.026
+
+Qdot = 100766, T = 1000.85, p = 1.36789e+06, CH4 = 0.0551065
+ExecutionTime = 8.35 s  ClockTime = 9 s
+
+deltaT = 0.0001
+Time = 0.0261
+
+Qdot = 101551, T = 1000.86, p = 1.36789e+06, CH4 = 0.0551058
+ExecutionTime = 8.38 s  ClockTime = 9 s
+
+deltaT = 0.0001
+Time = 0.0262
+
+Qdot = 102344, T = 1000.87, p = 1.36789e+06, CH4 = 0.0551051
+ExecutionTime = 8.41 s  ClockTime = 9 s
+
+deltaT = 0.0001
+Time = 0.0263
+
+Qdot = 103143, T = 1000.87, p = 1.36789e+06, CH4 = 0.0551044
+ExecutionTime = 8.44 s  ClockTime = 9 s
+ddeltaT = 0.0001
+Time = 0.0264
+
+Qdot = 103950, T = 1000.88, p = 1.36789e+06, CH4 = 0.0551037
+ExecutionTime = 8.47 s  ClockTime = 9 s
+ddeltaT = 0.0001
+Time = 0.0265
+
+Qdot = 104764, T = 1000.89, p = 1.36789e+06, CH4 = 0.055103
+ExecutionTime = 8.5 s  ClockTime = 9 s
+
+deltaT = 0.0001
+Time = 0.0266
+
+Qdot = 105586, T = 1000.9, p = 1.36789e+06, CH4 = 0.0551023
+ExecutionTime = 8.53 s  ClockTime = 9 s
+
+deltaT = 0.0001
+Time = 0.0267
+
+Qdot = 106416, T = 1000.91, p = 1.36789e+06, CH4 = 0.0551016
+ExecutionTime = 8.56 s  ClockTime = 9 s
+
+deltaT = 0.0001
+Time = 0.0268
+
+Qdot = 107253, T = 1000.91, p = 1.36789e+06, CH4 = 0.0551009
+ExecutionTime = 8.59 s  ClockTime = 9 s
+
+deltaT = 0.0001
+Time = 0.0269
+
+Qdot = 108098, T = 1000.92, p = 1.36789e+06, CH4 = 0.0551001
+ExecutionTime = 8.62 s  ClockTime = 9 s
+
+deltaT = 0.0001
+Time = 0.027
+
+Qdot = 108951, T = 1000.93, p = 1.36789e+06, CH4 = 0.0550994
+ExecutionTime = 8.66 s  ClockTime = 9 s
+
+deltaT = 0.0001
+Time = 0.0271
+
+Qdot = 109811, T = 1000.94, p = 1.36789e+06, CH4 = 0.0550987
+ExecutionTime = 8.69 s  ClockTime = 9 s
+
+deltaT = 0.0001
+Time = 0.0272
+
+Qdot = 110680, T = 1000.95, p = 1.36789e+06, CH4 = 0.0550979
+ExecutionTime = 8.72 s  ClockTime = 9 s
+
+deltaT = 0.0001
+Time = 0.0273
+
+Qdot = 111557, T = 1000.95, p = 1.36789e+06, CH4 = 0.0550972
+ExecutionTime = 8.75 s  ClockTime = 9 s
+ddeltaT = 0.0001
+Time = 0.0274
+
+Qdot = 112442, T = 1000.96, p = 1.36789e+06, CH4 = 0.0550964
+ExecutionTime = 8.78 s  ClockTime = 9 s
+ddeltaT = 0.0001
+Time = 0.0275
+
+Qdot = 113336, T = 1000.97, p = 1.36789e+06, CH4 = 0.0550957
+ExecutionTime = 8.81 s  ClockTime = 9 s
+ddeltaT = 0.0001
+Time = 0.0276
+
+Qdot = 114238, T = 1000.98, p = 1.36789e+06, CH4 = 0.0550949
+ExecutionTime = 8.84 s  ClockTime = 9 s
+ddeltaT = 0.0001
+Time = 0.0277
+
+Qdot = 115149, T = 1000.99, p = 1.36789e+06, CH4 = 0.0550941
+ExecutionTime = 8.87 s  ClockTime = 9 s
+ddeltaT = 0.0001
+Time = 0.0278
+
+Qdot = 116068, T = 1001, p = 1.36789e+06, CH4 = 0.0550933
+ExecutionTime = 8.9 s  ClockTime = 9 s
+
+deltaT = 0.0001
+Time = 0.0279
+
+Qdot = 116996, T = 1001.01, p = 1.36789e+06, CH4 = 0.0550926
+ExecutionTime = 8.93 s  ClockTime = 9 s
+
+deltaT = 0.0001
+Time = 0.028
+
+Qdot = 117933, T = 1001.01, p = 1.36789e+06, CH4 = 0.0550918
+ExecutionTime = 8.96 s  ClockTime = 9 s
+
+deltaT = 0.0001
+Time = 0.0281
+
+Qdot = 118879, T = 1001.02, p = 1.36789e+06, CH4 = 0.055091
+ExecutionTime = 8.99 s  ClockTime = 9 s
+
+deltaT = 0.0001
+Time = 0.0282
+
+Qdot = 119834, T = 1001.03, p = 1.36789e+06, CH4 = 0.0550902
+ExecutionTime = 9.02 s  ClockTime = 9 s
+
+deltaT = 0.0001
+Time = 0.0283
+
+Qdot = 120798, T = 1001.04, p = 1.36789e+06, CH4 = 0.0550894
+ExecutionTime = 9.05 s  ClockTime = 9 s
+
+deltaT = 0.0001
+Time = 0.0284
+
+Qdot = 121771, T = 1001.05, p = 1.36789e+06, CH4 = 0.0550886
+ExecutionTime = 9.08 s  ClockTime = 9 s
+
+deltaT = 0.0001
+Time = 0.0285
+
+Qdot = 122754, T = 1001.06, p = 1.36789e+06, CH4 = 0.0550878
+ExecutionTime = 9.11 s  ClockTime = 9 s
+
+deltaT = 0.0001
+Time = 0.0286
+
+Qdot = 123747, T = 1001.07, p = 1.36789e+06, CH4 = 0.0550869
+ExecutionTime = 9.14 s  ClockTime = 9 s
+ddeltaT = 0.0001
+Time = 0.0287
+
+Qdot = 124749, T = 1001.08, p = 1.36789e+06, CH4 = 0.0550861
+ExecutionTime = 9.17 s  ClockTime = 9 s
+ddeltaT = 0.0001
+Time = 0.0288
+
+Qdot = 125761, T = 1001.09, p = 1.36789e+06, CH4 = 0.0550853
+ExecutionTime = 9.2 s  ClockTime = 9 s
+
+deltaT = 0.0001
+Time = 0.0289
+
+Qdot = 126783, T = 1001.1, p = 1.36789e+06, CH4 = 0.0550844
+ExecutionTime = 9.23 s  ClockTime = 9 s
+
+deltaT = 0.0001
+Time = 0.029
+
+Qdot = 127814, T = 1001.11, p = 1.36789e+06, CH4 = 0.0550836
+ExecutionTime = 9.26 s  ClockTime = 9 s
+
+deltaT = 0.0001
+Time = 0.0291
+
+Qdot = 128856, T = 1001.12, p = 1.36789e+06, CH4 = 0.0550827
+ExecutionTime = 9.29 s  ClockTime = 9 s
+
+deltaT = 0.0001
+Time = 0.0292
+
+Qdot = 129909, T = 1001.13, p = 1.36789e+06, CH4 = 0.0550819
+ExecutionTime = 9.33 s  ClockTime = 9 s
+
+deltaT = 0.0001
+Time = 0.0293
+
+Qdot = 130971, T = 1001.14, p = 1.36789e+06, CH4 = 0.055081
+ExecutionTime = 9.36 s  ClockTime = 10 s
+ddeltaT = 0.0001
+Time = 0.0294
+
+Qdot = 132044, T = 1001.15, p = 1.36789e+06, CH4 = 0.0550801
+ExecutionTime = 9.39 s  ClockTime = 10 s
+ddeltaT = 0.0001
+Time = 0.0295
+
+Qdot = 133128, T = 1001.16, p = 1.36789e+06, CH4 = 0.0550792
+ExecutionTime = 9.42 s  ClockTime = 10 s
+ddeltaT = 0.0001
+Time = 0.0296
+
+Qdot = 134223, T = 1001.17, p = 1.36789e+06, CH4 = 0.0550783
+ExecutionTime = 9.45 s  ClockTime = 10 sdedeltaT = 0.0001
+Time = 0.0297
+
+Qdot = 135329, T = 1001.18, p = 1.36789e+06, CH4 = 0.0550774
+ExecutionTime = 9.48 s  ClockTime = 10 sdedeltaT = 0.0001
+Time = 0.0298
+
+Qdot = 136445, T = 1001.19, p = 1.36789e+06, CH4 = 0.0550765
+ExecutionTime = 9.51 s  ClockTime = 10 sdedeltaT = 0.0001
+Time = 0.0299
+
+Qdot = 137573, T = 1001.2, p = 1.36789e+06, CH4 = 0.0550756
+ExecutionTime = 9.54 s  ClockTime = 10 sdedeltaT = 0.0001
+Time = 0.03
+
+Qdot = 138712, T = 1001.21, p = 1.36789e+06, CH4 = 0.0550747
+ExecutionTime = 9.57 s  ClockTime = 10 sdedeltaT = 0.0001
+Time = 0.0301
+
+Qdot = 139863, T = 1001.22, p = 1.36789e+06, CH4 = 0.0550738
+ExecutionTime = 9.63 s  ClockTime = 10 sdedeltaT = 0.0001
+Time = 0.0302
+
+Qdot = 141026, T = 1001.23, p = 1.36789e+06, CH4 = 0.0550729
+ExecutionTime = 9.66 s  ClockTime = 10 sdedeltaT = 0.0001
+Time = 0.0303
+
+Qdot = 142200, T = 1001.24, p = 1.36789e+06, CH4 = 0.0550719
+ExecutionTime = 9.69 s  ClockTime = 10 sdedeltaT = 0.0001
+Time = 0.0304
+
+Qdot = 143386, T = 1001.25, p = 1.36789e+06, CH4 = 0.055071
+ExecutionTime = 9.72 s  ClockTime = 10 sdedeltaT = 0.0001
+Time = 0.0305
+
+Qdot = 144585, T = 1001.26, p = 1.36789e+06, CH4 = 0.05507
+ExecutionTime = 9.75 s  ClockTime = 10 sdedeltaT = 0.0001
+Time = 0.0306
+
+Qdot = 145796, T = 1001.27, p = 1.36789e+06, CH4 = 0.0550691
+ExecutionTime = 9.78 s  ClockTime = 10 sdedeltaT = 0.0001
+Time = 0.0307
+
+Qdot = 147019, T = 1001.28, p = 1.36789e+06, CH4 = 0.0550681
+ExecutionTime = 9.81 s  ClockTime = 10 sdedeltaT = 0.0001
+Time = 0.0308
+
+Qdot = 148255, T = 1001.29, p = 1.36789e+06, CH4 = 0.0550671
+ExecutionTime = 9.84 s  ClockTime = 10 sdedeltaT = 0.0001
+Time = 0.0309
+
+Qdot = 149503, T = 1001.3, p = 1.36789e+06, CH4 = 0.0550661
+ExecutionTime = 9.87 s  ClockTime = 10 sdedeltaT = 0.0001
+Time = 0.031
+
+Qdot = 150765, T = 1001.31, p = 1.36789e+06, CH4 = 0.0550652
+ExecutionTime = 9.9 s  ClockTime = 10 s
+ddeltaT = 0.0001
+Time = 0.0311
+
+Qdot = 152039, T = 1001.33, p = 1.36789e+06, CH4 = 0.0550642
+ExecutionTime = 9.93 s  ClockTime = 10 sdedeltaT = 0.0001
+Time = 0.0312
+
+Qdot = 153327, T = 1001.34, p = 1.36789e+06, CH4 = 0.0550632
+ExecutionTime = 9.96 s  ClockTime = 10 sdedeltaT = 0.0001
+Time = 0.0313
+
+Qdot = 154629, T = 1001.35, p = 1.36789e+06, CH4 = 0.0550621
+ExecutionTime = 9.99 s  ClockTime = 10 sdedeltaT = 0.0001
+Time = 0.0314
+
+Qdot = 155944, T = 1001.36, p = 1.36789e+06, CH4 = 0.0550611
+ExecutionTime = 10.02 s  ClockTime = 10 deldeltaT = 0.0001
+Time = 0.0315
+
+Qdot = 157273, T = 1001.37, p = 1.36789e+06, CH4 = 0.0550601
+ExecutionTime = 10.06 s  ClockTime = 10 deldeltaT = 0.0001
+Time = 0.0316
+
+Qdot = 158616, T = 1001.38, p = 1.36789e+06, CH4 = 0.055059
+ExecutionTime = 10.08 s  ClockTime = 10 deldeltaT = 0.0001
+Time = 0.0317
+
+Qdot = 159973, T = 1001.4, p = 1.36789e+06, CH4 = 0.055058
+ExecutionTime = 10.11 s  ClockTime = 10 deldeltaT = 0.0001
+Time = 0.0318
+
+Qdot = 161345, T = 1001.41, p = 1.36789e+06, CH4 = 0.0550569
+ExecutionTime = 10.15 s  ClockTime = 10 deldeltaT = 0.0001
+Time = 0.0319
+
+Qdot = 162731, T = 1001.42, p = 1.36789e+06, CH4 = 0.0550559
+ExecutionTime = 10.18 s  ClockTime = 10 deldeltaT = 0.0001
+Time = 0.032
+
+Qdot = 164132, T = 1001.43, p = 1.36789e+06, CH4 = 0.0550548
+ExecutionTime = 10.21 s  ClockTime = 10 deldeltaT = 0.0001
+Time = 0.0321
+
+Qdot = 165548, T = 1001.44, p = 1.36789e+06, CH4 = 0.0550537
+ExecutionTime = 10.24 s  ClockTime = 10 deldeltaT = 0.0001
+Time = 0.0322
+
+Qdot = 166980, T = 1001.46, p = 1.36789e+06, CH4 = 0.0550526
+ExecutionTime = 10.27 s  ClockTime = 10 deldeltaT = 0.0001
+Time = 0.0323
+
+Qdot = 168427, T = 1001.47, p = 1.36789e+06, CH4 = 0.0550515
+ExecutionTime = 10.3 s  ClockTime = 10 sdedeltaT = 0.0001
+Time = 0.0324
+
+Qdot = 169889, T = 1001.48, p = 1.36789e+06, CH4 = 0.0550504
+ExecutionTime = 10.33 s  ClockTime = 10 deldeltaT = 0.0001
+Time = 0.0325
+
+Qdot = 171368, T = 1001.49, p = 1.36789e+06, CH4 = 0.0550493
+ExecutionTime = 10.36 s  ClockTime = 11 deldeltaT = 0.0001
+Time = 0.0326
+
+Qdot = 172862, T = 1001.51, p = 1.36789e+06, CH4 = 0.0550482
+ExecutionTime = 10.39 s  ClockTime = 11 deldeltaT = 0.0001
+Time = 0.0327
+
+Qdot = 174373, T = 1001.52, p = 1.36789e+06, CH4 = 0.0550471
+ExecutionTime = 10.42 s  ClockTime = 11 deldeltaT = 0.0001
+Time = 0.0328
+
+Qdot = 175900, T = 1001.53, p = 1.36789e+06, CH4 = 0.0550459
+ExecutionTime = 10.45 s  ClockTime = 11 deldeltaT = 0.0001
+Time = 0.0329
+
+Qdot = 177445, T = 1001.55, p = 1.36789e+06, CH4 = 0.0550448
+ExecutionTime = 10.48 s  ClockTime = 11 deldeltaT = 0.0001
+Time = 0.033
+
+Qdot = 179006, T = 1001.56, p = 1.36789e+06, CH4 = 0.0550436
+ExecutionTime = 10.51 s  ClockTime = 11 deldeltaT = 0.0001
+Time = 0.0331
+
+Qdot = 180584, T = 1001.57, p = 1.36789e+06, CH4 = 0.0550424
+ExecutionTime = 10.54 s  ClockTime = 11 deldeltaT = 0.0001
+Time = 0.0332
+
+Qdot = 182181, T = 1001.59, p = 1.36789e+06, CH4 = 0.0550413
+ExecutionTime = 10.57 s  ClockTime = 11 deldeltaT = 0.0001
+Time = 0.0333
+
+Qdot = 183794, T = 1001.6, p = 1.36789e+06, CH4 = 0.0550401
+ExecutionTime = 10.6 s  ClockTime = 11 sdedeltaT = 0.0001
+Time = 0.0334
+
+Qdot = 185426, T = 1001.61, p = 1.36789e+06, CH4 = 0.0550389
+ExecutionTime = 10.63 s  ClockTime = 11 sdedeltaT = 0.0001
+Time = 0.0335
+
+Qdot = 187077, T = 1001.63, p = 1.36789e+06, CH4 = 0.0550377
+ExecutionTime = 10.66 s  ClockTime = 11 sdedeltaT = 0.0001
+Time = 0.0336
+
+Qdot = 188745, T = 1001.64, p = 1.36789e+06, CH4 = 0.0550364
+ExecutionTime = 10.69 s  ClockTime = 11 sdedeltaT = 0.0001
+Time = 0.0337
+
+Qdot = 190433, T = 1001.66, p = 1.36789e+06, CH4 = 0.0550352
+ExecutionTime = 10.72 s  ClockTime = 11 deldeltaT = 0.0001
+Time = 0.0338
+
+Qdot = 192140, T = 1001.67, p = 1.36789e+06, CH4 = 0.055034
+ExecutionTime = 10.76 s  ClockTime = 11 deldeltaT = 0.0001
+Time = 0.0339
+
+Qdot = 193866, T = 1001.69, p = 1.36789e+06, CH4 = 0.0550327
+ExecutionTime = 10.79 s  ClockTime = 11 deldeltaT = 0.0001
+Time = 0.034
+
+Qdot = 195612, T = 1001.7, p = 1.36789e+06, CH4 = 0.0550315
+ExecutionTime = 10.83 s  ClockTime = 11 deldeltaT = 0.0001
+Time = 0.0341
+
+Qdot = 197378, T = 1001.72, p = 1.36789e+06, CH4 = 0.0550302
+ExecutionTime = 10.86 s  ClockTime = 11 deldeltaT = 0.0001
+Time = 0.0342
+
+Qdot = 199164, T = 1001.73, p = 1.36789e+06, CH4 = 0.0550289
+ExecutionTime = 10.89 s  ClockTime = 11 deldeltaT = 0.0001
+Time = 0.0343
+
+Qdot = 200970, T = 1001.74, p = 1.36789e+06, CH4 = 0.0550276
+ExecutionTime = 10.92 s  ClockTime = 11 deldeltaT = 0.0001
+Time = 0.0344
+
+Qdot = 202798, T = 1001.76, p = 1.36789e+06, CH4 = 0.0550263
+ExecutionTime = 10.95 s  ClockTime = 11 deldeltaT = 0.0001
+Time = 0.0345
+
+Qdot = 204647, T = 1001.78, p = 1.36789e+06, CH4 = 0.055025
+ExecutionTime = 10.98 s  ClockTime = 11 deldeltaT = 0.0001
+Time = 0.0346
+
+Qdot = 206517, T = 1001.79, p = 1.36789e+06, CH4 = 0.0550237
+ExecutionTime = 11.01 s  ClockTime = 11 deldeltaT = 0.0001
+Time = 0.0347
+
+Qdot = 208409, T = 1001.81, p = 1.36789e+06, CH4 = 0.0550223
+ExecutionTime = 11.04 s  ClockTime = deltaTdeltaT = 0.0001
+Time = 0.0348
+
+Qdot = 210324, T = 1001.82, p = 1.36789e+06, CH4 = 0.055021
+ExecutionTime = 11.07 s  ClockTime = deltaTdeltaT = 0.0001
+Time = 0.0349
+
+Qdot = 212261, T = 1001.84, p = 1.36789e+06, CH4 = 0.0550196
+ExecutionTime = 11.1 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.035
+
+Qdot = 214220, T = 1001.85, p = 1.36789e+06, CH4 = 0.0550182
+ExecutionTime = 11.13 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0351
+
+Qdot = 216203, T = 1001.87, p = 1.36789e+06, CH4 = 0.0550168
+ExecutionTime = 11.16 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0352
+
+Qdot = 218210, T = 1001.89, p = 1.36789e+06, CH4 = 0.0550155
+ExecutionTime = 11.19 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0353
+
+Qdot = 220241, T = 1001.9, p = 1.36789e+06, CH4 = 0.055014
+ExecutionTime = 11.22 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0354
+
+Qdot = 222295, T = 1001.92, p = 1.36789e+06, CH4 = 0.0550126
+ExecutionTime = 11.25 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0355
+
+Qdot = 224375, T = 1001.94, p = 1.36789e+06, CH4 = 0.0550112
+ExecutionTime = 11.28 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0356
+
+Qdot = 226480, T = 1001.95, p = 1.36789e+06, CH4 = 0.0550097
+ExecutionTime = 11.31 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0357
+
+Qdot = 228610, T = 1001.97, p = 1.36789e+06, CH4 = 0.0550083
+ExecutionTime = 11.35 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0358
+
+Qdot = 230766, T = 1001.99, p = 1.36789e+06, CH4 = 0.0550068
+ExecutionTime = 11.38 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0359
+
+Qdot = 232948, T = 1002, p = 1.36789e+06, CH4 = 0.0550053
+ExecutionTime = 11.41 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.036
+
+Qdot = 235158, T = 1002.02, p = 1.36789e+06, CH4 = 0.0550038
+ExecutionTime = 11.44 s  ClockTime = deltaTdeltaT = 0.0001
+Time = 0.0361
+
+Qdot = 237394, T = 1002.04, p = 1.36789e+06, CH4 = 0.0550023
+ExecutionTime = 11.47 s  ClockTime = deltaTdeltaT = 0.0001
+Time = 0.0362
+
+Qdot = 239658, T = 1002.06, p = 1.36789e+06, CH4 = 0.0550008
+ExecutionTime = 11.5 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0363
+
+Qdot = 241950, T = 1002.08, p = 1.36789e+06, CH4 = 0.0549993
+ExecutionTime = 11.53 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0364
+
+Qdot = 244270, T = 1002.09, p = 1.36789e+06, CH4 = 0.0549977
+ExecutionTime = 11.56 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0365
+
+Qdot = 246620, T = 1002.11, p = 1.36789e+06, CH4 = 0.0549961
+ExecutionTime = 11.59 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0366
+
+Qdot = 248999, T = 1002.13, p = 1.36789e+06, CH4 = 0.0549946
+ExecutionTime = 11.62 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0367
+
+Qdot = 251407, T = 1002.15, p = 1.36789e+06, CH4 = 0.054993
+ExecutionTime = 11.65 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0368
+
+Qdot = 253847, T = 1002.17, p = 1.36789e+06, CH4 = 0.0549914
+ExecutionTime = 11.68 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0369
+
+Qdot = 256317, T = 1002.19, p = 1.36789e+06, CH4 = 0.0549897
+ExecutionTime = 11.71 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.037
+
+Qdot = 258818, T = 1002.21, p = 1.36789e+06, CH4 = 0.0549881
+ExecutionTime = 11.74 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0371
+
+Qdot = 261352, T = 1002.23, p = 1.36789e+06, CH4 = 0.0549864
+ExecutionTime = 11.77 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0372
+
+Qdot = 263918, T = 1002.25, p = 1.36789e+06, CH4 = 0.0549848
+ExecutionTime = 11.8 s  ClockTime = 12deltdeltaT = 0.0001
+Time = 0.0373
+
+Qdot = 266517, T = 1002.27, p = 1.36789e+06, CH4 = 0.0549831
+ExecutionTime = 11.84 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0374
+
+Qdot = 269150, T = 1002.29, p = 1.36789e+06, CH4 = 0.0549814
+ExecutionTime = 11.87 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0375
+
+Qdot = 271817, T = 1002.31, p = 1.36789e+06, CH4 = 0.0549797
+ExecutionTime = 11.9 s  ClockTime = 12deltdeltaT = 0.0001
+Time = 0.0376
+
+Qdot = 274519, T = 1002.33, p = 1.36789e+06, CH4 = 0.0549779
+ExecutionTime = 11.93 s  ClockTime = 12deltdeltaT = 0.0001
+Time = 0.0377
+
+Qdot = 277256, T = 1002.35, p = 1.36789e+06, CH4 = 0.0549762
+ExecutionTime = 11.96 s  ClockTime = 12deltdeltaT = 0.0001
+Time = 0.0378
+
+Qdot = 280029, T = 1002.37, p = 1.36789e+06, CH4 = 0.0549744
+ExecutionTime = 11.99 s  ClockTime = 12deltdeltaT = 0.0001
+Time = 0.0379
+
+Qdot = 282839, T = 1002.39, p = 1.36789e+06, CH4 = 0.0549727
+ExecutionTime = 12.02 s  ClockTime = 12deltdeltaT = 0.0001
+Time = 0.038
+
+Qdot = 285686, T = 1002.41, p = 1.36789e+06, CH4 = 0.0549709
+ExecutionTime = 12.05 s  ClockTime = 12deltdeltaT = 0.0001
+Time = 0.0381
+
+Qdot = 288571, T = 1002.43, p = 1.36789e+06, CH4 = 0.0549691
+ExecutionTime = 12.08 s  ClockTime = 12deltdeltaT = 0.0001
+Time = 0.0382
+
+Qdot = 291495, T = 1002.45, p = 1.36789e+06, CH4 = 0.0549672
+ExecutionTime = 12.11 s  ClockTime = 12deltdeltaT = 0.0001
+Time = 0.0383
+
+Qdot = 294457, T = 1002.47, p = 1.36789e+06, CH4 = 0.0549654
+ExecutionTime = 12.14 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0384
+
+Qdot = 297460, T = 1002.5, p = 1.36789e+06, CH4 = 0.0549635
+ExecutionTime = 12.17 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0385
+
+Qdot = 300504, T = 1002.52, p = 1.36789e+06, CH4 = 0.0549616
+ExecutionTime = 12.2 s  ClockTime = 12deltdeltaT = 0.0001
+Time = 0.0386
+
+Qdot = 303588, T = 1002.54, p = 1.36789e+06, CH4 = 0.0549597
+ExecutionTime = 12.23 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0387
+
+Qdot = 306715, T = 1002.56, p = 1.36789e+06, CH4 = 0.0549578
+ExecutionTime = 12.26 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0388
+
+Qdot = 309885, T = 1002.59, p = 1.36789e+06, CH4 = 0.0549559
+ExecutionTime = 12.29 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0389
+
+Qdot = 313099, T = 1002.61, p = 1.36789e+06, CH4 = 0.0549539
+ExecutionTime = 12.32 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.039
+
+Qdot = 316357, T = 1002.63, p = 1.36789e+06, CH4 = 0.0549519
+ExecutionTime = 12.35 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0391
+
+Qdot = 319660, T = 1002.66, p = 1.36789e+06, CH4 = 0.0549499
+ExecutionTime = 12.38 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0392
+
+Qdot = 323010, T = 1002.68, p = 1.36789e+06, CH4 = 0.0549479
+ExecutionTime = 12.42 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0393
+
+Qdot = 326406, T = 1002.71, p = 1.36789e+06, CH4 = 0.0549459
+ExecutionTime = 12.45 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0394
+
+Qdot = 329850, T = 1002.73, p = 1.36789e+06, CH4 = 0.0549439
+ExecutionTime = 12.48 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0395
+
+Qdot = 333344, T = 1002.76, p = 1.36789e+06, CH4 = 0.0549418
+ExecutionTime = 12.51 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0396
+
+Qdot = 336886, T = 1002.78, p = 1.36789e+06, CH4 = 0.0549397
+ExecutionTime = 12.54 s  ClockTime = deltaTdeltaT = 0.0001
+Time = 0.0397
+
+Qdot = 340480, T = 1002.81, p = 1.36789e+06, CH4 = 0.0549376
+ExecutionTime = 12.57 s  ClockTime = deltaTdeltaT = 0.0001
+Time = 0.0398
+
+Qdot = 344125, T = 1002.83, p = 1.36789e+06, CH4 = 0.0549354
+ExecutionTime = 12.6 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0399
+
+Qdot = 347822, T = 1002.86, p = 1.36789e+06, CH4 = 0.0549333
+ExecutionTime = 12.63 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0Qdot Qdot = 351573, T = 1002.88, p = 1.36789e+06, CH4 = 0.0549311
+ExecutionTime = 12.66 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0401
+
+Qdot = 355379, T = 1002.91, p = 1.36789e+06, CH4 = 0.0549289
+ExecutionTime = 12.71 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0402
+
+Qdot = 359241, T = 1002.94, p = 1.36789e+06, CH4 = 0.0549267
+ExecutionTime = 12.75 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0403
+
+Qdot = 363159, T = 1002.96, p = 1.36789e+06, CH4 = 0.0549244
+ExecutionTime = 12.78 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0404
+
+Qdot = 367135, T = 1002.99, p = 1.36789e+06, CH4 = 0.0549222
+ExecutionTime = 12.81 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0405
+
+Qdot = 371170, T = 1003.02, p = 1.36789e+06, CH4 = 0.0549199
+ExecutionTime = 12.84 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0406
+
+Qdot = 375265, T = 1003.05, p = 1.36789e+06, CH4 = 0.0549176
+ExecutionTime = 12.87 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0407
+
+Qdot = 379422, T = 1003.08, p = 1.36789e+06, CH4 = 0.0549152
+ExecutionTime = 12.9 s  ClockTime = 13deltdeltaT = 0.0001
+Time = 0.0408
+
+Qdot = 383641, T = 1003.1, p = 1.36789e+06, CH4 = 0.0549129
+ExecutionTime = 12.93 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0409
+
+Qdot = 387924, T = 1003.13, p = 1.36789e+06, CH4 = 0.0549105
+ExecutionTime = 12.96 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.041
+
+Qdot = 392272, T = 1003.16, p = 1.36789e+06, CH4 = 0.054908
+ExecutionTime = 12.99 s  ClockTime = 1deltadeltaT = 0.0001
+Time = 0.0411
+
+Qdot = 396686, T = 1003.19, p = 1.36789e+06, CH4 = 0.0549056
+ExecutionTime = 13.02 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0412
+
+Qdot = 401169, T = 1003.22, p = 1.36789e+06, CH4 = 0.0549031
+ExecutionTime = 13.05 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0413
+
+Qdot = 405720, T = 1003.25, p = 1.36789e+06, CH4 = 0.0549007
+ExecutionTime = 13.08 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0414
+
+Qdot = 410342, T = 1003.28, p = 1.36789e+06, CH4 = 0.0548981
+ExecutionTime = 13.11 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0415
+
+Qdot = 415037, T = 1003.31, p = 1.36789e+06, CH4 = 0.0548956
+ExecutionTime = 13.14 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0416
+
+Qdot = 419805, T = 1003.34, p = 1.36789e+06, CH4 = 0.054893
+ExecutionTime = 13.17 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0417
+
+Qdot = 424648, T = 1003.38, p = 1.36789e+06, CH4 = 0.0548904
+ExecutionTime = 13.2 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0418
+
+Qdot = 429568, T = 1003.41, p = 1.36789e+06, CH4 = 0.0548878
+ExecutionTime = 13.23 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0419
+
+Qdot = 434566, T = 1003.44, p = 1.36789e+06, CH4 = 0.0548851
+ExecutionTime = 13.26 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.042
+
+Qdot = 439644, T = 1003.47, p = 1.36789e+06, CH4 = 0.0548825
+ExecutionTime = 13.3 s  ClockTime = deltaTdeltaT = 0.0001
+Time = 0.0421
+
+Qdot = 444804, T = 1003.51, p = 1.36789e+06, CH4 = 0.0548798
+ExecutionTime = 13.33 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0422
+
+Qdot = 450047, T = 1003.54, p = 1.36789e+06, CH4 = 0.054877
+ExecutionTime = 13.36 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0423
+
+Qdot = 455376, T = 1003.57, p = 1.36789e+06, CH4 = 0.0548742
+ExecutionTime = 13.39 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0424
+
+Qdot = 460792, T = 1003.61, p = 1.36789e+06, CH4 = 0.0548714
+ExecutionTime = 13.43 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0425
+
+Qdot = 466297, T = 1003.64, p = 1.36789e+06, CH4 = 0.0548686
+ExecutionTime = 13.46 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0426
+
+Qdot = 471893, T = 1003.68, p = 1.36789e+06, CH4 = 0.0548657
+ExecutionTime = 13.49 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0427
+
+Qdot = 477582, T = 1003.71, p = 1.36789e+06, CH4 = 0.0548628
+ExecutionTime = 13.52 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0428
+
+Qdot = 483367, T = 1003.75, p = 1.36789e+06, CH4 = 0.0548599
+ExecutionTime = 13.55 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0429
+
+Qdot = 489248, T = 1003.79, p = 1.36789e+06, CH4 = 0.0548569
+ExecutionTime = 13.58 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.043
+
+Qdot = 495229, T = 1003.82, p = 1.36789e+06, CH4 = 0.0548539
+ExecutionTime = 13.61 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0431
+
+Qdot = 501312, T = 1003.86, p = 1.36789e+06, CH4 = 0.0548509
+ExecutionTime = 13.64 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0432
+
+Qdot = 507499, T = 1003.9, p = 1.36789e+06, CH4 = 0.0548478
+ExecutionTime = 13.67 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0433
+
+Qdot = 513793, T = 1003.94, p = 1.36789e+06, CH4 = 0.0548447
+ExecutionTime = 13.7 s  ClockTime = deltaTdeltaT = 0.0001
+Time = 0.0434
+
+Qdot = 520195, T = 1003.97, p = 1.36789e+06, CH4 = 0.0548416
+ExecutionTime = 13.73 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0435
+
+Qdot = 526709, T = 1004.01, p = 1.36789e+06, CH4 = 0.0548384
+ExecutionTime = 13.76 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0436
+
+Qdot = 533337, T = 1004.05, p = 1.36789e+06, CH4 = 0.0548352
+ExecutionTime = 13.79 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0437
+
+Qdot = 540082, T = 1004.09, p = 1.36789e+06, CH4 = 0.054832
+ExecutionTime = 13.82 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0438
+
+Qdot = 546946, T = 1004.13, p = 1.36789e+06, CH4 = 0.0548287
+ExecutionTime = 13.86 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0439
+
+Qdot = 553933, T = 1004.18, p = 1.36789e+06, CH4 = 0.0548253
+ExecutionTime = 13.89 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.044
+
+Qdot = 561045, T = 1004.22, p = 1.36789e+06, CH4 = 0.054822
+ExecutionTime = 13.92 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0441
+
+Qdot = 568286, T = 1004.26, p = 1.36789e+06, CH4 = 0.0548186
+ExecutionTime = 13.95 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0442
+
+Qdot = 575658, T = 1004.3, p = 1.36789e+06, CH4 = 0.0548151
+ExecutionTime = 13.98 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0443
+
+Qdot = 583164, T = 1004.35, p = 1.36789e+06, CH4 = 0.0548116
+ExecutionTime = 14.01 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0444
+
+Qdot = 590809, T = 1004.39, p = 1.36789e+06, CH4 = 0.0548081
+ExecutionTime = 14.04 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0445
+
+Qdot = 598596, T = 1004.43, p = 1.36789e+06, CH4 = 0.0548045
+ExecutionTime = 14.07 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0446
+
+Qdot = 606527, T = 1004.48, p = 1.36789e+06, CH4 = 0.0548009
+ExecutionTime = 14.1 s  ClockTime = deltaTdeltaT = 0.0001
+Time = 0.0447
+
+Qdot = 614607, T = 1004.53, p = 1.36789e+06, CH4 = 0.0547972
+ExecutionTime = 14.13 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0448
+
+Qdot = 622839, T = 1004.57, p = 1.36789e+06, CH4 = 0.0547935
+ExecutionTime = 14.16 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0449
+
+Qdot = 631228, T = 1004.62, p = 1.36789e+06, CH4 = 0.0547897
+ExecutionTime = 14.19 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.045
+
+Qdot = 639777, T = 1004.67, p = 1.36789e+06, CH4 = 0.0547859
+ExecutionTime = 14.22 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0451
+
+Qdot = 648490, T = 1004.71, p = 1.36789e+06, CH4 = 0.0547821
+ExecutionTime = 14.25 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0452
+
+Qdot = 657373, T = 1004.76, p = 1.36789e+06, CH4 = 0.0547782
+ExecutionTime = 14.28 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0453
+
+Qdot = 666428, T = 1004.81, p = 1.36789e+06, CH4 = 0.0547742
+ExecutionTime = 14.31 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0454
+
+Qdot = 675661, T = 1004.86, p = 1.36789e+06, CH4 = 0.0547702
+ExecutionTime = 14.34 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0455
+
+Qdot = 685077, T = 1004.91, p = 1.36789e+06, CH4 = 0.0547661
+ExecutionTime = 14.37 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0456
+
+Qdot = 694680, T = 1004.97, p = 1.36789e+06, CH4 = 0.054762
+ExecutionTime = 14.4 s  ClockTime = deltaTdeltaT = 0.0001
+Time = 0.0457
+
+Qdot = 704475, T = 1005.02, p = 1.36789e+06, CH4 = 0.0547579
+ExecutionTime = 14.44 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0458
+
+Qdot = 714468, T = 1005.07, p = 1.36789e+06, CH4 = 0.0547536
+ExecutionTime = 14.47 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0459
+
+Qdot = 724663, T = 1005.13, p = 1.36789e+06, CH4 = 0.0547494
+ExecutionTime = 14.5 s  ClockTime = deltaTdeltaT = 0.0001
+Time = 0.046
+
+Qdot = 735068, T = 1005.18, p = 1.36789e+06, CH4 = 0.054745
+ExecutionTime = 14.53 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0461
+
+Qdot = 745687, T = 1005.24, p = 1.36789e+06, CH4 = 0.0547406
+ExecutionTime = 14.56 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0462
+
+Qdot = 756526, T = 1005.29, p = 1.36789e+06, CH4 = 0.0547362
+ExecutionTime = 14.59 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0463
+
+Qdot = 767591, T = 1005.35, p = 1.36789e+06, CH4 = 0.0547317
+ExecutionTime = 14.62 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0464
+
+Qdot = 778890, T = 1005.41, p = 1.36789e+06, CH4 = 0.0547271
+ExecutionTime = 14.65 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0465
+
+Qdot = 790428, T = 1005.47, p = 1.36789e+06, CH4 = 0.0547224
+ExecutionTime = 14.68 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0466
+
+Qdot = 802213, T = 1005.53, p = 1.36789e+06, CH4 = 0.0547177
+ExecutionTime = 14.71 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0467
+
+Qdot = 814252, T = 1005.59, p = 1.36789e+06, CH4 = 0.054713
+ExecutionTime = 14.74 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0468
+
+Qdot = 826551, T = 1005.65, p = 1.36789e+06, CH4 = 0.0547081
+ExecutionTime = 14.77 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0469
+
+Qdot = 839119, T = 1005.71, p = 1.36789e+06, CH4 = 0.0547032
+ExecutionTime = 14.8 s  ClockTime = deltaTdeltaT = 0.0001
+Time = 0.047
+
+Qdot = 851964, T = 1005.77, p = 1.36789e+06, CH4 = 0.0546983
+ExecutionTime = 14.83 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0471
+
+Qdot = 865094, T = 1005.84, p = 1.36789e+06, CH4 = 0.0546932
+ExecutionTime = 14.86 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0472
+
+Qdot = 878518, T = 1005.9, p = 1.36789e+06, CH4 = 0.0546881
+ExecutionTime = 14.89 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0473
+
+Qdot = 892244, T = 1005.97, p = 1.36789e+06, CH4 = 0.0546829
+ExecutionTime = 14.92 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0474
+
+Qdot = 906283, T = 1006.04, p = 1.36789e+06, CH4 = 0.0546776
+ExecutionTime = 14.95 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0475
+
+Qdot = 920642, T = 1006.1, p = 1.36789e+06, CH4 = 0.0546723
+ExecutionTime = 14.98 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0476
+
+Qdot = 935333, T = 1006.17, p = 1.36789e+06, CH4 = 0.0546668
+ExecutionTime = 15.02 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0477
+
+Qdot = 950366, T = 1006.25, p = 1.36789e+06, CH4 = 0.0546613
+ExecutionTime = 15.05 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0478
+
+Qdot = 965752, T = 1006.32, p = 1.36789e+06, CH4 = 0.0546557
+ExecutionTime = 15.08 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0479
+
+Qdot = 981501, T = 1006.39, p = 1.36789e+06, CH4 = 0.0546501
+ExecutionTime = 15.11 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.048
+
+Qdot = 997627, T = 1006.46, p = 1.36789e+06, CH4 = 0.0546443
+ExecutionTime = 15.14 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0481
+
+Qdot = 1.01414e+06, T = 1006.54, p = 1.36789e+06, CH4 = 0.0546384
+ExecutionTime = 15.17 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0482
+
+Qdot = 1.03105e+06, T = 1006.62, p = 1.36789e+06, CH4 = 0.0546325
+ExecutionTime = 15.2 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0483
+
+Qdot = 1.04838e+06, T = 1006.69, p = 1.36789e+06, CH4 = 0.0546265
+ExecutionTime = 15.23 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0484
+
+Qdot = 1.06614e+06, T = 1006.77, p = 1.36789e+06, CH4 = 0.0546203
+ExecutionTime = 15.26 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0485
+
+Qdot = 1.08433e+06, T = 1006.85, p = 1.36789e+06, CH4 = 0.0546141
+ExecutionTime = 15.29 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0486
+
+Qdot = 1.10299e+06, T = 1006.94, p = 1.36789e+06, CH4 = 0.0546078
+ExecutionTime = 15.32 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0487
+
+Qdot = 1.12212e+06, T = 1007.02, p = 1.36789e+06, CH4 = 0.0546013
+ExecutionTime = 15.35 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0488
+
+Qdot = 1.14173e+06, T = 1007.1, p = 1.36789e+06, CH4 = 0.0545948
+ExecutionTime = 15.38 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0489
+
+Qdot = 1.16185e+06, T = 1007.19, p = 1.36789e+06, CH4 = 0.0545881
+ExecutionTime = 15.41 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.049
+
+Qdot = 1.1825e+06, T = 1007.28, p = 1.36789e+06, CH4 = 0.0545814
+ExecutionTime = 15.44 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0491
+
+Qdot = 1.20369e+06, T = 1007.37, p = 1.36789e+06, CH4 = 0.0545745
+ExecutionTime = 15.47 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0492
+
+Qdot = 1.22544e+06, T = 1007.46, p = 1.36789e+06, CH4 = 0.0545675
+ExecutionTime = 15.51 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0493
+
+Qdot = 1.24777e+06, T = 1007.55, p = 1.36789e+06, CH4 = 0.0545604
+ExecutionTime = 15.54 s  ClockTimedeltaT = deltaT = 0.0001
+Time = 0.0494
+
+Qdot = 1.27071e+06, T = 1007.65, p = 1.36789e+06, CH4 = 0.0545532
+ExecutionTime = 15.57 s  ClockTimedeltaT = deltaT = 0.0001
+Time = 0.0495
+
+Qdot = 1.29427e+06, T = 1007.74, p = 1.36789e+06, CH4 = 0.0545458
+ExecutionTime = 15.6 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0496
+
+Qdot = 1.31849e+06, T = 1007.84, p = 1.36789e+06, CH4 = 0.0545384
+ExecutionTime = 15.63 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0497
+
+Qdot = 1.34337e+06, T = 1007.94, p = 1.36789e+06, CH4 = 0.0545308
+ExecutionTime = 15.66 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0498
+
+Qdot = 1.36896e+06, T = 1008.04, p = 1.36789e+06, CH4 = 0.054523
+ExecutionTime = 15.69 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0499
+
+Qdot = 1.39527e+06, T = 1008.15, p = 1.36789e+06, CH4 = 0.0545151
+ExecutionTime = 15.72 s  ClockTime deltaT =deltaT = 0.0001
+Time Qdot = 1Qdot = 1.42233e+06, T = 1008.25, p = 1.36789e+06, CH4 = 0.0545071
+ExecutionTime = 15.75 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0501
+
+Qdot = 1.45018e+06, T = 1008.36, p = 1.36789e+06, CH4 = 0.0544989
+ExecutionTime = 15.81 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0502
+
+Qdot = 1.47885e+06, T = 1008.47, p = 1.36789e+06, CH4 = 0.0544906
+ExecutionTime = 15.84 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0503
+
+Qdot = 1.50836e+06, T = 1008.58, p = 1.36789e+06, CH4 = 0.0544821
+ExecutionTime = 15.87 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0504
+
+Qdot = 1.53876e+06, T = 1008.7, p = 1.36789e+06, CH4 = 0.0544735
+ExecutionTime = 15.9 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0505
+
+Qdot = 1.57007e+06, T = 1008.81, p = 1.36789e+06, CH4 = 0.0544647
+ExecutionTime = 15.93 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0506
+
+Qdot = 1.60234e+06, T = 1008.93, p = 1.36789e+06, CH4 = 0.0544557
+ExecutionTime = 15.96 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0507
+
+Qdot = 1.6356e+06, T = 1009.05, p = 1.36789e+06, CH4 = 0.0544465
+ExecutionTime = 15.99 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0508
+
+Qdot = 1.6699e+06, T = 1009.18, p = 1.36789e+06, CH4 = 0.0544372
+ExecutionTime = 16.02 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0509
+
+Qdot = 1.70529e+06, T = 1009.3, p = 1.36789e+06, CH4 = 0.0544277
+ExecutionTime = 16.05 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.051
+
+Qdot = 1.7418e+06, T = 1009.43, p = 1.36789e+06, CH4 = 0.054418
+ExecutionTime = 16.08 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0511
+
+Qdot = 1.77949e+06, T = 1009.57, p = 1.36789e+06, CH4 = 0.0544081
+ExecutionTime = 16.11 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0512
+
+Qdot = 1.81842e+06, T = 1009.7, p = 1.36789e+06, CH4 = 0.054398
+ExecutionTime = 16.14 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0513
+
+Qdot = 1.85863e+06, T = 1009.84, p = 1.36789e+06, CH4 = 0.0543877
+ExecutionTime = 16.18 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0514
+
+Qdot = 1.90018e+06, T = 1009.98, p = 1.36789e+06, CH4 = 0.0543772
+ExecutionTime = 16.21 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0515
+
+Qdot = 1.94314e+06, T = 1010.12, p = 1.36789e+06, CH4 = 0.0543664
+ExecutionTime = 16.24 s  ClockTimedeltaT = deltaT = 0.0001
+Time = 0.0516
+
+Qdot = 1.98757e+06, T = 1010.27, p = 1.36789e+06, CH4 = 0.0543555
+ExecutionTime = 16.27 s  ClockTimedeltaT = deltaT = 0.0001
+Time = 0.0517
+
+Qdot = 2.03353e+06, T = 1010.42, p = 1.36789e+06, CH4 = 0.0543442
+ExecutionTime = 16.3 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0518
+
+Qdot = 2.08112e+06, T = 1010.58, p = 1.36789e+06, CH4 = 0.0543328
+ExecutionTime = 16.33 s  ClockTimedeltaT = deltaT = 0.0001
+Time = 0.0519
+
+Qdot = 2.13039e+06, T = 1010.74, p = 1.36789e+06, CH4 = 0.0543211
+ExecutionTime = 16.36 s  ClockTimedeltaT = deltaT = 0.0001
+Time = 0.052
+
+Qdot = 2.18143e+06, T = 1010.9, p = 1.36789e+06, CH4 = 0.0543091
+ExecutionTime = 16.39 s  ClockTimedeltaT = deltaT = 0.0001
+Time = 0.0521
+
+Qdot = 2.23434e+06, T = 1011.06, p = 1.36789e+06, CH4 = 0.0542969
+ExecutionTime = 16.42 s  ClockTimedeltaT = deltaT = 0.0001
+Time = 0.0522
+
+Qdot = 2.2892e+06, T = 1011.23, p = 1.36789e+06, CH4 = 0.0542844
+ExecutionTime = 16.45 s  ClockTimedeltaT = deltaT = 0.0001
+Time = 0.0523
+
+Qdot = 2.34612e+06, T = 1011.41, p = 1.36789e+06, CH4 = 0.0542715
+ExecutionTime = 16.48 s  ClockTimedeltaT = deltaT = 0.0001
+Time = 0.0524
+
+Qdot = 2.40519e+06, T = 1011.59, p = 1.36789e+06, CH4 = 0.0542584
+ExecutionTime = 16.51 s  ClockTimedeltaT = deltaT = 0.0001
+Time = 0.0525
+
+Qdot = 2.46653e+06, T = 1011.77, p = 1.36789e+06, CH4 = 0.054245
+ExecutionTime = 16.54 s  ClockTimedeltaT = deltaT = 0.0001
+Time = 0.0526
+
+Qdot = 2.53026e+06, T = 1011.96, p = 1.36789e+06, CH4 = 0.0542313
+ExecutionTime = 16.57 s  ClockTimedeltaT = deltaT = 0.0001
+Time = 0.0527
+
+Qdot = 2.59652e+06, T = 1012.15, p = 1.36789e+06, CH4 = 0.0542172
+ExecutionTime = 16.6 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0528
+
+Qdot = 2.66543e+06, T = 1012.35, p = 1.36789e+06, CH4 = 0.0542027
+ExecutionTime = 16.63 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0529
+
+Qdot = 2.73714e+06, T = 1012.55, p = 1.36789e+06, CH4 = 0.0541879
+ExecutionTime = 16.66 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.053
+
+Qdot = 2.81181e+06, T = 1012.76, p = 1.36789e+06, CH4 = 0.0541728
+ExecutionTime = 16.69 s  ClockTime deltaT =deltaT = 0.0001
+Time = 0.0531
+
+Qdot = 2.88961e+06, T = 1012.98, p = 1.36789e+06, CH4 = 0.0541572
+ExecutionTime = 16.72 s  ClockTimedeltaT = deltaT = 0.0001
+Time = 0.0532
+
+Qdot = 2.97071e+06, T = 1013.2, p = 1.36789e+06, CH4 = 0.0541412
+ExecutionTime = 16.76 s  ClockTimedeltaT = deltaT = 0.0001
+Time = 0.0533
+
+Qdot = 3.05532e+06, T = 1013.42, p = 1.36789e+06, CH4 = 0.0541249
+ExecutionTime = 16.79 s  ClockTimedeltaT = deltaT = 0.0001
+Time = 0.0534
+
+Qdot = 3.14364e+06, T = 1013.66, p = 1.36789e+06, CH4 = 0.054108
+ExecutionTime = 16.82 s  ClockTimedeltaT = deltaT = 0.0001
+Time = 0.0535
+
+Qdot = 3.23589e+06, T = 1013.9, p = 1.36789e+06, CH4 = 0.0540907
+ExecutionTime = 16.85 s  ClockTimedeltaT = deltaT = 0.0001
+Time = 0.0536
+
+Qdot = 3.33231e+06, T = 1014.14, p = 1.36789e+06, CH4 = 0.0540729
+ExecutionTime = 16.88 s  ClockTimedeltaT = deltaT = 0.0001
+Time = 0.0537
+
+Qdot = 3.43317e+06, T = 1014.4, p = 1.36789e+06, CH4 = 0.0540547
+ExecutionTime = 16.91 s  ClockTimedeltaT = deltaT = 0.0001
+Time = 0.0538
+
+Qdot = 3.53875e+06, T = 1014.66, p = 1.36789e+06, CH4 = 0.0540359
+ExecutionTime = 16.94 s  ClockTimedeltaT = deltaT = 0.0001
+Time = 0.0539
+
+Qdot = 3.64935e+06, T = 1014.93, p = 1.36789e+06, CH4 = 0.0540165
+ExecutionTime = 16.97 s  ClockTimedeltaT = deltaT = 0.0001
+Time = 0.054
+
+Qdot = 3.76529e+06, T = 1015.21, p = 1.36789e+06, CH4 = 0.0539966
+ExecutionTime = 17 s  ClockTime = deltaTdeltaT = 0.0001
+Time = 0.0541
+
+Qdot = 3.88695e+06, T = 1015.5, p = 1.36789e+06, CH4 = 0.0539761
+ExecutionTime = 17.03 s  ClockTime = deltaTdeltaT = 0.0001
+Time = 0.0542
+
+Qdot = 4.0147e+06, T = 1015.8, p = 1.36789e+06, CH4 = 0.0539549
+ExecutionTime = 17.06 s  ClockTime = deltaTdeltaT = 0.0001
+Time = 0.0543
+
+Qdot = 4.14898e+06, T = 1016.11, p = 1.36789e+06, CH4 = 0.0539331
+ExecutionTime = 17.09 s  ClockTime = deltaTdeltaT = 0.0001
+Time = 0.0544
+
+Qdot = 4.29022e+06, T = 1016.42, p = 1.36789e+06, CH4 = 0.0539106
+ExecutionTime = 17.12 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0545
+
+Qdot = 4.43895e+06, T = 1016.75, p = 1.36789e+06, CH4 = 0.0538874
+ExecutionTime = 17.15 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0546
+
+Qdot = 4.59571e+06, T = 1017.09, p = 1.36789e+06, CH4 = 0.0538634
+ExecutionTime = 17.18 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0547
+
+Qdot = 4.7611e+06, T = 1017.45, p = 1.36789e+06, CH4 = 0.0538386
+ExecutionTime = 17.22 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0548
+
+Qdot = 4.93578e+06, T = 1017.81, p = 1.36789e+06, CH4 = 0.053813
+ExecutionTime = 17.25 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0549
+
+Qdot = 5.12046e+06, T = 1018.19, p = 1.36789e+06, CH4 = 0.0537864
+ExecutionTime = 17.28 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.055
+
+Qdot = 5.31596e+06, T = 1018.59, p = 1.36789e+06, CH4 = 0.053759
+ExecutionTime = 17.31 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0551
+
+Qdot = 5.52314e+06, T = 1019, p = 1.36789e+06, CH4 = 0.0537305
+ExecutionTime = 17.34 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0552
+
+Qdot = 5.74297e+06, T = 1019.42, p = 1.36789e+06, CH4 = 0.053701
+ExecutionTime = 17.37 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0.0553
+
+Qdot = 5.97654e+06, T = 1019.86, p = 1.36789e+06, CH4 = 0.0536703
+ExecutionTime = 17.4 s  ClockTime = deltaTdeltaT = 0.0001
+Time = 0.0554
+
+Qdot = 6.22504e+06, T = 1020.33, p = 1.36789e+06, CH4 = 0.0536385
+ExecutionTime = 17.43 s  ClockTime = deltaTdeltaT = 0.0001
+Time = 0.0555
+
+Qdot = 6.48979e+06, T = 1020.81, p = 1.36789e+06, CH4 = 0.0536054
+ExecutionTime = 17.46 s  ClockTime = deltaTdeltaT = 0.0001
+Time = 0.0556
+
+Qdot = 6.77229e+06, T = 1021.31, p = 1.36789e+06, CH4 = 0.053571
+ExecutionTime = 17.49 s  ClockTime = deltaTdeltaT = 0.0001
+Time = 0.Qdot =Qdot = 7.07419e+06, T = 1021.83, p = 1.36789e+06, CH4 = 0.0535351
+ExecutionTime = 17.52 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0Qdot = Qdot = 7.39736e+06, T = 1022.38, p = 1.36789e+06, CH4 = 0.0534977
+ExecutionTime = 17.55 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0Qdot = Qdot = 7.7439e+06, T = 1022.95, p = 1.36789e+06, CH4 = 0.0534587
+ExecutionTime = 17.58 s  ClockTime =deltaT deltaT = 0.0001
+Time = Qdot = Qdot = 8.11618e+06, T = 1023.56, p = 1.36789e+06, CH4 = 0.0534179
+ExecutionTime = 17.61 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0Qdot = Qdot = 8.51688e+06, T = 1024.19, p = 1.36789e+06, CH4 = 0.0533753
+ExecutionTime = 17.64 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0Qdot = Qdot = 8.94906e+06, T = 1024.85, p = 1.36789e+06, CH4 = 0.0533307
+ExecutionTime = 17.67 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0Qdot = Qdot = 9.4162e+06, T = 1025.55, p = 1.36789e+06, CH4 = 0.0532839
+ExecutionTime = 17.71 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0Qdot = Qdot = 9.9223e+06, T = 1026.28, p = 1.36789e+06, CH4 = 0.0532347
+ExecutionTime = 17.74 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0Qdot = Qdot = 1.0472e+07, T = 1027.06, p = 1.36789e+06, CH4 = 0.053183
+ExecutionTime = 17.77 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0Qdot = Qdot = 1.10705e+07, T = 1027.87, p = 1.36789e+06, CH4 = 0.0531286
+ExecutionTime = 17.8 s  ClockTime = deltaTdeltaT = 0.0001
+Time = 0.Qdot =Qdot = 1.17241e+07, T = 1028.74, p = 1.36789e+06, CH4 = 0.0530712
+ExecutionTime = 17.83 s  ClockTime = deltaTdeltaT = 0.0001
+Time = 0.Qdot =Qdot = 1.24399e+07, T = 1029.66, p = 1.36789e+06, CH4 = 0.0530105
+ExecutionTime = 17.86 s  ClockTime = deltaTdeltaT = 0.0001
+Time = 0.Qdot =Qdot = 1.32265e+07, T = 1030.64, p = 1.36789e+06, CH4 = 0.0529463
+ExecutionTime = 17.89 s  ClockTime = deltaTdeltaT = 0.0001
+Time = 0Qdot =Qdot = 1.40938e+07, T = 1031.68, p = 1.36789e+06, CH4 = 0.0528781
+ExecutionTime = 17.92 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0Qdot = Qdot = 1.50537e+07, T = 1032.79, p = 1.36789e+06, CH4 = 0.0528056
+ExecutionTime = 17.95 s  ClockTime =deltaT deltaT = 0.0001
+Time = 0Qdot = Qdot = 1.61206e+07, T = 1033.99, p = 1.36789e+06, CH4 = 0.0527284
+ExecutionTime = 17.98 s  ClockTime =deltaT = 0.0001
+Time = 0.0573
+
+Qdot = 1.73117e+07, T = 1035.26, p = 1.36789e+06, CH4 = 0.0526458
+ExecutionTime = 17.99 s  ClockTime = 18 s
+
+deltaT = 0.0001
+Time = 0.0574
+
+Qdot = 1.86478e+07, T = 1036.64, p = 1.36789e+06, CH4 = 0.0525573
+ExecutionTime = 18.02 s  ClockTime = 18 s
+
+deltaT = 0.0001
+Time = 0.0575
+
+Qdot = 2.01549e+07, T = 1038.13, p = 1.36789e+06, CH4 = 0.0524621
+ExecutionTime = 18.05 s  ClockTime = 18 s
+
+deltaT = 0.0001
+Time = 0.0576
+
+Qdot = 2.18649e+07, T = 1039.74, p = 1.36789e+06, CH4 = 0.0523594
+ExecutionTime = 18.08 s  ClockTime = 18 s
+
+deltaT = 0.0001
+Time = 0.0577
+
+Qdot = 2.38181e+07, T = 1041.5, p = 1.36789e+06, CH4 = 0.0522481
+ExecutionTime = 18.11 s  ClockTime = 18 s
+
+deltaT = 0.0001
+Time = 0.0578
+
+Qdot = 2.60655e+07, T = 1043.42, p = 1.36789e+06, CH4 = 0.0521271
+ExecutionTime = 18.14 s  ClockTime = 18 s
+
+deltaT = 0.0001
+Time = 0.0579
+
+Qdot = 2.86731e+07, T = 1045.54, p = 1.36789e+06, CH4 = 0.0519947
+ExecutionTime = 18.17 s  ClockTime = 18 s
+
+deltaT = 0.0001
+Time = 0.058
+
+Qdot = 3.17274e+07, T = 1047.87, p = 1.36789e+06, CH4 = 0.0518492
+ExecutionTime = 18.21 s  ClockTime = 18 s
+
+deltaT = 0.0001
+Time = 0.0581
+
+Qdot = 3.53436e+07, T = 1050.48, p = 1.36789e+06, CH4 = 0.0516882
+ExecutionTime = 18.24 s  ClockTime = 18 s
+
+deltaT = 0.0001
+Time = 0.0582
+
+Qdot = 3.96788e+07, T = 1053.4, p = 1.36789e+06, CH4 = 0.0515086
+ExecutionTime = 18.27 s  ClockTime = 18 s
+
+deltaT = 0.0001
+Time = 0.0583
+
+Qdot = 4.49519e+07, T = 1056.7, p = 1.36789e+06, CH4 = 0.0513067
+ExecutionTime = 18.3 s  ClockTime = 19 s
+
+deltaT = 0.0001
+Time = 0.0584
+
+Qdot = 5.1477e+07, T = 1060.49, p = 1.36789e+06, CH4 = 0.0510773
+ExecutionTime = 18.33 s  ClockTime = 19 s
+
+deltaT = 0.0001
+Time = 0.0585
+
+Qdot = 5.97191e+07, T = 1064.87, p = 1.36789e+06, CH4 = 0.0508133
+ExecutionTime = 18.36 s  ClockTime = 19 s
+
+deltaT = 0.0001
+Time = 0.0586
+
+Qdot = 7.03949e+07, T = 1070.04, p = 1.36789e+06, CH4 = 0.0505049
+ExecutionTime = 18.39 s  ClockTime = 19 s
+
+deltaT = 0.0001
+Time = 0.0587
+
+Qdot = 8.46625e+07, T = 1076.25, p = 1.36789e+06, CH4 = 0.0501373
+ExecutionTime = 18.42 s  ClockTime = 19 s
+
+deltaT = 0.0001
+Time = 0.0588
+
+Qdot = 1.04509e+08, T = 1083.9, p = 1.36789e+06, CH4 = 0.0496881
+ExecutionTime = 18.45 s  ClockTime = 19 s
+
+deltaT = 0.0001
+Time = 0.0589
+
+Qdot = 1.33617e+08, T = 1093.66, p = 1.36789e+06, CH4 = 0.04912
+ExecutionTime = 18.48 s  ClockTime = 19 s
+
+deltaT = 0.0001
+Time = 0.059
+
+Qdot = 1.79537e+08, T = 1106.75, p = 1.36789e+06, CH4 = 0.0483656
+ExecutionTime = 18.51 s  ClockTime = 19 s
+
+deltaT = 0.0001
+Time = 0.0591
+
+Qdot = 2.60831e+08, T = 1125.72, p = 1.36789e+06, CH4 = 0.0472842
+ExecutionTime = 18.55 s  ClockTime = 19 s
+
+deltaT = 5e-05
+Time = 0.05915
+
+Qdot = 3.67069e+08, T = 1139.03, p = 1.36789e+06, CH4 = 0.0465307
+ExecutionTime = 18.58 s  ClockTime = 19 s
+
+deltaT = 0.00010625
+Time = 0.0592563
+
+Qdot = 6.17804e+08, T = 1186.42, p = 1.36789e+06, CH4 = 0.0438758
+ExecutionTime = 18.61 s  ClockTime = 19 s
+
+deltaT = 2.65625e-05
+Time = 0.0592828
+
+Qdot = 1.03629e+09, T = 1206.19, p = 1.36789e+06, CH4 = 0.0427721
+ExecutionTime = 18.64 s  ClockTime = 19 s
+
+deltaT = 1.32812e-05
+Time = 0.0592961
+
+Qdot = 1.26364e+09, T = 1218.21, p = 1.36789e+06, CH4 = 0.0421016
+ExecutionTime = 18.67 s  ClockTime = 19 s
+
+deltaT = 2.60706e-05
+Time = 0.0593222
+
+Qdot = 1.58572e+09, T = 1247.75, p = 1.36789e+06, CH4 = 0.0404588
+ExecutionTime = 18.7 s  ClockTime = 19 s
+
+deltaT = 1.30353e-05
+Time = 0.0593352
+
+Qdot = 1.99609e+09, T = 1266.29, p = 1.36789e+06, CH4 = 0.0394282
+ExecutionTime = 18.74 s  ClockTime = 19 s
+
+deltaT = 2.55692e-05
+Time = 0.0593608
+
+Qdot = 2.60535e+09, T = 1313.56, p = 1.36789e+06, CH4 = 0.0368054
+ExecutionTime = 18.77 s  ClockTime = 19 s
+
+deltaT = 1.27846e-05
+Time = 0.0593736
+
+Qdot = 3.42779e+09, T = 1344.52, p = 1.36789e+06, CH4 = 0.0350842
+ExecutionTime = 18.8 s  ClockTime = 19 s
+
+deltaT = 2.61019e-05
+Time = 0.0593997
+
+Qdot = 5.12943e+09, T = 1438.52, p = 1.36789e+06, CH4 = 0.0298573
+ExecutionTime = 18.83 s  ClockTime = 19 s
+
+deltaT = 6.52548e-06
+Time = 0.0594062
+
+Qdot = 7.7448e+09, T = 1473.8, p = 1.36789e+06, CH4 = 0.0278824
+ExecutionTime = 18.86 s  ClockTime = 19 s
+
+deltaT = 3.26274e-06
+Time = 0.0594094
+
+Qdot = 9.28323e+09, T = 1494.9, p = 1.36789e+06, CH4 = 0.0267017
+ExecutionTime = 18.89 s  ClockTime = 19 s
+
+deltaT = 6.48963e-06
+Time = 0.0594159
+
+Qdot = 1.2008e+10, T = 1549.06, p = 1.36789e+06, CH4 = 0.0236912
+ExecutionTime = 18.93 s  ClockTime = 19 s
+
+deltaT = 3.24481e-06
+Time = 0.0594192
+
+Qdot = 1.63894e+10, T = 1585.92, p = 1.36789e+06, CH4 = 0.0216627
+ExecutionTime = 18.96 s  ClockTime = 19 s
+
+deltaT = 1.62241e-06
+Time = 0.0594208
+
+Qdot = 2.01847e+10, T = 1608.58, p = 1.36789e+06, CH4 = 0.0204306
+ExecutionTime = 18.99 s  ClockTime = 19 s
+
+deltaT = 3.25393e-06
+Time = 0.0594241
+
+Qdot = 2.7417e+10, T = 1670.22, p = 1.36789e+06, CH4 = 0.0171864
+ExecutionTime = 19.02 s  ClockTime = 19 s
+
+deltaT = 8.13482e-07
+Time = 0.0594249
+
+Qdot = 3.65953e+10, T = 1690.76, p = 1.36789e+06, CH4 = 0.0161393
+ExecutionTime = 19.05 s  ClockTime = 19 s
+
+deltaT = 1.62467e-06
+Time = 0.0594265
+
+Qdot = 4.82372e+10, T = 1744.77, p = 1.36789e+06, CH4 = 0.0135235
+ExecutionTime = 19.08 s  ClockTime = 19 s
+
+deltaT = 4.06167e-07
+Time = 0.0594269
+
+Qdot = 6.16222e+10, T = 1762, p = 1.36789e+06, CH4 = 0.0127249
+ExecutionTime = 19.11 s  ClockTime = 19 s
+
+deltaT = 8.11758e-07
+Time = 0.0594277
+
+Qdot = 7.67363e+10, T = 1804.87, p = 1.36789e+06, CH4 = 0.0108439
+ExecutionTime = 19.14 s  ClockTime = 19 s
+
+deltaT = 4.05879e-07
+Time = 0.0594281
+
+Qdot = 9.71395e+10, T = 1831.98, p = 1.36789e+06, CH4 = 0.00972299
+ExecutionTime = 19.18 s  ClockTime = 19 s
+
+deltaT = 8.11182e-07
+Time = 0.0594289
+
+Qdot = 1.37422e+11, T = 1908.56, p = 1.36789e+06, CH4 = 0.00687279
+ExecutionTime = 19.21 s  ClockTime = 19 s
+
+deltaT = 2.02796e-07
+Time = 0.0594291
+
+Qdot = 1.86877e+11, T = 1934.57, p = 1.36789e+06, CH4 = 0.00599281
+ExecutionTime = 19.24 s  ClockTime = 19 s
+
+deltaT = 4.05735e-07
+Time = 0.0594295
+
+Qdot = 2.48537e+11, T = 2003.68, p = 1.36789e+06, CH4 = 0.00390735
+ExecutionTime = 19.28 s  ClockTime = 20 s
+
+deltaT = 1.01434e-07
+Time = 0.0594296
+
+Qdot = 3.09927e+11, T = 2025.19, p = 1.36789e+06, CH4 = 0.00332037
+ExecutionTime = 19.31 s  ClockTime = 20 s
+
+deltaT = 2.02832e-07
+Time = 0.0594298
+
+Qdot = 3.64623e+11, T = 2075.7, p = 1.36789e+06, CH4 = 0.00208092
+ExecutionTime = 19.34 s  ClockTime = 20 s
+
+deltaT = 1.01416e-07
+Time = 0.0594299
+
+Qdot = 4.09225e+11, T = 2103.98, p = 1.36789e+06, CH4 = 0.00147188
+ExecutionTime = 19.37 s  ClockTime = 20 s
+
+deltaT = 2.02796e-07
+Time = 0.0594301
+
+Qdot = 4.2039e+11, T = 2161.76, p = 1.36789e+06, CH4 = 0.000477608
+ExecutionTime = 19.4 s  ClockTime = 20 s
+
+deltaT = 5.06989e-08
+Time = 0.0594302
+
+Qdot = 3.70395e+11, T = 2174.39, p = 1.36789e+06, CH4 = 0.000317375
+ExecutionTime = 19.43 s  ClockTime = 20 s
+
+deltaT = 1.01389e-07
+Time = 0.0594303
+
+Qdot = 3.24462e+11, T = 2196.33, p = 1.36789e+06, CH4 = 0.000115256
+ExecutionTime = 19.47 s  ClockTime = 20 s
+
+deltaT = 5.06944e-08
+Time = 0.0594303
+
+Qdot = 2.8159e+11, T = 2205.74, p = 1.36789e+06, CH4 = 6.30906e-05
+ExecutionTime = 19.5 s  ClockTime = 20 s
+
+deltaT = 1.01398e-07
+Time = 0.0594304
+
+Qdot = 2.59118e+11, T = 2222.91, p = 1.36789e+06, CH4 = 1.59618e-05
+ExecutionTime = 19.53 s  ClockTime = 20 s
+
+deltaT = 5.06989e-08
+Time = 0.0594305
+
+Qdot = 2.47774e+11, T = 2231.05, p = 1.36789e+06, CH4 = 7.52457e-06
+ExecutionTime = 19.56 s  ClockTime = 20 s
+
+deltaT = 1.01407e-07
+Time = 0.0594306
+
+Qdot = 2.44754e+11, T = 2247.08, p = 1.36789e+06, CH4 = 1.55137e-06
+ExecutionTime = 19.59 s  ClockTime = 20 s
+
+deltaT = 1.76613e-07
+Time = 0.0594308
+
+Qdot = 2.38611e+11, T = 2274.22, p = 1.36789e+06, CH4 = 8.05273e-08
+ExecutionTime = 19.62 s  ClockTime = 20 s
+
+deltaT = 2.95087e-07
+Time = 0.0594311
+
+Qdot = 2.19923e+11, T = 2316.04, p = 1.36789e+06, CH4 = 0
+ExecutionTime = 19.65 s  ClockTime = 20 s
+
+deltaT = 5.21952e-07
+Time = 0.0594316
+
+Qdot = 1.81572e+11, T = 2377.33, p = 1.36789e+06, CH4 = 6.39559e-13
+ExecutionTime = 19.68 s  ClockTime = 20 s
+
+deltaT = 9.78323e-07
+Time = 0.0594326
+
+Qdot = 1.25066e+11, T = 2456.97, p = 1.36789e+06, CH4 = 4.76831e-14
+ExecutionTime = 19.72 s  ClockTime = 20 s
+
+deltaT = 4.89161e-07
+Time = 0.0594331
+
+Qdot = 8.58295e+10, T = 2484.39, p = 1.36789e+06, CH4 = 2.75086e-14
+ExecutionTime = 19.75 s  ClockTime = 20 s
+
+deltaT = 9.77479e-07
+Time = 0.059434
+
+Qdot = 6.38574e+10, T = 2525.21, p = 1.36789e+06, CH4 = 1.51485e-14
+ExecutionTime = 19.78 s  ClockTime = 20 s
+
+deltaT = 1.95834e-06
+Time = 0.059436
+
+Qdot = 3.90677e+10, T = 2575.17, p = 1.36789e+06, CH4 = 8.85435e-15
+ExecutionTime = 19.81 s  ClockTime = 20 s
+
+deltaT = 3.91668e-06
+Time = 0.0594399
+
+Qdot = 1.91566e+10, T = 2623.94, p = 1.36789e+06, CH4 = 6.0149e-15
+ExecutionTime = 19.84 s  ClockTime = 20 s
+
+deltaT = 1.95834e-06
+Time = 0.0594419
+
+Qdot = 1.02983e+10, T = 2637, p = 1.36789e+06, CH4 = 5.41107e-15
+ExecutionTime = 19.87 s  ClockTime = 20 s
+
+deltaT = 3.93047e-06
+Time = 0.0594458
+
+Qdot = 6.30032e+09, T = 2653.02, p = 1.36789e+06, CH4 = 4.91966e-15
+ExecutionTime = 19.9 s  ClockTime = 20 s
+
+deltaT = 7.80559e-06
+Time = 0.0594536
+
+Qdot = 2.6953e+09, T = 2666.6, p = 1.36789e+06, CH4 = 4.54927e-15
+ExecutionTime = 19.93 s  ClockTime = 20 s
+
+deltaT = 1.56112e-05
+Time = 0.0594692
+
+Qdot = 6.52073e+08, T = 2673.16, p = 1.36789e+06, CH4 = 4.36685e-15
+ExecutionTime = 19.96 s  ClockTime = 20 s
+
+deldeltaT = 7.80559e-06
+Time = 0.05947QdoQdot = 1.10588e+08, T = 2673.72, p = 1.36789e+06, CH4 = 4.34722e-15
+ExecutionTime = 20.02 s  ClockTime = deltaTdeltaT = 1.53816e-05
+Time = 0.059Qdot =Qdot = 9.57197e+06, T = 2673.81, p = 1.36789e+06, CH4 = 4.35603e-15
+ExecutionTime = 20.05 s  ClockTime = deltaTdeltaT = 2.98584e-05
+Time = 0.059Qdot =Qdot = -2.26662e+07, T = 2673.38, p = 1.36789e+06, CH4 = 4.38873e-15
+ExecutionTime = 20.08 s  ClockTime = deltaTdeltaT = 5.97168e-05
+Time = 0.05Qdot =Qdot = -2.50032e+07, T = 2672.42, p = 1.36789e+06, CH4 = 4.45641e-15
+ExecutionTime = 20.12 s  ClockTime = deltaTdeltaT = 0.000104504
+Time = 0.059Qdot =Qdot = -2.32405e+07, T = 2670.86, p = 1.36789e+06, CH4 = 4.56903e-15
+ExecutionTime = 20.15 s  ClockTime = deltaTdeltaT = 0.000104504
+Time = 0.05Qdot =Qdot = -2.08605e+07, T = 2669.46, p = 1.36789e+06, CH4 = 4.67472e-15
+ExecutionTime = 20.18 s  ClockTime = deltaTdeltaT = 0.000104504
+Time = 0.059Qdot =Qdot = -1.87316e+07, T = 2668.2, p = 1.36789e+06, CH4 = 4.77194e-15
+ExecutionTime = 20.21 s  ClockTime = deltaTdeltaT = 0.000104504
+Time = Qdot =Qdot = -1.67995e+07, T = 2667.08, p = 1.36789e+06, CH4 = 4.86131e-15
+ExecutionTime = 20.24 s  ClockTime = deltaTdeltaT = 0.0001
+Time = 0.Qdot =Qdot = -1.46552e+07, T = 2666.14, p = 1.36789e+06, CH4 = 4.93794e-15
+ExecutionTime = 20.3 s  ClockTime = 2deltadeltaT = 0.0001
+Time = 0.0Qdot Qdot = -1.16404e+07, T = 2665.39, p = 1.36789e+06, CH4 = 4.99571e-15
+ExecutionTime = 20.33 s  ClockTime = deltaTdeltaT = 5e-05
+Time = 0.0Qdot =Qdot = -9.16806e+06, T = 2665.1, p = 1.36789e+06, CH4 = 5.02212e-15
+ExecutionTime = 20.36 s  ClockTime = deltaTdeltaT = 0.000100515
+Time = 0.060Qdot =Qdot = -1.03135e+07, T = 2664.43, p = 1.36789e+06, CH4 = 5.07565e-15
+ExecutionTime = 20.39 s  ClockTime = deltaTdeltaT = 0.000100515
+Time = 0.060451
+
+Qdot = -8.87528e+06, T = 2663.86, p = 1.36789e+06, CH4 = 5.1238e-15
+ExecutionTime = 20.42 s  ClockTime = deltaTdeltaT = 0.000100515
+Time = 0.0605515
+
+Qdot = -7.789e+06, T = 2663.35, p = 1.36789e+06, CH4 = 5.16668e-15
+ExecutionTime = 20.45 s  ClockTime = deltaTdeltaT = 0.000100515
+Time = 0.0606521
+
+Qdot = -6.84933e+06, T = 2662.91, p = 1.36789e+06, CH4 = 5.20503e-15
+ExecutionTime = 20.48 s  ClockTime = deltaTdeltaT = 0.000100515
+Time = 0.060Qdot =Qdot = -4.17343e+06, T = 2662.64, p = 1.36789e+06, CH4 = 5.22698e-15
+ExecutionTime = 20.52 s  ClockTime = deltaTdeltaT = 0.000100515
+Time = 0.0608531
+
+Qdot = -4.74104e+06, T = 2662.34, p = 1.36789e+06, CH4 = 5.25244e-15
+ExecutionTime = 20.55 s  ClockTime = deltaTdeltaT = 0.000100515
+Time = 0.0609536
+
+Qdot = -3.80581e+06, T = 2662.09, p = 1.36789e+06, CH4 = 5.2734e-15
+ExecutionTime = 20.58 s  ClockTime = deltaTdeltaT = 0.000100515
+Time = 0.061Qdot =Qdot = -4.03378e+06, T = 2661.83, p = 1.36789e+06, CH4 = 5.29657e-15
+ExecutionTime = 20.61 s  ClockTime = deltaTdeltaT = 0.000100515
+Time = 0.0611546
+
+Qdot = -2.95327e+06, T = 2661.64, p = 1.36789e+06, CH4 = 5.31348e-15
+ExecutionTime = 20.64 s  ClockTime = deltaTdeltaT = 0.000100515
+Time = 0.0612552
+
+Qdot = -2.58036e+06, T = 2661.47, p = 1.36789e+06, CH4 = 5.32817e-15
+ExecutionTime = 20.67 s  ClockTime = deltaTdeltaT = 0.000100515
+Time = 0.0613557
+
+Qdot = -2.25743e+06, T = 2661.33, p = 1.36789e+06, CH4 = 5.34115e-15
+ExecutionTime = 20.7 s  ClockTime = 2deltadeltaT = 0.000100515
+Time = 0.0614562
+
+Qdot = -1.6096e+06, T = 2661.22, p = 1.36789e+06, CH4 = 5.34987e-15
+ExecutionTime = 20.74 s  ClockTime = deltaTdeltaT = 5.02577e-05
+Time = 0.0615064
+
+Qdot = -1.45429e+06, T = 2661.18, p = 1.36789e+06, CH4 = 5.35426e-15
+ExecutionTime = 20.77 s  ClockTime = deltaTdeltaT = 9.99242e-05
+Time = 0.0616064
+
+Qdot = -1.45058e+06, T = 2661.08, p = 1.36789e+06, CH4 = 5.36226e-15
+ExecutionTime = 20.8 s  ClockTime = 2deltadeltaT = 9.99242e-05
+Time = 0.0617063
+
+Qdot = -1.22589e+06, T = 2661, p = 1.36789e+06, CH4 = 5.36924e-15
+ExecutionTime = 20.83 s  ClockTime = deltaTdeltaT = 9.99242e-05
+Time = 0.0618062
+
+Qdot = -1.05345e+06, T = 2660.94, p = 1.36789e+06, CH4 = 5.37525e-15
+ExecutionTime = 20.86 s  ClockTime = deltaTdeltaT = 9.99242e-05
+Time = 0.0619061
+
+Qdot = -914362, T = 2660.88, p = 1.36789e+06, CH4 = 5.38051e-15
+ExecutionTime = 20.89 s  ClockTime = deltaTdeltaT = 9.99242e-05
+Time = 0.0620061
+
+Qdot = -809048, T = 2660.83, p = 1.36789e+06, CH4 = 5.38522e-15
+ExecutionTime = 20.92 s  ClockTime = deltaTdeltaT = 9.99242e-05
+Time = 0.06Qdot =Qdot = -464986, T = 2660.8, p = 1.36789e+06, CH4 = 5.38769e-15
+ExecutionTime = 20.95 s  ClockTime = deltaTdeltaT = 9.99242e-05
+Time = 0.0622059
+
+Qdot = -543194, T = 2660.76, p = 1.36789e+06, CH4 = 5.39071e-15
+ExecutionTime = 20.98 s  ClockTime = deltaTdeltaT = 9.99242e-05
+Time = 0.0623058
+
+Qdot = -446328, T = 2660.73, p = 1.36789e+06, CH4 = 5.39324e-15
+ExecutionTime = 21.02 s  ClockTime = deltaTdeltaT = 9.99242e-05
+Time = 0.0624058
+
+Qdot = -368790, T = 2660.71, p = 1.36789e+06, CH4 = 5.39531e-15
+ExecutionTime = 21.05 s  ClockTime = deltaTdeltaT = 9.99242e-05
+Time = 0.0625057
+
+Qdot = -384022, T = 2660.68, p = 1.36789e+06, CH4 = 5.39756e-15
+ExecutionTime = 21.08 s  ClockTime = deltaTdeltaT = 9.99242e-05
+Time = 0.0626056
+
+Qdot = -280549, T = 2660.67, p = 1.36789e+06, CH4 = 5.39919e-15
+ExecutionTime = 21.11 s  ClockTime = deltaTdeltaT = 9.99242e-05
+Time = 0.0627055
+
+Qdot = -244047, T = 2660.65, p = 1.36789e+06, CH4 = 5.4006e-15
+ExecutionTime = 21.14 s  ClockTime = deltaTdeltaT = 9.99242e-05
+Time = 0.0628055
+
+Qdot = -212790, T = 2660.64, p = 1.36789e+06, CH4 = 5.40183e-15
+ExecutionTime = 21.17 s  ClockTime = deltaTdeltaT = 9.99242e-05
+Time = 0.0629054
+
+Qdot = -151283, T = 2660.63, p = 1.36789e+06, CH4 = 5.40265e-15
+ExecutionTime = 21.2 s  ClockTime = 2deltadeltaT = 4.99621e-05
+Time = 0.0629553
+
+Qdot = -139256, T = 2660.62, p = 1.36789e+06, CH4 = 5.40307e-15
+ExecutionTime = 21.23 s  ClockTime = 2deltadeltaT = 0.000100638
+Time = 0.063056
+
+Qdot = -136079, T = 2660.61, p = 1.36789e+06, CH4 = 5.40384e-15
+ExecutionTime = 21.27 s  ClockTime = 2deltadeltaT = 0.000100638
+Time = 0.0631566
+
+Qdot = -114637, T = 2660.61, p = 1.36789e+06, CH4 = 5.4045e-15
+ExecutionTime = 21.3 s  ClockTime = 22deltdeltaT = 0.000100638
+Time = 0.0632573
+
+Qdot = -98189.3, T = 2660.6, p = 1.36789e+06, CH4 = 5.40507e-15
+ExecutionTime = 21.33 s  ClockTime = 2deltadeltaT = 0.000100638
+Time = 0.0633579
+
+Qdot = -85005, T = 2660.6, p = 1.36789e+06, CH4 = 5.40556e-15
+ExecutionTime = 21.36 s  ClockTime = 2deltadeltaT = 0.000100638
+Time = 0.0634585
+
+Qdot = -75210, T = 2660.59, p = 1.36789e+06, CH4 = 5.40601e-15
+ExecutionTime = 21.39 s  ClockTime = 2deltadeltaT = 0.000100638
+Time = 0.0635592
+
+Qdot = -43330, T = 2660.59, p = 1.36789e+06, CH4 = 5.40624e-15
+ExecutionTime = 21.42 s  ClockTime = deltaTdeltaT = 0.000100638
+Time = 0.0636598
+
+Qdot = -50174.7, T = 2660.58, p = 1.36789e+06, CH4 = 5.40652e-15
+ExecutionTime = 21.45 s  ClockTime = deltaTdeltaT = 0.000100638
+Time = 0.0637604
+
+Qdot = -41154.8, T = 2660.58, p = 1.36789e+06, CH4 = 5.40676e-15
+ExecutionTime = 21.48 s  ClockTime = deltaTdeltaT = 0.000100638
+Time = 0.0638611
+
+Qdot = -33917.3, T = 2660.58, p = 1.36789e+06, CH4 = 5.40695e-15
+ExecutionTime = 21.51 s  ClockTime = deltaTdeltaT = 0.000100638
+Time = 0.0639617
+
+Qdot = -35321.5, T = 2660.58, p = 1.36789e+06, CH4 = 5.40716e-15
+ExecutionTime = 21.55 s  ClockTime = deltaTdeltaT = 0.000100638
+Time = 0.0640624
+
+Qdot = -25754.1, T = 2660.58, p = 1.36789e+06, CH4 = 5.40731e-15
+ExecutionTime = 21.58 s  ClockTime = deltaTdeltaT = 0.000100638
+Time = 0.064163
+
+Qdot = -22397.2, T = 2660.57, p = 1.36789e+06, CH4 = 5.40744e-15
+ExecutionTime = 21.61 s  ClockTime = deltaTdeltaT = 0.000100638
+Time = 0.0642636
+
+Qdot = -19561.7, T = 2660.57, p = 1.36789e+06, CH4 = 5.40755e-15
+ExecutionTime = 21.64 s  ClockTime = deltaTdeltaT = 0.000100638
+Time = 0.0643643
+
+Qdot = -13696.6, T = 2660.57, p = 1.36789e+06, CH4 = 5.40763e-15
+ExecutionTime = 21.67 s  ClockTime = deltaTdeltaT = 5.0319e-05
+Time = 0.0644146
+
+Qdot = -12593.2, T = 2660.57, p = 1.36789e+06, CH4 = 5.40767e-15
+ExecutionTime = 21.7 s  ClockTime = 2deltadeltaT = 9.97394e-05
+Time = 0.0645143
+
+Qdot = -12423.1, T = 2660.57, p = 1.36789e+06, CH4 = 5.40774e-15
+ExecutionTime = 21.73 s  ClockTime = deltaTdeltaT = 9.97394e-05
+Time = 0.0646141
+
+Qdot = -10475.4, T = 2660.57, p = 1.36789e+06, CH4 = 5.4078e-15
+ExecutionTime = 21.76 s  ClockTime = deltaTdeltaT = 9.97394e-05
+Time = 0.0647138
+
+Qdot = -8980.31, T = 2660.57, p = 1.36789e+06, CH4 = 5.40785e-15
+ExecutionTime = 21.79 s  ClockTime = deltaTdeltaT = 9.97394e-05
+Time = 0.0648136
+
+Qdot = -7774.45, T = 2660.57, p = 1.36789e+06, CH4 = 5.40789e-15
+ExecutionTime = 21.82 s  ClockTime =deltaT deltaT = 9.97394e-05
+Time = 0.0649133
+
+Qdot = -6863.8, T = 2660.57, p = 1.36789e+06, CH4 = 5.40793e-15
+ExecutionTime = 21.86 s  ClockTime =deltaT deltaT = 9.97394e-05
+Time = 0.065013
+
+Qdot = -3918.19, T = 2660.57, p = 1.36789e+06, CH4 = 5.40795e-15
+ExecutionTime = 21.89 s  ClockTime =deltaT deltaT = 9.97394e-05
+Time = 0.0651128
+
+Qdot = -4625.22, T = 2660.57, p = 1.36789e+06, CH4 = 5.40798e-15
+ExecutionTime = 21.92 s  ClockTime =deltaT deltaT = 9.97394e-05
+Time = 0.0652125
+
+Qdot = -3721.9, T = 2660.57, p = 1.36789e+06, CH4 = 5.408e-15
+ExecutionTime = 21.95 s  ClockTime =deltaT deltaT = 9.97394e-05
+Time = 0.0653122
+
+Qdot = -3799.3, T = 2660.57, p = 1.36789e+06, CH4 = 5.40802e-15
+ExecutionTime = 21.98 s  ClockTime =deltaT deltaT = 9.97394e-05
+Time = 0.065412
+
+Qdot = -2803.88, T = 2660.57, p = 1.36789e+06, CH4 = 5.40804e-15
+ExecutionTime = 22.01 s  ClockTime =deltaT deltaT = 9.97394e-05
+Time = 0.0655117
+
+Qdot = -2459.88, T = 2660.57, p = 1.36789e+06, CH4 = 5.40805e-15
+ExecutionTime = 22.04 s  ClockTime =deltaT deltaT = 9.97394e-05
+Time = 0.0656115
+
+Qdot = -2161.86, T = 2660.57, p = 1.36789e+06, CH4 = 5.40807e-15
+ExecutionTime = 22.07 s  ClockTime =deltaT deltaT = 9.97394e-05
+Time = 0.0657112
+
+Qdot = -1301.05, T = 2660.57, p = 1.36789e+06, CH4 = 5.40807e-15
+ExecutionTime = 22.11 s  ClockTime =deltaT deltaT = 9.97394e-05
+Time = 0.0658109
+
+Qdot = -1468.56, T = 2660.57, p = 1.36789e+06, CH4 = 5.40808e-15
+ExecutionTime = 22.14 s  ClockTime =deltaT deltaT = 9.97394e-05
+Time = 0.0659107
+
+Qdot = -1189.9, T = 2660.57, p = 1.36789e+06, CH4 = 5.40809e-15
+ExecutionTime = 22.17 s  ClockTime =deltaT deltaT = 9.97394e-05
+Time = 0.0660104
+
+Qdot = -1185.67, T = 2660.57, p = 1.36789e+06, CH4 = 5.40809e-15
+ExecutionTime = 22.2 s  ClockTime = deltaTdeltaT = 9.97394e-05
+Time = 0.0661102
+
+Qdot = -891.258, T = 2660.57, p = 1.36789e+06, CH4 = 5.4081e-15
+ExecutionTime = 22.23 s  ClockTime =deltaT deltaT = 9.97394e-05
+Time = 0.0662099
+
+Qdot = -778.765, T = 2660.57, p = 1.36789e+06, CH4 = 5.4081e-15
+ExecutionTime = 22.26 s  ClockTime =deltaT deltaT = 9.97394e-05
+Time = 0.0663096
+
+Qdot = -681.995, T = 2660.57, p = 1.36789e+06, CH4 = 5.40811e-15
+ExecutionTime = 22.29 s  ClockTime =deltaT deltaT = 9.97394e-05
+Time = 0.0664094
+
+Qdot = -467.814, T = 2660.57, p = 1.36789e+06, CH4 = 5.40811e-15
+ExecutionTime = 22.33 s  ClockTime =deltaT deltaT = 4.98697e-05
+Time = 0.0664593
+
+Qdot = -437.624, T = 2660.57, p = 1.36789e+06, CH4 = 5.40811e-15
+ExecutionTime = 22.36 s  ClockTime =deltaT deltaT = 0.000101164
+Time = 0.0665604
+
+Qdot = -432.266, T = 2660.57, p = 1.36789e+06, CH4 = 5.40811e-15
+ExecutionTime = 22.39 s  ClockTime =deltaT deltaT = 0.000101164
+Time = 0.0666616
+
+Qdot = -363.784, T = 2660.57, p = 1.36789e+06, CH4 = 5.40812e-15
+ExecutionTime = 22.42 s  ClockTime =deltaT deltaT = 0.000101164
+Time = 0.0667627
+
+Qdot = -311.596, T = 2660.57, p = 1.36789e+06, CH4 = 5.40812e-15
+ExecutionTime = 22.45 s  ClockTime =deltaT deltaT = 0.000101164
+Time = 0.0668639
+
+Qdot = -270.169, T = 2660.57, p = 1.36789e+06, CH4 = 5.40812e-15
+ExecutionTime = 22.48 s  ClockTime =deltaT deltaT = 0.000101164
+Time = 0.0669651
+
+Qdot = -240.201, T = 2660.57, p = 1.36789e+06, CH4 = 5.40812e-15
+ExecutionTime = 22.51 s  ClockTime =deltaT deltaT = 0.000101164
+Time = 0.0670662
+
+Qdot = -135.303, T = 2660.57, p = 1.36789e+06, CH4 = 5.40812e-15
+ExecutionTime = 22.54 s  ClockTime =deltaT deltaT = 0.000101164
+Time = 0.0671674
+
+Qdot = -158.272, T = 2660.57, p = 1.36789e+06, CH4 = 5.40812e-15
+ExecutionTime = 22.58 s  ClockTime =deltaT deltaT = 0.000101164
+Time = 0.0672686
+
+Qdot = -132.156, T = 2660.57, p = 1.36789e+06, CH4 = 5.40812e-15
+ExecutionTime = 22.61 s  ClockTime =deltaT deltaT = 0.000101164
+Time = 0.0673697
+
+Qdot = -111.114, T = 2660.57, p = 1.36789e+06, CH4 = 5.40812e-15
+ExecutionTime = 22.64 s  ClockTime deltaT =deltaT = 0.000101164
+Time = 0.0674709
+
+Qdot = -92.6001, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 22.67 s  ClockTime deltaT =deltaT = 0.000101164
+Time = 0.0675721
+
+Qdot = -86.1619, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 22.7 s  ClockTime =deltaT deltaT = 5.05821e-05
+Time = 0.0676226
+
+Qdot = -72.8883, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 22.73 s  ClockTime =deltaT deltaT = 9.90566e-05
+Time = 0.0677217
+
+Qdot = -63.6677, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 22.76 s  ClockTime =deltaT deltaT = 9.90566e-05
+Time = 0.0678208
+
+Qdot = -53.8159, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 22.79 s  ClockTime =deltaT deltaT = 9.90566e-05
+Time = 0.0679198
+
+Qdot = -45.9252, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 22.82 s  ClockTime =deltaT deltaT = 9.90566e-05
+Time = 0.0680189
+
+Qdot = -39.3472, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 22.85 s  ClockTime =deltaT deltaT = 9.90566e-05
+Time = 0.0681179
+
+Qdot = -33.9844, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 22.88 s  ClockTime =deltaT deltaT = 9.90566e-05
+Time = 0.068217
+
+Qdot = -29.8178, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 22.91 s  ClockTime =deltaT deltaT = 9.90566e-05
+Time = 0.068316
+
+Qdot = -18.3264, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 22.95 s  ClockTime =deltaT deltaT = 9.90566e-05
+Time = 0.0684151
+
+Qdot = -20.4119, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 22.98 s  ClockTime =deltaT deltaT = 9.90566e-05
+Time = 0.0685142
+
+Qdot = -16.62, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 23.01 s  ClockTime =deltaT deltaT = 9.90566e-05
+Time = 0.0686132
+
+Qdot = -15.7546, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 23.04 s  ClockTimdeltaT = 4deltaT = 4.95283e-05
+Time = 0.0686627
+
+Qdot = -13.185, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 23.07 s  ClockTimdeltaT = 0deltaT = 0.000102867
+Time = 0.0687656
+
+Qdot = -11.5111, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 23.1 s  ClockTimedeltaT = deltaT = 0.000102867
+Time = 0.0688685
+
+Qdot = -9.67152, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 23.13 s  ClockTimedeltaT = deltaT = 0.000102867
+Time = 0.0689713
+
+Qdot = -8.22149, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 23.16 s  ClockTimedeltaT = deltaT = 0.000102867
+Time = 0.0690742
+
+Qdot = -7.04295, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 23.19 s  ClockTimedeltaT = deltaT = 0.000102867
+Time = 0.0691771
+
+Qdot = -6.13671, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 23.22 s  ClockTimedeltaT = deltaT = 0.000102867
+Time = 0.0692799
+
+Qdot = -4.35828, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 23.26 s  ClockTimedeltaT = deltaT = 5.14333e-05
+Time = 0.0693314
+
+Qdot = -3.90198, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 23.29 s  ClockTimedeltaT = deltaT = 9.55189e-05
+Time = 0.0694269
+
+Qdot = -3.88451, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 23.32 s  ClockTimedeltaT = deltaT = 9.55189e-05
+Time = 0.0695224
+
+Qdot = -3.29344, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 23.36 s  ClockTimedeltaT = deltaT = 9.55189e-05
+Time = 0.0696179
+
+Qdot = -2.83271, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 23.39 s  ClockTimedeltaT = deltaT = 9.55189e-05
+Time = 0.0697134
+
+Qdot = -2.44816, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 23.42 s  ClockTimedeltaT = deltaT = 9.55189e-05
+Time = 0.069809
+
+Qdot = -2.13408, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 23.45 s  ClockTimdeltaT = 9deltaT = 9.55189e-05
+Time = 0.0699045
+
+Qdot = -1.52335, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 23.48 s  ClockTimdeltaT = 4deltaT = 4.77595e-05
+Time = 0.0699522
+
+Qdot = -1.46345, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 23.51 s  ClockTimdeltaT = 4deltaT = 4.77595e-05
+Time = 0.07
+
+Qdot = -1.4377, T = 2660.57, p = 1.36789e+06, CH4 = 5.40813e-15
+ExecutionTime = 23.54 s  ClockTiNumber of sNumber of steps = 758
+End
+

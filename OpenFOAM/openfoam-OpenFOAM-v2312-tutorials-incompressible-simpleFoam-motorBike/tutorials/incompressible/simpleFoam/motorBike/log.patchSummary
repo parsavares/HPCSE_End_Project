@@ -1,0 +1,54 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2312                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _1d8f0d55f7-20231221 OPENFOAM=2312 version=v2312
+Arch   : "LSB;label=32;scalar=64"
+Exec   : patchSummary -parallel -decomposeParDict system/decomposeParDict.6
+Date   : May 26 2024
+Time   : 16:10:44
+Host   : aion-0180
+PID    : 2523109
+I/O    : uncollated
+Case   : /mnt/aiongpfs/users/pvares/OpenFOAM/openfoam-OpenFOAM-v2312-tutorials-incompressible-simpleFoam-motorBike/tutorials/incompressible/simpleFoam/motorBike
+nProcs : 6
+Hosts  :
+(
+    (aion-0180 6)
+)
+Pstream initialized with:
+    floatTransfer      : false
+    nProcsSimpleSum    : 0
+    nonBlockingExchange: 0 (tuning: 0)
+    exchange algorithm : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Time = 0
+
+Reading fields:
+    volScalarField (k nut omega p)
+    volVectorField (U)
+[4] 
+[4] 
+[4] --> FOAM FATAL IO ERROR: (openfoam-2312)
+[4] "ill defined primitiveEntry starting at keyword '' on line 52 and ending at line 52"
+[4] 
+[4] file: processor4/0/U at line 52.
+[4] 
+[4]     From void Foam::primitiveEntry::readEntry(const Foam::dictionary&, Foam::Istream&)
+[4]     in file db/dictionary/primitiveEntry/primitiveEntryIO.C at line 243.
+[4] 
+FOAM parallel run exiting
+[4] 
