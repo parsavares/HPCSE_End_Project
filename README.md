@@ -254,10 +254,30 @@ cd plots
 # Example 2: Test `atmDownstreamDevelopment` from `atmosphericModels` 
 
 
-![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/a12c4afc-585f-4a5a-be82-0ac5fd2d5880)
+![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/a12c4afc-585f-4a5a-be82-0ac5fd2d5880) 
+```bash
+cd /home/users/$USER/OpenFOAM/openfoam-OpenFOAM-v2312/tutorials/verificationAndValidation/atmosphericModels/atmDownstreamDevelopment/
+ 
+```
 ![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/07dccb2c-ed68-4477-a46b-1993566fbbc5) 
-![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/2028a24e-96b9-4a02-8b29-c5a3b6e2c57b)
+```bash
+chmod +x Allrun
+srun -n 1 -c 32 ./Allrun
+./Allrun
+```
+
+By running `./plot` we generate results of the test. 
+
+![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/2028a24e-96b9-4a02-8b29-c5a3b6e2c57b) 
+
+Now, a subdirectory of `plots` has been generated in this directory. 
+
 ![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/58be2fee-fdb3-4248-8f64-87169de90715)
+```bash
+cd kOmegaSST/
+cd ..
+cd kEpsilon/
+```
 ![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/ede71e65-993b-4a94-be19-f8bc52dcfc22)
 
 
