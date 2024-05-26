@@ -7,7 +7,7 @@ OpenFOAM is a C++ toolbox for the development of customized numerical solvers, a
 ## Table of Contents
 - [Introduction](https://github.com/parsavares/HPCSE_End_Project/blob/main/README.md#introduction)
 - [Part I: Installing EasyBuild and OpenFOAM](https://github.com/parsavares/HPCSE_End_Project?tab=readme-ov-file#i-installing-latest-release-of-easybuild)
-- [Part II: Test Examples]
+- [Part II: Test Examples](https://github.com/parsavares/HPCSE_End_Project?tab=readme-ov-file#-ii-running-test-examples)
  - [Test Example 1: Running OpenFOAM-v2312 motorBike Tutorial on HPC]()
  - [Test Example 2: Testing turbulenceModels from planeChannel]()
  - [Test Example 3: Test atmDownstreamDevelopment from atmosphericModels]()
