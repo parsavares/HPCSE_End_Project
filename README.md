@@ -7,12 +7,13 @@ OpenFOAM is a C++ toolbox for the development of customized numerical solvers, a
 ## Table of Contents
 - [Introduction](https://github.com/parsavares/HPCSE_End_Project/blob/main/README.md#introduction)
 - [Part I: Installing EasyBuild and OpenFOAM]()
-- [Part II: Running OpenFOAM-v2312 motorBike Tutorial on HPC]()
-- [Part III: Testing turbulenceModels from planeChannel]()
-- [Part IV: Test atmDownstreamDevelopment from atmosphericModels]()
-- [Part V: ChemFoam Tutorial Setup]()
-- [Part VI: ChemFoam h2 Tutorial Setup]()
-
+- [Part II: Test Examples]
+ - [Test Example 1: Running OpenFOAM-v2312 motorBike Tutorial on HPC]()
+ - [Test Example 2: Testing turbulenceModels from planeChannel]()
+ - [Test Example 3: Test atmDownstreamDevelopment from atmosphericModels]()
+ - [Test Example 4: ChemFoam Tutorial Setup]()
+ - [Test Example 5: ChemFoam h2 Tutorial Setup]()
+- [Reframe Installation]()
 
 
 ##  Introduction
