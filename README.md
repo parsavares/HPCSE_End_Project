@@ -6,7 +6,7 @@ OpenFOAM is a C++ toolbox for the development of customized numerical solvers, a
 
 ## Table of Contents
 - [Introduction](https://github.com/parsavares/HPCSE_End_Project/blob/main/README.md#introduction)
-- [Part I: Installing EasyBuild and OpenFOAM]()
+- [Part I: Installing EasyBuild and OpenFOAM](https://github.com/parsavares/HPCSE_End_Project?tab=readme-ov-file#i-installing-latest-release-of-easybuild)
 - [Part II: Test Examples]
  - [Test Example 1: Running OpenFOAM-v2312 motorBike Tutorial on HPC]()
  - [Test Example 2: Testing turbulenceModels from planeChannel]()
@@ -144,9 +144,9 @@ Dependencies between jobs will be "registered" at submission time, so Slurm will
      ```bash
     module load cae/OpenFOAM/11-foss-2023a
     ```
-      
+## ** II: Running Test Examples**      
 
-## II. Test Example 1: Running the OpenFOAM-v2312 `motorBike` Tutorial on HPC
+## Test Example 1: Running the OpenFOAM-v2312 `motorBike` Tutorial on HPC
 
 1. **Download the Tutorial Files**
    - **Command**: 
@@ -214,9 +214,9 @@ Dependencies between jobs will be "registered" at submission time, so Slurm will
 ![9y8wrzf8](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/2f8c9fa3-7d06-4c36-89cc-b3871ab37fb1)
 
 
-## III. Test Example 2: Testing `turbulenceModels` from `planeChannel`
+## Test Example 2: Testing `turbulenceModels` from `planeChannel`
 
-   **Loading required modules** 
+ 1.  **Loading required modules** 
    ```bash
    module load tools/EasyBuild/4.9.1
    module use ~/.local/easyconfig/modules/all
@@ -227,7 +227,7 @@ Dependencies between jobs will be "registered" at submission time, so Slurm will
    export EASYBUILD_PREFIX=$HOME/easybuild
    export EASYBUILD_BUILDPATH=/dev/shm/$USER
    ```
-   **installing(optional if needed)** 
+ 2.  **installing(optional if needed)** 
    ```bash
 
   eb /home/users/$USER/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs/o/OpenFOAM/OpenFOAM-v2312-foss-2023a.eb --job --job-cores 32 --job-max-walltime 11 --robot --trace
@@ -237,7 +237,7 @@ Dependencies between jobs will be "registered" at submission time, so Slurm will
    module use /home/users/$USER/easybuild/modules/all
    module load cae/OpenFOAM/v2312-foss-2023a
    ``` 
-Now, we're gonna supposed to download tutorials of openfoam v2312, then upload them in openfoam directory that we have created for motorbike example: 
+3. Now, we're gonna supposed to download tutorials of openfoam v2312, then upload them in openfoam directory that we have created for motorbike example: 
    ```bash
    wget https://develop.openfoam.com/Development/openfoam/-/archive/OpenFOAM-v2312/openfoam-OpenFOAM-v2312.zip?     path=tutorials/incompressible/simpleFoam -O openfoam-OpenFOAM-v2312-tutorials-incompressible-simpleFoam.zip
    mkdir -p $HOME/OpenFOAM
@@ -250,13 +250,13 @@ Source the OpenFOAM Environment Setup
 ```bash
 source /home/users/$USER/easybuild/software/OpenFOAM/v2312-foss-2023a/OpenFOAM-v2312/etc/bashrc
 ```
-Verifying the Environment Variable 
+4. Verifying the Environment Variable 
 ```bash
 echo $WM_PROJECT_DIR
 ```
 ![image](https://github.com/nahidjavadinara/OpenFOAM-Documentation/assets/161458338/2d7b007b-dffd-4fdb-8ea8-8b8da2a357e1) 
 
-Execution and running 
+5. Execution and running 
 ```bash
 chmod +x Allrun
 srun -n 6 -c 6 ./Allrun
@@ -265,7 +265,7 @@ srun -n 6 -c 6 ./Allrun
 ![image](https://github.com/nahidjavadinara/OpenFOAM-Documentation/assets/161458338/5e14d6a4-fe7b-487f-a990-3ef6ff926728)
 ![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/ae69ec9b-9f15-4f05-85fa-3370f1e6cda1) 
 
-Now, after running procedure it is possible to generate plots 
+6. Now, after running procedure it is possible to generate plots 
 ```bash
 ./plot
 ```
@@ -275,9 +275,9 @@ cd plots
 ```
 ![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/477e3a8b-cdec-4ec4-9141-635f39056b13) 
  
- we see that all of .png files are saved in plots directory. (check ValidationVerfication folder for plots)
+ 7. we see that all of `.png` files are saved in plots directory. (check ValidationVerfication folder for plots)
 
-## IV. Test Example 3: Test `atmDownstreamDevelopment` from `atmosphericModels`
+## Test Example 3: Test `atmDownstreamDevelopment` from `atmosphericModels`
 
 
 ![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/a12c4afc-585f-4a5a-be82-0ac5fd2d5880) 
@@ -308,7 +308,7 @@ cd kEpsilon/
 
 
 
-## V. Test Example 4: `ChemFoam-gri` Tutorial Setup
+## Test Example 4: `ChemFoam-gri` Tutorial Setup
 
 ### Pre-settings
 
@@ -398,7 +398,7 @@ For further information, refer to the OpenFOAM documentation:
 
 
 
-## VI. Test Example 5: ChemFoam `h2` Tutorial Setup
+## Test Example 5: ChemFoam `h2` Tutorial Setup
 
 ### Pre-settings
 
@@ -488,7 +488,7 @@ For further information, refer to the OpenFOAM documentation:
 
 
 
-## VII. Test Example 6: ChemFoam `ic8h18` Tutorial Setup
+## Test Example 6: ChemFoam `ic8h18` Tutorial Setup
 
 ### Pre-settings
 
@@ -575,7 +575,7 @@ For further information, refer to the OpenFOAM documentation:
 - [chemFoam Tutorial](https://doc.openfoam.com/2312/examples/verification-validation/chemistry/chemFoam/reactions/)
 - Tutorial location in OpenFOAM: `$FOAM_TUTORIALS/combustion/chemFoam/ic8h18`
 
-## VIII. Test Example 7: ChemFoam `nc7h16` Tutorial Setup
+## Test Example 7: ChemFoam `nc7h16` Tutorial Setup
 
 ### Pre-settings
 
