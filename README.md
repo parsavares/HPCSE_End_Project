@@ -145,7 +145,7 @@ Dependencies between jobs will be "registered" at submission time, so Slurm will
     ```
       
 
-## II. Running the OpenFOAM-v2312 `motorBike` Tutorial on HPC[test1]
+## II. Test Example 1: Running the OpenFOAM-v2312 `motorBike` Tutorial on HPC
 
 1. **Download the Tutorial Files**
    - **Command**: 
@@ -213,7 +213,7 @@ Dependencies between jobs will be "registered" at submission time, so Slurm will
 ![9y8wrzf8](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/2f8c9fa3-7d06-4c36-89cc-b3871ab37fb1)
 
 
-## III. Testing `turbulenceModels` from `planeChannel`[test2]
+## III. Test Example 2: Testing `turbulenceModels` from `planeChannel`
 
    **Loading required modules** 
    ```bash
@@ -276,7 +276,7 @@ cd plots
  
  we see that all of .png files are saved in plots directory. (check ValidationVerfication folder for plots)
 
-## IV. Test `atmDownstreamDevelopment` from `atmosphericModels`[test3]
+## IV. Test Example 3: Test `atmDownstreamDevelopment` from `atmosphericModels`
 
 
 ![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/a12c4afc-585f-4a5a-be82-0ac5fd2d5880) 
@@ -307,12 +307,7 @@ cd kEpsilon/
 
 
 
-
-
-
-
-
-## V. `ChemFoam-gri` Tutorial Setup[test4]
+## V. Test Example 4: `ChemFoam-gri` Tutorial Setup
 
 ### Pre-settings
 
@@ -402,12 +397,7 @@ For further information, refer to the OpenFOAM documentation:
 
 
 
-
-
-
-
-
-## VI. ChemFoam `h2` Tutorial Setup[test5]
+## VI. Test Example 5: ChemFoam `h2` Tutorial Setup
 
 ### Pre-settings
 
@@ -497,7 +487,7 @@ For further information, refer to the OpenFOAM documentation:
 
 
 
-## VII. ChemFoam `ic8h18` Tutorial Setup[test6]
+## VII. Test Example 6: ChemFoam `ic8h18` Tutorial Setup
 
 ### Pre-settings
 
@@ -584,7 +574,7 @@ For further information, refer to the OpenFOAM documentation:
 - [chemFoam Tutorial](https://doc.openfoam.com/2312/examples/verification-validation/chemistry/chemFoam/reactions/)
 - Tutorial location in OpenFOAM: `$FOAM_TUTORIALS/combustion/chemFoam/ic8h18`
 
-## VIII. ChemFoam `nc7h16` Tutorial Setup[test7]
+## VIII. Test Example 7: ChemFoam `nc7h16` Tutorial Setup
 
 ### Pre-settings
 
