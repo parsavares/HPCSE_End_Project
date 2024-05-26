@@ -427,6 +427,7 @@ Run the simulation using `srun`:
 srun -n 6 -c 6 ./Allrun
 ./Allrun
 ```
+![image](https://github.com/parsavares/HPCSE_End_Project/assets/106035843/183427e5-80a2-4ed8-bf9a-e158aa776603)
 
 ## Resources
 For further information, refer to the OpenFOAM documentation:
@@ -436,7 +437,6 @@ For further information, refer to the OpenFOAM documentation:
 
 
 
-![image](https://github.com/parsavares/HPCSE_End_Project/assets/106035843/183427e5-80a2-4ed8-bf9a-e158aa776603)
 
 
 
