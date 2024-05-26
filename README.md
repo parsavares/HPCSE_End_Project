@@ -12,7 +12,7 @@ OpenFOAM is a C++ toolbox for the development of customized numerical solvers, a
 - [Part IV: Test atmDownstreamDevelopment from atmosphericModels](https://github.com/parsavares/HPCSE_End_Project/blob/main/README.md#iv-test-atmdownstreamdevelopment-from-atmosphericmodelstest3)
 - [Part V: ChemFoam Tutorial Setup](https://github.com/parsavares/HPCSE_End_Project/blob/main/README.md#v-chemfoam-gri-tutorial-setuptest4)
 - [Part VI: ChemFoam h2 Tutorial Setup](https://github.com/parsavares/HPCSE_End_Project/tree/main#vi-chemfoam-h2-tutorial-setuptest5)
-- [Resources]()
+
 
 
 ##  Introduction
@@ -395,7 +395,7 @@ srun -n 6 -c 6 ./Allrun
 ```
 ![image](https://github.com/parsavares/HPCSE_End_Project/assets/106035843/183427e5-80a2-4ed8-bf9a-e158aa776603)
 
-## Resources
+### Resources
 For further information, refer to the OpenFOAM documentation:
 - [chemFoam Tutorial](https://doc.openfoam.com/2312/examples/verification-validation/chemistry/chemFoam/reactions/)
 - Part: `$FOAM_TUTORIALS/combustion/chemFoam/gri`
@@ -490,7 +490,7 @@ srun -n 6 -c 6 ./Allrun
 ```
 ![image](https://github.com/parsavares/HPCSE_End_Project/assets/106035843/3398341c-41e6-43f6-9491-41cb61ed86ae)
 
-## Resources
+### Resources
 For further information, refer to the OpenFOAM documentation:
 - [chemFoam Tutorial](https://doc.openfoam.com/2312/examples/verification-validation/chemistry/chemFoam/reactions/)
 - Tutorial location in OpenFOAM: `$FOAM_TUTORIALS/combustion/chemFoam/h2`
