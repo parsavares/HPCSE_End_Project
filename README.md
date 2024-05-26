@@ -301,7 +301,7 @@ cd kEpsilon/
 
 
 
-## V. `ChemFoam` Tutorial Setup
+## V. `ChemFoam-gri` Tutorial Setup
 
 ### Pre-settings
 
