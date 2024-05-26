@@ -1,7 +1,9 @@
 # **OpenFOAM-Documentation** 
 
 #  Introduction
-OpenFOAM is a free, open source computational fluid dynamics (CFD) software package released by the OpenFOAM Foundation. It has a large user base across most areas of engineering and science, from both commercial and academic organisations. OpenFOAM has an extensive range of features to solve anything from complex fluid flows involving chemical reactions, turbulence and heat transfer, to solid dynamics and electromagnetics. OpenFOAM is a C++ toolbox for the development of customized numerical solvers, and pre-/post-processing utilities for the solution of continuum mechanics problems, most prominently including computational fluid dynamics (CFD).  
+OpenFOAM is a free, open source computational fluid dynamics (CFD) software package released by the OpenFOAM Foundation. It has a large user base across most areas of engineering and science, from both commercial and academic organisations. OpenFOAM has an extensive range of features to solve anything from complex fluid flows involving chemical reactions, turbulence and heat transfer, to solid dynamics and electromagnetics. 
+
+OpenFOAM is a C++ toolbox for the development of customized numerical solvers, and pre-/post-processing utilities for the solution of continuum mechanics problems, most prominently including computational fluid dynamics (CFD).  
 
 # **Installation and Regression Testing of OpenFOAM** 
 
@@ -209,7 +211,7 @@ OpenFOAM is a free, open source computational fluid dynamics (CFD) software pack
    module use /home/users/$USER/easybuild/modules/all
    module load cae/OpenFOAM/v2312-foss-2023a
    ```
-**Testing 'turbulenceModels' from 'planeChannel'**
+**Testing `turbulenceModels` from `planeChannel`**
 
 Now, we're gonna supposed to download tutorials of openfoam v2312, then upload them in openfoam directory that we have created for motorbike example: 
    ```bash
@@ -250,6 +252,27 @@ cd plots
 ![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/477e3a8b-cdec-4ec4-9141-635f39056b13) 
  
  we see that all of .png files are saved in plots directory. (check ValidationVerfication folder for plots)
+
+Example 2: Test `atmDownstreamDevelopment` from `atmosphericModels`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # ReFrame Installation and Setup Guide
