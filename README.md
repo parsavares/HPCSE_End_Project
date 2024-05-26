@@ -172,7 +172,7 @@ OpenFOAM is a C++ toolbox for the development of customized numerical solvers, a
 9. **Run the `Allrun` Script Using `srun`**
    - **Command**:
      ```bash
-     srun -n 6 -c 10 ./Allrun
+     srun -n 6 -c 6 ./Allrun
      ```
 
 10. **Run the `Allrun` Script Directly (Optional)**
@@ -233,7 +233,7 @@ echo $WM_PROJECT_DIR
 Execution and running 
 ```bash
 chmod +x Allrun
-srun -n 6 -c 10 ./Allrun
+srun -n 6 -c 6 ./Allrun
 ./Allrun
 ```
 ![image](https://github.com/nahidjavadinara/OpenFOAM-Documentation/assets/161458338/5e14d6a4-fe7b-487f-a990-3ef6ff926728)
