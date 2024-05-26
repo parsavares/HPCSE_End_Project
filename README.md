@@ -3,7 +3,7 @@
 #  Introduction
 OpenFOAM is a free, open source computational fluid dynamics (CFD) software package released by the OpenFOAM Foundation. It has a large user base across most areas of engineering and science, from both commercial and academic organisations. OpenFOAM has an extensive range of features to solve anything from complex fluid flows involving chemical reactions, turbulence and heat transfer, to solid dynamics and electromagnetics. 
 
- **Installation and Regression Testing of OpenFOAM** 
+# **Installation and Regression Testing of OpenFOAM** 
 
  OpenFOAM is a C++ toolbox for the development of customized numerical solvers, and pre-/post-processing utilities for the solution of continuum mechanics problems, most prominently including computational fluid dynamics (CFD). 
  
@@ -13,7 +13,7 @@ OpenFOAM is a free, open source computational fluid dynamics (CFD) software pack
             1) To install recent versions of OpenFOAM on the Uni.lu HPC platform using EasyBuild.
             2) To set up a regression testing configuration for the installed OpenFOAM using ReFrame.
 
-# **PART I. Installing latest release of EasyBuild & OpenFOAM** 
+ ** Installing latest release of EasyBuild & OpenFOAM** 
 
 1. Allocating an interactive job with a high priority for 2 hours, using 1 node, 1 task, and 32 CPU cores.
  - **Command**: 
@@ -250,8 +250,6 @@ cd plots
  
  we see that all of .png files are saved in plots directory. (check ValidationVerfication folder for plots)
 
-
-## **PART III. ** Reframe
 
 # ReFrame Installation and Setup Guide
 
