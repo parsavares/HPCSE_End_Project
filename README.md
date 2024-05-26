@@ -16,7 +16,7 @@ OpenFOAM is a C++ toolbox for the development of customized numerical solvers, a
    1) To install recent versions of OpenFOAM on the Uni.lu HPC platform using EasyBuild.
    2) To set up a regression testing configuration for the installed OpenFOAM using ReFrame.
 
-## **I. Installing latest release of EasyBuild** 
+## I. Installing latest release of EasyBuild
 
 1. **Connection to a Compute Node**
  Allocating an interactive job with a high priority for 2 hours, using 1 node, 1 task, and 32 CPU cores.
@@ -134,7 +134,7 @@ Dependencies between jobs will be "registered" at submission time, so Slurm will
     ```
       
 
-## II. Running the OpenFOAM-v2312 `motorBike` Tutorial on HPC
+## II. Running the OpenFOAM-v2312 `motorBike` Tutorial on HPC[test1]
 
 1. **Download the Tutorial Files**
    - **Command**: 
@@ -202,7 +202,7 @@ Dependencies between jobs will be "registered" at submission time, so Slurm will
 ![9y8wrzf8](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/2f8c9fa3-7d06-4c36-89cc-b3871ab37fb1)
 
 
-## III. Testing `turbulenceModels` from `planeChannel`**
+## III. Testing `turbulenceModels` from `planeChannel`**[test2]
 
    **Loading required modules** 
    ```bash
@@ -265,7 +265,7 @@ cd plots
  
  we see that all of .png files are saved in plots directory. (check ValidationVerfication folder for plots)
 
-## IV. Test `atmDownstreamDevelopment` from `atmosphericModels` 
+## IV. Test `atmDownstreamDevelopment` from `atmosphericModels`[test3]
 
 
 ![image](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/a12c4afc-585f-4a5a-be82-0ac5fd2d5880) 
@@ -301,7 +301,7 @@ cd kEpsilon/
 
 
 
-## V. `ChemFoam-gri` Tutorial Setup
+## V. `ChemFoam-gri` Tutorial Setup[test4]
 
 ### Pre-settings
 
@@ -396,7 +396,7 @@ For further information, refer to the OpenFOAM documentation:
 
 
 
-## VI. ChemFoam `h2` Tutorial Setup
+## VI. ChemFoam `h2` Tutorial Setup[test5]
 
 ### Pre-settings
 
@@ -488,7 +488,8 @@ For further information, refer to the OpenFOAM documentation:
 
 
 
-
+___
+___
 # ReFrame Installation and Setup Guide
 
 ## Introduction
