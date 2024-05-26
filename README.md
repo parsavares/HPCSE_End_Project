@@ -202,7 +202,7 @@ Dependencies between jobs will be "registered" at submission time, so Slurm will
 ![9y8wrzf8](https://github.com/parsavares/HPCSE_End_Project/assets/161458338/2f8c9fa3-7d06-4c36-89cc-b3871ab37fb1)
 
 
-## III. Testing `turbulenceModels` from `planeChannel`**[test2]
+## III. Testing `turbulenceModels` from `planeChannel`[test2]
 
    **Loading required modules** 
    ```bash
