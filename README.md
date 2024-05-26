@@ -48,6 +48,14 @@ OpenFOAM is a C++ toolbox for the development of customized numerical solvers, a
      ```bash
      module use /work/projects/mhpc-softenv/easybuild/aion-epyc-prod-2023a/modules/all/
      ```
+## **Submitting installations as Slurm jobs** 
+
+EasyBuild can submit jobs to different backends including Slurm to install software, to distribute the often time-consuming installation of a set of software applications and the dependencies they require to a cluster.
+
+This is done via the `--job` command line option.
+
+It is important to be aware of some details before you start using this, which we'll cover here.
+     
 7. It Configures EasyBuild to use Slurm as the backend job scheduler for build jobs.
 - **Command**: 
      ```bash
