@@ -139,7 +139,7 @@ Dependencies between jobs will be "registered" at submission time, so Slurm will
     ```
 
 13.1 unload previous installed module to install the other OpenFOAM version. 
-  
+- **Command**: 
     ```bash
     module unload cae/OpenFOAM/v2312-foss-2023a
     ```
