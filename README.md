@@ -256,9 +256,8 @@ Dependencies between jobs will be "registered" at submission time, so Slurm will
    scp openfoam-OpenFOAM-v2312-tutorials-incompressible-simpleFoam.zip $HOME/OpenFOAM
    unzip $HOME/OpenFOAM/openfoam-OpenFOAM-v2312-tutorials-incompressible-simpleFoam.zip -d $HOME/OpenFOAM
    cd $HOME/OpenFOAM/openfoam-OpenFOAM-v2312/tutorials/verificationAndValidation/turbulenceModels/planeChannel
-  ```
-
-**Source the OpenFOAM Environment Setup**
+   ```
+ **Source the OpenFOAM Environment Setup** 
 
 ```bash
 source /home/users/$USER/easybuild/software/OpenFOAM/v2312-foss-2023a/OpenFOAM-v2312/etc/bashrc
