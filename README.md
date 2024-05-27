@@ -697,7 +697,7 @@ If ReFrame 4.3.3 is not found, setup environment variables and build it using Ea
 export EASYBUILD_JOB_BACKEND='Slurm'
 export EASYBUILD_PREFIX=$HOME/easybuild
 export EASYBUILD_BUILDPATH=/dev/shm/$USER
-eb /home/users/pvares/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs/r/ReFrame/ReFrame-4.3.3.eb --job --job-cores 64 --job-max-walltime 3 --robot --trace
+eb /home/users/$USER/.local/easybuild/software/EasyBuild/4.9.1/easybuild/easyconfigs/r/ReFrame/ReFrame-4.3.3.eb --job --job-cores 64 --job-max-walltime 3 --robot --trace
 ```
 ### Step 5: Load ReFrame 
 ```bash
