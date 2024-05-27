@@ -137,10 +137,13 @@ Dependencies between jobs will be "registered" at submission time, so Slurm will
     ```bash
     module load cae/OpenFOAM/v2312-foss-2023a
     ```
+
 13.1 unload previous installed module to install the other OpenFOAM version. 
+  
     ```bash
     module unload cae/OpenFOAM/v2312-foss-2023a
     ```
+
 14. Now we repeat process again from the step 10th for installing OpenFOAM-11.
     - **Important**: don't forget to do: 1. `export EASYBUILD_JOB_BACKEND='Slurm'` 2. `export EASYBUILD_PREFIX=$HOME/easybuild` 3. `export EASYBUILD_BUILDPATH=/dev/shm/$USER` before doing this line.
  - **Command**: 
